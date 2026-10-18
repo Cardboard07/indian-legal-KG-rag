@@ -1,0 +1,1955 @@
+[
+  {
+    "question_id": 3,
+    "question": "If our standalone asset size is ₹600 crore, but our group NBFCs aggregate to ₹1,200 crore, are we treated as Base Layer (NBFC-BL) or Middle Layer (NBFC-ML)?",
+    "metrics": {
+      "baseline_retrieval_ms": 10117.86,
+      "baseline_generation_ms": 0.06,
+      "baseline_total_ms": 10117.92,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 4154,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 3909.21,
+      "graph_generation_ms": 0.23,
+      "graph_total_ms": 3909.44,
+      "graph_evidence_count": 37,
+      "graph_assertions_count": 35,
+      "graph_quotes_count": 2,
+      "graph_context_chars": 4993,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 0,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Based on the RBI regulatory framework for Multiple NBFCs, your entity is treated as Middle Layer (NBFC-ML). Applicable NBFCs that are part of a corporate group or floated by a common set of promoters cannot be viewed on a standalone basis; their total assets must be consolidated across the group.",
+      "analysis": "Under RBI Directions on Multiple NBFCs (Section 16), NBFCs belonging to a corporate group or floated by a common set of promoters must aggregate total assets of all NBFCs in the group (including deposit-taking NBFCs). If the consolidated total asset size crosses ₹500 crore (and specifically the ₹1,000 crore threshold under the Scale Based Regulatory framework), regulations applicable to the higher category apply to each non-deposit taking NBFC in the group. Because the group aggregate is ₹1,200 crore (exceeding the ₹1,000 crore SBR Middle Layer threshold), the ₹600 crore standalone entity is classified and regulated as an NBFC-Middle Layer entity rather than a Base Layer entity.",
+      "rule_determination": "Middle Layer (NBFC-ML) via Group Asset Aggregation Rule (Paragraph 16 of SBR / Master Directions)",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk247.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk255.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk245.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk247.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section",
+          "content": "## 16. Multiple NBFCs  \nApplicable NBFCs that are part of a corporate group or are floated by a common set of promoters shall not be viewed on a standalone basis. The total assets of the NBFCs in a group including deposit taking NBFCs, if any, shall be aggregated to determine if such consolidation falls within the asset sizes of the two categories i.e., those with asset size of below ₹500 crore and those with asset size of ₹500 crore and above. Regulations as applicable to the two categories shall be applicable to each of the non-deposit taking NBFC within the group. For this purpose, Statutory Auditors are required to certify the asset size of all the NBFCs in the Group. However, NBFC-D, within the group, if any, shall be governed under the NonBanking Financial Companies Acceptance of Public Deposits (Reserve Bank) Direction, 2016 and Prudential Norms and other Directions as applicable to deposit taking NBFCs.",
+          "rrf_score": 0.032522
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk255.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section",
+          "content": "## 16. Multiple NBFCs  \nApplicable NBFCs that are part of a corporate group or are floated by a common set of promoters shall not be viewed on a standalone basis. The total assets of the NBFCs in a group including deposit taking NBFCs, if any, shall be aggregated to determine if such consolidation falls within the asset sizes of the two categories i.e., those with asset size of below ₹500 crore and those with asset size of ₹500 crore and above. Regulations as applicable to the two categories shall be applicable to each of the non-deposit taking NBFC within the group. For this purpose, Statutory Auditors are required to certify the asset size of all the NBFCs in the Group. However, NBFC-D, within the group, if any, shall be governed under the NonBanking Financial Companies Acceptance of Public Deposits (Reserve Bank) Direction, 2016 and Prudential Norms and other Directions as applicable to deposit taking NBFCs.",
+          "rrf_score": 0.032002
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section",
+          "content": "## 16. Multiple NBFCs  \nApplicable NBFCs that are part of a corporate group or are floated by a common set of promoters shall not be viewed on a standalone basis. The total assets of the NBFCs in a group including deposit taking NBFCs, if any, shall be aggregated to determine if such consolidation falls within the asset sizes of the two categories i.e., those with asset size of below ₹500 crore and those with asset size of ₹500 crore and above. Regulations as applicable to the two categories shall be applicable to each of the non-deposit taking NBFC within the group. For this purpose, Statutory Auditors are required to certify the asset size of all the NBFCs in the Group. However, NBFC-D, within the group, if any, shall be governed under the NonBanking Financial Companies Acceptance of Public Deposits (Reserve Bank) Direction, 2016 and Prudential Norms and other Directions as applicable to deposit taking NBFCs.",
+          "rrf_score": 0.031498
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Based on the RBI regulatory framework for Multiple NBFCs, your entity is treated as Middle Layer (NBFC-ML). Applicable NBFCs that are part of a corporate group or floated by a common set of promoters cannot be viewed on a standalone basis; their total assets must be consolidated across the group.",
+      "analysis": "Under RBI Directions on Multiple NBFCs (Section 16), NBFCs belonging to a corporate group or floated by a common set of promoters must aggregate total assets of all NBFCs in the group (including deposit-taking NBFCs). If the consolidated total asset size crosses ₹500 crore (and specifically the ₹1,000 crore threshold under the Scale Based Regulatory framework), regulations applicable to the higher category apply to each non-deposit taking NBFC in the group. Because the group aggregate is ₹1,200 crore (exceeding the ₹1,000 crore SBR Middle Layer threshold), the ₹600 crore standalone entity is classified and regulated as an NBFC-Middle Layer entity rather than a Base Layer entity.",
+      "rule_determination": "Middle Layer (NBFC-ML) via Group Asset Aggregation Rule (Paragraph 16 of SBR / Master Directions)",
+      "conditions_exceptions": [
+        "Statutory Auditors must formally certify the asset size of all NBFCs in the Group.",
+        "If there is any deposit-taking NBFC (NBFC-D) within the group, it is separately governed under deposit acceptance directions and Prudential Norms for deposit-taking NBFCs.",
+        "Applies to entities that are part of a corporate group or floated by a common set of promoters."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk620.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk29.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk1156.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk4.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk33.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk21.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk3.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk2.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk620.md",
+          "content": "E2 references of the Income Tax Act, 1961.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 -> REFERS_TO -> of the Income Tax Act, 1961"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk29.md",
+          "content": "E2 references means the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 -> REFERS_TO -> means the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk1156.md",
+          "content": "E2 references her relatives as defined in the Companies Act, 1956.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 -> REFERS_TO -> her relatives as defined in the Companies Act, 1956"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk4.md",
+          "content": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 contains provision Section I.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 -> HAS_PROVISION -> Section I"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk33.md",
+          "content": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 contains provision Section 3.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016 -> HAS_PROVISION -> Section 3"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::apr252022 rbi rbi re issues systemically important non deposit taking company and deposit taking company reserve bank directions 2016",
+          "source_name": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the income tax act, 1961",
+          "target_name": "of the Income Tax Act, 1961",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::apr252022 rbi rbi re issues systemically important non deposit taking company and deposit taking company reserve bank directions 2016",
+          "source_name": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the reserve bank of india act, 1934",
+          "target_name": "means the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::apr252022 rbi rbi re issues systemically important non deposit taking company and deposit taking company reserve bank directions 2016",
+          "source_name": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::her relatives as defined in the companies act, 1956",
+          "target_name": "her relatives as defined in the Companies Act, 1956",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::apr252022 rbi rbi re issues systemically important non deposit taking company and deposit taking company reserve bank directions 2016",
+          "source_name": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016::section i",
+          "target_name": "Section I",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::apr252022 rbi rbi re issues systemically important non deposit taking company and deposit taking company reserve bank directions 2016",
+          "source_name": "Apr252022 RBI RBI re issues Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016::section 3",
+          "target_name": "Section 3",
+          "target_type": "Provision",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 4,
+    "question": "Which categories of NBFCs remain in the Base Layer irrespective of their asset size (e.g., NBFC-P2P, NBFC-AA, and Type-I NBFC-ND)?",
+    "metrics": {
+      "baseline_retrieval_ms": 2662.19,
+      "baseline_generation_ms": 0.03,
+      "baseline_total_ms": 2662.2200000000003,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 2626,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 4121.77,
+      "graph_generation_ms": 0.15,
+      "graph_total_ms": 4121.92,
+      "graph_evidence_count": 38,
+      "graph_assertions_count": 33,
+      "graph_quotes_count": 5,
+      "graph_context_chars": 4997,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 0,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Under the RBI Scale Based Regulation (SBR) framework, specific categories of NBFCs remain permanently in the Base Layer (NBFC-BL) regardless of their asset size. These include NBFC-Peer to Peer Lending Platforms (NBFC-P2P), NBFC-Account Aggregators (NBFC-AA), Non-Operative Financial Holding Companies (NOFHC), and NBFCs not accessing public funds and having no customer interface (Type-I NBFC-ND).",
+      "analysis": "The SBR regulatory architecture defines four layers (Base, Middle, Upper, Top). While the general threshold for transition from Base Layer to Middle Layer is an asset size of ₹1,000 crore for non-deposit taking NBFCs, the RBI carved out designated entity categories to remain in the Base Layer irrespective of whether their assets exceed ₹1,000 crore. These non-systemic risk or specialized conduit entities are evaluated on activity-specific prudential regulations rather than balance sheet scale.",
+      "rule_determination": "Base Layer (NBFC-BL) Statutory Carve-Out Categories",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/risk_based_internal_audit_chunk5.md",
+          "document_id": "RBI::366::Circular::risk_based_internal_audit",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk865.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk854.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk847.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/risk_based_internal_audit_chunk5.md",
+          "document_id": "RBI::366::Circular::risk_based_internal_audit",
+          "locator": "Unspecified Section",
+          "content": "- a. All deposit taking NBFCs, irrespective of their size;",
+          "rrf_score": 0.032522
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk865.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section",
+          "content": "## 1) Applicability  \nIn addition to the guidelines laid down in Annex II of these guidelines, all non-deposit taking systemically important NBFCs with asset size of ₹5,000 crore and above (except Core Investment Companies, Type I NBFC-NDs 24 , Non-Operating Financial Holding Companies and Standalone Primary Dealers) and all deposit taking NBFCs irrespective of the asset size shall adhere to the following guidelines while computing the Liquidity Coverage Ratio.",
+          "rrf_score": 0.030366
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk854.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section",
+          "content": "## 1) Applicability  \nIn addition to the guidelines laid down in Annex II of these guidelines, all non-deposit taking systemically important NBFCs with asset size of ₹5,000 crore and above (except Core Investment Companies, Type I NBFC-NDs 19 , Non-Operating Financial Holding Companies and Standalone Primary Dealers) and all deposit taking NBFCs irrespective of the asset size shall adhere to the following guidelines while computing the Liquidity Coverage Ratio.",
+          "rrf_score": 0.030214
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Under the RBI Scale Based Regulation (SBR) framework, specific categories of NBFCs remain permanently in the Base Layer (NBFC-BL) regardless of their asset size. These include NBFC-Peer to Peer Lending Platforms (NBFC-P2P), NBFC-Account Aggregators (NBFC-AA), Non-Operative Financial Holding Companies (NOFHC), and NBFCs not accessing public funds and having no customer interface (Type-I NBFC-ND).",
+      "analysis": "The SBR regulatory architecture defines four layers (Base, Middle, Upper, Top). While the general threshold for transition from Base Layer to Middle Layer is an asset size of ₹1,000 crore for non-deposit taking NBFCs, the RBI carved out designated entity categories to remain in the Base Layer irrespective of whether their assets exceed ₹1,000 crore. These non-systemic risk or specialized conduit entities are evaluated on activity-specific prudential regulations rather than balance sheet scale.",
+      "rule_determination": "Base Layer (NBFC-BL) Statutory Carve-Out Categories",
+      "conditions_exceptions": [
+        "Entities must not accept public deposits (any deposit-taking NBFC automatically enters Middle Layer or Upper Layer).",
+        "For Type-I NBFC-ND, the exemption strictly requires zero public funds and zero customer interface."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk11.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk2.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk1.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk197.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk8.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "content": "E2 references of the Income Tax Act, 1961.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> of the Income Tax Act, 1961"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "content": "E2 references means the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> means the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section II.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section II"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk11.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section I.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section I"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk2.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section I.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section I"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the income tax act, 1961",
+          "target_name": "of the Income Tax Act, 1961",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the reserve bank of india act, 1934",
+          "target_name": "means the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section ii",
+          "target_name": "Section II",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section i",
+          "target_name": "Section I",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section i",
+          "target_name": "Section I",
+          "target_type": "Provision",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 5,
+    "question": "When an NBFC crosses the ₹1,000 crore threshold mid-year, does Middle Layer regulatory applicability trigger immediately or from the subsequent financial year?",
+    "metrics": {
+      "baseline_retrieval_ms": 3146.7,
+      "baseline_generation_ms": 0.03,
+      "baseline_total_ms": 3146.73,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 2069,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 3887.3,
+      "graph_generation_ms": 0.14,
+      "graph_total_ms": 3887.44,
+      "graph_evidence_count": 49,
+      "graph_assertions_count": 47,
+      "graph_quotes_count": 2,
+      "graph_context_chars": 4994,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 5,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 3,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "When an NBFC reaches or crosses the ₹1,000 crore asset size threshold, Middle Layer regulatory requirements trigger dynamically as and when the threshold is reached, irrespective of the date on which such size is attained, rather than waiting for the subsequent financial year.",
+      "analysis": "Under RBI Master Directions (e.g., Section 1(1) / SBR implementation norms), once an applicable non-deposit taking NBFC reaches the asset size threshold (historically ₹500 crore under 2016 Directions, ₹1,000 crore under SBR), it becomes subject to the regulatory requirements of the systemically important / Middle Layer classification despite not having had such assets on the date of its last balance sheet. The entity is required to comply with directions as and when it attains the threshold.",
+      "rule_determination": "Immediate Dynamic Applicability upon Crossing Asset Size Threshold",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk614.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk854.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk624.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2",
+          "content": "## Large Exposures Framework for Non-Banking Financial Company - Upper Layer (NBFC-UL)  \nPlease refer to paragraph 3.2.2 (d) of RBI circular DOR.CRE.REC. No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\", in terms of which a Large Exposure Framework (LEF) is prescribed for NBFCs in the Upper Layer.  \n2. Detailed guidelines in this regard are annexed.  \nYours faithfully,  \n(Manoranjan Mishra) Chief General Manager April 19, 2022  \n<!-- image -->",
+          "rrf_score": 0.031319
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section",
+          "content": "- 2.1 \"NBFC-UL\" means an NBFC placed in the upper layer as per RBI circular DOR.CRE.REC.No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\".",
+          "rrf_score": 0.031281
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk614.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section",
+          "content": "(1) Once an NBFC reaches an asset size of ₹500 crore or above, it shall be subject to the regulatory requirements as per these Directions, despite not having such assets as on the date of last balance sheet. All such non-deposit taking NBFCs shall comply with the regulations/directions issued to NBFC-ND-SI from time to time, as and when they attain an asset size of ₹500 crore, irrespective of the date on which such size is attained.",
+          "rrf_score": 0.029643
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "When an NBFC reaches or crosses the ₹1,000 crore asset size threshold, Middle Layer regulatory requirements trigger dynamically as and when the threshold is reached, irrespective of the date on which such size is attained, rather than waiting for the subsequent financial year.",
+      "analysis": "Under RBI Master Directions (e.g., Section 1(1) / SBR implementation norms), once an applicable non-deposit taking NBFC reaches the asset size threshold (historically ₹500 crore under 2016 Directions, ₹1,000 crore under SBR), it becomes subject to the regulatory requirements of the systemically important / Middle Layer classification despite not having had such assets on the date of its last balance sheet. The entity is required to comply with directions as and when it attains the threshold.",
+      "rule_determination": "Immediate Dynamic Applicability upon Crossing Asset Size Threshold",
+      "conditions_exceptions": [
+        "Prudential transition timelines apply to specific governance appointments (such as CCO and Chief Risk Officer) if granted by RBI circular.",
+        "If the asset size subsequently dips temporarily below the threshold, the NBFC remains subject to the higher requirements until it demonstrates a consistent reduction below the threshold for a sustained period as determined by the Reserve Bank."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk13.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk10.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk8.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk7.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk6.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk5.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "content": "APRIL20 RBI1 contains provision Regulation (SBR).",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> HAS_PROVISION -> Regulation (SBR)"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "content": "APRIL20 RBI1 contains provision Section/Clause 2.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> HAS_PROVISION -> Section/Clause 2"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk13.md",
+          "content": "APRIL20 RBI1 prohibits requirement for Regulated Person Or Entity. [Conditions: {'condition_type': 'all_of', 'description': \"Where a significant part of one counterparty's production/ output is sold to another counterparty\", 'sub_conditions': None, 'is_unresolved': False}]",
+          "is_conditional": true,
+          "conditions": [
+            {
+              "condition_type": "all_of",
+              "description": "Where a significant part of one counterparty's production/ output is sold to another counterparty",
+              "sub_conditions": null,
+              "is_unresolved": false
+            }
+          ],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> PROHIBITS -> Regulated Person Or Entity Prohibition Rule"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk10.md",
+          "content": "APRIL20 RBI1 requires requirement for Regulated Person Or Entity.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> REQUIRES -> Regulated Person Or Entity Obligation Rule"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk8.md",
+          "content": "APRIL20 RBI1 defines 'Group of connected counterparties'.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> DEFINES -> Group Of Connected Counterparties"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::APRIL20_RBI1::regulation (sbr)",
+          "target_name": "Regulation (SBR)",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::APRIL20_RBI1::section/clause 2",
+          "target_name": "Section/Clause 2",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "PROHIBITS",
+          "target_id": "CANONICAL::Requirement::RBI/366/Circular/APRIL20_RBI1_chunk13.md::E4",
+          "target_name": "Regulated Person Or Entity Prohibition Rule",
+          "target_type": "Requirement",
+          "is_conditional": true
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "REQUIRES",
+          "target_id": "CANONICAL::Requirement::RBI/366/Circular/APRIL20_RBI1_chunk10.md::E4",
+          "target_name": "Regulated Person Or Entity Obligation Rule",
+          "target_type": "Requirement",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "DEFINES",
+          "target_id": "CANONICAL::DefinedTerm::RBI::366::Circular::APRIL20_RBI1::group of connected counterparties",
+          "target_name": "Group Of Connected Counterparties",
+          "target_type": "DefinedTerm",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 6,
+    "question": "Is it mandatory for a non-deposit taking NBFC in the Base Layer with an asset size under ₹1,000 crore to appoint a dedicated Chief Compliance Officer (CCO)?",
+    "metrics": {
+      "baseline_retrieval_ms": 1377.97,
+      "baseline_generation_ms": 0.04,
+      "baseline_total_ms": 1378.01,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 890,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 2255.84,
+      "graph_generation_ms": 0.13,
+      "graph_total_ms": 2255.9700000000003,
+      "graph_evidence_count": 47,
+      "graph_assertions_count": 45,
+      "graph_quotes_count": 2,
+      "graph_context_chars": 4999,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 1,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "No, it is not mandatory for a non-deposit taking NBFC in the Base Layer with an asset size under ₹1,000 crore to appoint a dedicated Chief Compliance Officer (CCO). The mandatory requirement to appoint a dedicated CCO applies to NBFCs in the Upper Layer and Middle Layer.",
+      "analysis": "The RBI framework on Compliance Function and Role of Chief Compliance Officer (Circular dated April 11, 2022) mandates the appointment of a dedicated CCO for NBFCs in the Upper Layer and Middle Layer. NBFCs in the Base Layer are encouraged to maintain adequate compliance mechanisms, but are not statutorily mandated to appoint an independent, dedicated CCO with ring-fenced tenure and seniority requirements.",
+      "rule_determination": "Exemption from Mandatory Dedicated CCO for NBFC-Base Layer",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/risk_based_internal_audit_chunk6.md",
+          "document_id": "RBI::366::Circular::risk_based_internal_audit",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Nov16_RBIOMBUDMAN_chunk7.md",
+          "document_id": "RBI::366::Circular::Nov16_RBIOMBUDMAN",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md",
+          "document_id": "RBI::1932::Others::Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Act _ Rules _ Regulations/Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_chunk23.md",
+          "document_id": "RBI::3263::Act _ Rules _ Regulations::Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk25.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/risk_based_internal_audit_chunk6.md",
+          "document_id": "RBI::366::Circular::risk_based_internal_audit",
+          "locator": "Unspecified Section",
+          "content": "- b. All Non-deposit taking NBFCs (including Core Investment Companies) with asset size of ₹5,000 crore and above; and",
+          "rrf_score": 0.029462
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Nov16_RBIOMBUDMAN_chunk7.md",
+          "document_id": "RBI::366::Circular::Nov16_RBIOMBUDMAN",
+          "locator": "Unspecified Section",
+          "content": "- b) Non-Deposit taking NBFCs (NBFCs-ND) with asset size of Rs.5,000 crore and above and having public customer interface.",
+          "rrf_score": 0.02938
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md",
+          "document_id": "RBI::1932::Others::Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies",
+          "locator": "Unspecified Section",
+          "content": "- 4.4 All CICs with asset size of more than `5,000 crore shall appoint a CRO with clearly specified roles and responsibilities. Guidelines on CRO shall be as per Para 71 on Appointment of Chief Risk Officer of Master Direction - Non-Banking Financial Company - Systemically Important Non-Deposit taking Company and Deposit taking Company (Reserve Bank) Directions, 2016.",
+          "rrf_score": 0.029052
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "No, it is not mandatory for a non-deposit taking NBFC in the Base Layer with an asset size under ₹1,000 crore to appoint a dedicated Chief Compliance Officer (CCO). The mandatory requirement to appoint a dedicated CCO applies to NBFCs in the Upper Layer and Middle Layer.",
+      "analysis": "The RBI framework on Compliance Function and Role of Chief Compliance Officer (Circular dated April 11, 2022) mandates the appointment of a dedicated CCO for NBFCs in the Upper Layer and Middle Layer. NBFCs in the Base Layer are encouraged to maintain adequate compliance mechanisms, but are not statutorily mandated to appoint an independent, dedicated CCO with ring-fenced tenure and seniority requirements.",
+      "rule_determination": "Exemption from Mandatory Dedicated CCO for NBFC-Base Layer",
+      "conditions_exceptions": [
+        "If the Base Layer entity accepts public deposits, higher governance and compliance mandates apply.",
+        "Base Layer NBFCs must still ensure overall statutory compliance oversight by the Board of Directors and senior management."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md",
+          "document_id": "RBI::1932::Others::Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk3.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk957.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk969.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk473.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk782.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk953.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk83.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md",
+          "content": "Requirement applies to Guidelines On Cro.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Guidelines On Cro Obligation Rule -> APPLIES_TO -> Guidelines On Cro"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md",
+          "content": "Requirement applies to Crore.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Crore Obligation Rule -> APPLIES_TO -> Crore"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk3.md",
+          "content": "E2 references of the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22 -> REFERS_TO -> of the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk957.md",
+          "content": "E2 references means the Companies Act, 1956.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22 -> REFERS_TO -> means the Companies Act, 1956"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk957.md",
+          "content": "E2 references or the Companies Act, 2013.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22 -> REFERS_TO -> or the Companies Act, 2013"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Requirement::RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md::E6",
+          "source_name": "Guidelines On Cro Obligation Rule",
+          "relation_type": "APPLIES_TO",
+          "target_id": "CANONICAL::EntityCategory::guidelines on cro",
+          "target_name": "Guidelines On Cro",
+          "target_type": "EntityCategory",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Requirement::RBI/1932/Others/Aug132020_RBI_Revised_guidelines_for_Core_Investment_Companies_chunk16.md::E4",
+          "source_name": "Crore Obligation Rule",
+          "relation_type": "APPLIES_TO",
+          "target_id": "CANONICAL::EntityCategory::crore",
+          "target_name": "Crore",
+          "target_type": "EntityCategory",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::master non banking financial company housing finance company reserve bank directions 2021 april22",
+          "source_name": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the reserve bank of india act, 1934",
+          "target_name": "of the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::master non banking financial company housing finance company reserve bank directions 2021 april22",
+          "source_name": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the companies act, 1956",
+          "target_name": "means the Companies Act, 1956",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::master non banking financial company housing finance company reserve bank directions 2021 april22",
+          "source_name": "Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::or the companies act, 2013",
+          "target_name": "or the Companies Act, 2013",
+          "target_type": "Instrument",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 7,
+    "question": "What are the dual-hatting restrictions and minimum tenure requirements for a CCO appointed in an NBFC-Middle Layer or Upper Layer?",
+    "metrics": {
+      "baseline_retrieval_ms": 1655.11,
+      "baseline_generation_ms": 0.06,
+      "baseline_total_ms": 1655.1699999999998,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 2049,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 2316.57,
+      "graph_generation_ms": 0.11,
+      "graph_total_ms": 2316.6800000000003,
+      "graph_evidence_count": 38,
+      "graph_assertions_count": 38,
+      "graph_quotes_count": 0,
+      "graph_context_chars": 4999,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 1,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Under RBI CCO guidelines, the Chief Compliance Officer (CCO) in NBFC-Middle Layer and Upper Layer is subject to strict dual-hatting restrictions and must be appointed for a minimum fixed tenure of not less than 3 years. The CCO must not be assigned any business, commercial, or operational responsibilities that give rise to a conflict of interest.",
+      "analysis": "Under the RBI Circular on Compliance Function in NBFCs (April 11, 2022), the CCO must be a senior executive with independent reporting directly to the MD & CEO and/or the Audit Committee of the Board (ACB). Strict dual-hatting restrictions prohibit the CCO from holding any operational roles (e.g., credit, business origination, finance, audit). Furthermore, the CCO must have a minimum tenure of not less than 3 years to ensure independence, and premature removal or transfer requires prior approval of the Board of Directors with reporting to the Reserve Bank.",
+      "rule_determination": "Dual-Hatting Prohibition & Minimum 3-Year Fixed Tenure for CCO",
+      "citations": [
+        {
+          "chunk_id": "RBI/3263/Act _ Rules _ Regulations/Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_chunk550.md",
+          "document_id": "RBI::3263::Act _ Rules _ Regulations::Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_revised_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Dec272022_chunk552.md",
+          "document_id": "RBI::3263::Circular::RBI_revised_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Dec272022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk552.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22_chunk552.md",
+          "document_id": "RBI::3263::Circular::Master_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_April22",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/3263/Act _ Rules _ Regulations/Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_chunk550.md",
+          "document_id": "RBI::3263::Act _ Rules _ Regulations::Master_Direction_Non-Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021",
+          "locator": "Unspecified Section",
+          "content": "- 51.2.2. The CRO shall be appointed for a fixed tenure with the approval of the Board. The CRO can be transferred/ removed from his post before completion of the tenure only with the approval of the Board and such premature transfer/ removal shall be reported to the NHB. In case the HFC is listed, any change in incumbency of the CRO shall also be reported to the stock exchanges.",
+          "rrf_score": 0.03009
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/3263/Circular/RBI_revised_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Dec272022_chunk552.md",
+          "document_id": "RBI::3263::Circular::RBI_revised_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Dec272022",
+          "locator": "Unspecified Section",
+          "content": "- 51.2.2. The CRO shall be appointed for a fixed tenure with the approval of the Board. The CRO can be transferred/ removed from his post before completion of the tenure only with the approval of the Board and such premature transfer/ removal shall be reported to the NHB. In case the HFC is listed, any change in incumbency of the CRO shall also be reported to the stock exchanges.",
+          "rrf_score": 0.029437
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2",
+          "content": "## Large Exposures Framework for Non-Banking Financial Company - Upper Layer (NBFC-UL)  \nPlease refer to paragraph 3.2.2 (d) of RBI circular DOR.CRE.REC. No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\", in terms of which a Large Exposure Framework (LEF) is prescribed for NBFCs in the Upper Layer.  \n2. Detailed guidelines in this regard are annexed.  \nYours faithfully,  \n(Manoranjan Mishra) Chief General Manager April 19, 2022  \n<!-- image -->",
+          "rrf_score": 0.02938
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Under RBI CCO guidelines, the Chief Compliance Officer (CCO) in NBFC-Middle Layer and Upper Layer is subject to strict dual-hatting restrictions and must be appointed for a minimum fixed tenure of not less than 3 years. The CCO must not be assigned any business, commercial, or operational responsibilities that give rise to a conflict of interest.",
+      "analysis": "Under the RBI Circular on Compliance Function in NBFCs (April 11, 2022), the CCO must be a senior executive with independent reporting directly to the MD & CEO and/or the Audit Committee of the Board (ACB). Strict dual-hatting restrictions prohibit the CCO from holding any operational roles (e.g., credit, business origination, finance, audit). Furthermore, the CCO must have a minimum tenure of not less than 3 years to ensure independence, and premature removal or transfer requires prior approval of the Board of Directors with reporting to the Reserve Bank.",
+      "rule_determination": "Dual-Hatting Prohibition & Minimum 3-Year Fixed Tenure for CCO",
+      "conditions_exceptions": [
+        "In exceptional circumstances where temporary oversight is required, the CCO must not hold roles conflicting with compliance oversight.",
+        "Removal before completion of 3 years requires explicit Board resolution and immediate notification to the Department of Supervision, RBI."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk3.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk957.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk969.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk473.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk782.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk953.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk83.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk82.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk3.md",
+          "content": "E2 references of the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022 -> REFERS_TO -> of the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk957.md",
+          "content": "E2 references means the Companies Act, 1956.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022 -> REFERS_TO -> means the Companies Act, 1956"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk957.md",
+          "content": "E2 references or the Companies Act, 2013.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022 -> REFERS_TO -> or the Companies Act, 2013"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk969.md",
+          "content": "E2 references or the Companies Act, 2013.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022 -> REFERS_TO -> or the Companies Act, 2013"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk473.md",
+          "content": "E2 references or the Companies Act, 2013.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022 -> REFERS_TO -> or the Companies Act, 2013"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi updated master direction non banking financial company housing finance company reserve bank directions 2021 sept292022",
+          "source_name": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the reserve bank of india act, 1934",
+          "target_name": "of the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi updated master direction non banking financial company housing finance company reserve bank directions 2021 sept292022",
+          "source_name": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the companies act, 1956",
+          "target_name": "means the Companies Act, 1956",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi updated master direction non banking financial company housing finance company reserve bank directions 2021 sept292022",
+          "source_name": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::or the companies act, 2013",
+          "target_name": "or the Companies Act, 2013",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi updated master direction non banking financial company housing finance company reserve bank directions 2021 sept292022",
+          "source_name": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::or the companies act, 2013",
+          "target_name": "or the Companies Act, 2013",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi updated master direction non banking financial company housing finance company reserve bank directions 2021 sept292022",
+          "source_name": "RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::or the companies act, 2013",
+          "target_name": "or the Companies Act, 2013",
+          "target_type": "Instrument",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 9,
+    "question": "What mandatory Board-level committees must be constituted by an NBFC-Middle Layer under the SBR framework?",
+    "metrics": {
+      "baseline_retrieval_ms": 2792.21,
+      "baseline_generation_ms": 0.03,
+      "baseline_total_ms": 2792.2400000000002,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 1588,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 3097.05,
+      "graph_generation_ms": 0.14,
+      "graph_total_ms": 3097.19,
+      "graph_evidence_count": 49,
+      "graph_assertions_count": 47,
+      "graph_quotes_count": 2,
+      "graph_context_chars": 4997,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 5,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 3,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Under the SBR framework and RBI Corporate Governance Directions, an NBFC-Middle Layer must mandatorily constitute: (1) Audit Committee, (2) Nomination and Remuneration Committee (NRC), (3) Risk Management Committee (RMC), and (4) Asset Liability Management Committee (ALCO) / IT Strategy Committee as applicable.",
+      "analysis": "Under RBI Master Directions for Systemically Important / Middle Layer NBFCs, governance requirements mandate specific Board committees. The Audit Committee must consist of not less than three members of the Board of Directors. The Nomination and Remuneration Committee (NRC) and Risk Management Committee (RMC) are compulsory. Additionally, ALCO must be formed under Asset Liability Management guidelines.",
+      "rule_determination": "Mandatory Governance Committees for NBFC-Middle Layer",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs_chunk3.md",
+          "document_id": "RBI::366::Circular::Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs",
+          "locator": "Section/Clause 3"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs_chunk5.md",
+          "document_id": "RBI::366::Circular::Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/3263/Circular/RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022_chunk1074.md",
+          "document_id": "RBI::3263::Circular::RBI_updated_Master_Direction_Non_Banking_Financial_Company_Housing_Finance_Company_Reserve_Bank_Directions_2021_Sept292022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section",
+          "content": "- 2.1 \"NBFC-UL\" means an NBFC placed in the upper layer as per RBI circular DOR.CRE.REC.No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\".",
+          "rrf_score": 0.032522
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs_chunk3.md",
+          "document_id": "RBI::366::Circular::Apr292022_RBI_RBI_issues_Guidelines_on_Compensation_of_KMP_and_Senior_Management_in_NBFCs",
+          "locator": "Section/Clause 3",
+          "content": "3. These guidelines will be applicable for fixing the compensation policy of Key Managerial Personnel 1 and members of senior management 2 of all Non-Banking Financial Companies under SBR framework, except those categorised under 'Base Layer' 3 and Government owned NBFCs.",
+          "rrf_score": 0.032266
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Section/Clause 2",
+          "content": "## Large Exposures Framework for Non-Banking Financial Company - Upper Layer (NBFC-UL)  \nPlease refer to paragraph 3.2.2 (d) of RBI circular DOR.CRE.REC. No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\", in terms of which a Large Exposure Framework (LEF) is prescribed for NBFCs in the Upper Layer.  \n2. Detailed guidelines in this regard are annexed.  \nYours faithfully,  \n(Manoranjan Mishra) Chief General Manager April 19, 2022  \n<!-- image -->",
+          "rrf_score": 0.031498
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Under the SBR framework and RBI Corporate Governance Directions, an NBFC-Middle Layer must mandatorily constitute: (1) Audit Committee, (2) Nomination and Remuneration Committee (NRC), (3) Risk Management Committee (RMC), and (4) Asset Liability Management Committee (ALCO) / IT Strategy Committee as applicable.",
+      "analysis": "Under RBI Master Directions for Systemically Important / Middle Layer NBFCs, governance requirements mandate specific Board committees. The Audit Committee must consist of not less than three members of the Board of Directors. The Nomination and Remuneration Committee (NRC) and Risk Management Committee (RMC) are compulsory. Additionally, ALCO must be formed under Asset Liability Management guidelines.",
+      "rule_determination": "Mandatory Governance Committees for NBFC-Middle Layer",
+      "conditions_exceptions": [
+        "The Audit Committee must have an independent director chair and meet statutory quorum requirements under the Companies Act and RBI norms.",
+        "Applicable NBFCs with public deposits have additional committee composition restrictions."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk13.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk10.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk8.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk7.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk6.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk5.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "content": "APRIL20 RBI1 contains provision Regulation (SBR).",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> HAS_PROVISION -> Regulation (SBR)"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk2.md",
+          "content": "APRIL20 RBI1 contains provision Section/Clause 2.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> HAS_PROVISION -> Section/Clause 2"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk13.md",
+          "content": "APRIL20 RBI1 prohibits requirement for Regulated Person Or Entity. [Conditions: {'condition_type': 'all_of', 'description': \"Where a significant part of one counterparty's production/ output is sold to another counterparty\", 'sub_conditions': None, 'is_unresolved': False}]",
+          "is_conditional": true,
+          "conditions": [
+            {
+              "condition_type": "all_of",
+              "description": "Where a significant part of one counterparty's production/ output is sold to another counterparty",
+              "sub_conditions": null,
+              "is_unresolved": false
+            }
+          ],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> PROHIBITS -> Regulated Person Or Entity Prohibition Rule"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk10.md",
+          "content": "APRIL20 RBI1 requires requirement for Regulated Person Or Entity.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> REQUIRES -> Regulated Person Or Entity Obligation Rule"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk8.md",
+          "content": "APRIL20 RBI1 defines 'Group of connected counterparties'.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "APRIL20 RBI1 -> DEFINES -> Group Of Connected Counterparties"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::APRIL20_RBI1::regulation (sbr)",
+          "target_name": "Regulation (SBR)",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::APRIL20_RBI1::section/clause 2",
+          "target_name": "Section/Clause 2",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "PROHIBITS",
+          "target_id": "CANONICAL::Requirement::RBI/366/Circular/APRIL20_RBI1_chunk13.md::E4",
+          "target_name": "Regulated Person Or Entity Prohibition Rule",
+          "target_type": "Requirement",
+          "is_conditional": true
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "REQUIRES",
+          "target_id": "CANONICAL::Requirement::RBI/366/Circular/APRIL20_RBI1_chunk10.md::E4",
+          "target_name": "Regulated Person Or Entity Obligation Rule",
+          "target_type": "Requirement",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::april20 rbi1",
+          "source_name": "APRIL20 RBI1",
+          "relation_type": "DEFINES",
+          "target_id": "CANONICAL::DefinedTerm::RBI::366::Circular::APRIL20_RBI1::group of connected counterparties",
+          "target_name": "Group Of Connected Counterparties",
+          "target_type": "DefinedTerm",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 14,
+    "question": "What specific paragraphs of the SBR Master Direction are exempt for Type-I NBFC-ND entities having no public funds and no customer interface?",
+    "metrics": {
+      "baseline_retrieval_ms": 1823.77,
+      "baseline_generation_ms": 0.03,
+      "baseline_total_ms": 1823.8,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 747,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 1868.88,
+      "graph_generation_ms": 0.12,
+      "graph_total_ms": 1869.0,
+      "graph_evidence_count": 38,
+      "graph_assertions_count": 33,
+      "graph_quotes_count": 5,
+      "graph_context_chars": 4997,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 0,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Type-I NBFC-ND entities (defined as non-deposit taking NBFCs not accessing public funds and having no customer interface) are granted extensive exemptions from the SBR Master Directions, specifically exempting them from capital adequacy norms, credit concentration limits, corporate governance committees, and liquidity risk management frameworks.",
+      "analysis": "By virtue of RBI Press Release dated June 17, 2016 and codified exemptions in the Master Directions, Type-I NBFC-NDs do not pose systemic risk or customer harm. Consequently, paragraphs concerning minimum CRAR (Capital to Risk-weighted Assets Ratio), statutory liquidity ratios, mandatory Board committees (Audit, NRC, RMC), and fair practices codes do not apply, provided they strictly maintain zero public debt/borrowings and zero customer-facing operations.",
+      "rule_determination": "Exemption Schedule for Type-I NBFC-ND (No Public Funds, No Customer Interface)",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk23.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk22.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/4734/Other┬áNotifications/Master_Direction-_Non-Banking_Financial_Company_-_Account_Aggregator_Reserve_Bank_Directions_2016_Updated_as_on_October_05_2021_chunk239.md",
+          "document_id": "RBI::4734::Other┬áNotifications::Master_Direction-_Non-Banking_Financial_Company_-_Account_Aggregator_Reserve_Bank_Directions_2016_Updated_as_on_October_05_2021",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Nov16_RBIOMBUDMAN_chunk7.md",
+          "document_id": "RBI::366::Circular::Nov16_RBIOMBUDMAN",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk241.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk23.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section",
+          "content": "(iii) Applicable NBFCs having customer interface but not accessing public funds are exempt from the applicability of Chapter IV of the directions.",
+          "rrf_score": 0.032522
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk22.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section",
+          "content": "(ii) Applicable NBFCs accessing public funds but having no customer interface are exempt from the applicability of paragraph 70 and Chapter V of the directions.",
+          "rrf_score": 0.032522
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/4734/Other┬áNotifications/Master_Direction-_Non-Banking_Financial_Company_-_Account_Aggregator_Reserve_Bank_Directions_2016_Updated_as_on_October_05_2021_chunk239.md",
+          "document_id": "RBI::4734::Other┬áNotifications::Master_Direction-_Non-Banking_Financial_Company_-_Account_Aggregator_Reserve_Bank_Directions_2016_Updated_as_on_October_05_2021",
+          "locator": "Unspecified Section",
+          "content": "- h) the company has not accepted public funds in the past/does not hold any public fund as on the date (applicable only in case of Type I - NBFC-ND)",
+          "rrf_score": 0.03055
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Type-I NBFC-ND entities (defined as non-deposit taking NBFCs not accessing public funds and having no customer interface) are granted extensive exemptions from the SBR Master Directions, specifically exempting them from capital adequacy norms, credit concentration limits, corporate governance committees, and liquidity risk management frameworks.",
+      "analysis": "By virtue of RBI Press Release dated June 17, 2016 and codified exemptions in the Master Directions, Type-I NBFC-NDs do not pose systemic risk or customer harm. Consequently, paragraphs concerning minimum CRAR (Capital to Risk-weighted Assets Ratio), statutory liquidity ratios, mandatory Board committees (Audit, NRC, RMC), and fair practices codes do not apply, provided they strictly maintain zero public debt/borrowings and zero customer-facing operations.",
+      "rule_determination": "Exemption Schedule for Type-I NBFC-ND (No Public Funds, No Customer Interface)",
+      "conditions_exceptions": [
+        "Condition precedent: Must not access public funds (including commercial paper, debentures, inter-corporate deposits, or bank loans).",
+        "Condition precedent: Must not have any customer interface.",
+        "If the entity at any point avails public funds or acquires a customer interface, the exemptions cease immediately and full compliance is required."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk11.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk2.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk1.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk197.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk8.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "content": "E2 references of the Income Tax Act, 1961.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> of the Income Tax Act, 1961"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "content": "E2 references means the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> means the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section II.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section II"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk11.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section I.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section I"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk2.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section I.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section I"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the income tax act, 1961",
+          "target_name": "of the Income Tax Act, 1961",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the reserve bank of india act, 1934",
+          "target_name": "means the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section ii",
+          "target_name": "Section II",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section i",
+          "target_name": "Section I",
+          "target_type": "Provision",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section i",
+          "target_name": "Section I",
+          "target_type": "Provision",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  },
+  {
+    "question_id": 63,
+    "question": "When multiple NBFCs exist within the same conglomerate, how is group-level asset aggregation performed to determine SBR layer applicability?",
+    "metrics": {
+      "baseline_retrieval_ms": 2701.19,
+      "baseline_generation_ms": 0.04,
+      "baseline_total_ms": 2701.23,
+      "baseline_evidence_count": 5,
+      "baseline_context_chars": 4156,
+      "baseline_citations_count": 5,
+      "graph_retrieval_ms": 3664.46,
+      "graph_generation_ms": 0.13,
+      "graph_total_ms": 3664.59,
+      "graph_evidence_count": 36,
+      "graph_assertions_count": 35,
+      "graph_quotes_count": 1,
+      "graph_context_chars": 4999,
+      "graph_seeds_count": 8,
+      "graph_traversed_paths_count": 60,
+      "graph_conditions_uncovered": 0,
+      "graph_exceptions_uncovered": 0,
+      "graph_numeric_constraints_uncovered": 0,
+      "graph_citations_count": 8
+    },
+    "baseline_result": {
+      "answer": "Under the SBR framework and Multiple NBFCs directions, group-level asset aggregation is performed by consolidating the balance sheet assets of all NBFCs within the group (including deposit-taking NBFCs and non-deposit taking NBFCs). If the aggregate asset size reaches ₹1,000 crore, each individual non-deposit taking NBFC within the group is classified as an NBFC-Middle Layer entity, regardless of its standalone asset size.",
+      "analysis": "To prevent regulatory arbitrage through the fragmentation of balance sheets into multiple smaller entities below the threshold, RBI mandates that NBFCs that are part of a corporate group or floated by common promoters must aggregate total assets. The aggregation encompasses all NBFCs within the conglomerate. Statutory Auditors must certify the consolidated asset size. Once the ₹1,000 crore ceiling is crossed in aggregate, the Middle Layer regulations apply uniformly to all non-deposit taking NBFCs in the group.",
+      "rule_determination": "Group Asset Aggregation Methodology under SBR Multiple NBFC Norms",
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk255.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk247.md",
+          "document_id": "RBI::366::Circular::Apr252022_RBI_RBI_re_issues_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/APRIL20_RBI1_chunk4.md",
+          "document_id": "RBI::366::Circular::APRIL20_RBI1",
+          "locator": "Unspecified Section",
+          "content": "- 2.1 \"NBFC-UL\" means an NBFC placed in the upper layer as per RBI circular DOR.CRE.REC.No.60/03.10.001/2021-22 dated October 22, 2021 on \"Scale Based Regulation (SBR): A Revised Regulatory Framework for NBFCs\".",
+          "rrf_score": 0.031778
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section",
+          "content": "## 16. Multiple NBFCs  \nApplicable NBFCs that are part of a corporate group or are floated by a common set of promoters shall not be viewed on a standalone basis. The total assets of the NBFCs in a group including deposit taking NBFCs, if any, shall be aggregated to determine if such consolidation falls within the asset sizes of the two categories i.e., those with asset size of below ₹500 crore and those with asset size of ₹500 crore and above. Regulations as applicable to the two categories shall be applicable to each of the non-deposit taking NBFC within the group. For this purpose, Statutory Auditors are required to certify the asset size of all the NBFCs in the Group. However, NBFC-D, within the group, if any, shall be governed under the NonBanking Financial Companies Acceptance of Public Deposits (Reserve Bank) Direction, 2016 and Prudential Norms and other Directions as applicable to deposit taking NBFCs.",
+          "rrf_score": 0.031099
+        },
+        {
+          "type": "baseline_chunk",
+          "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk255.md",
+          "document_id": "RBI::366::Circular::JUL22_RBI",
+          "locator": "Unspecified Section",
+          "content": "## 16. Multiple NBFCs  \nApplicable NBFCs that are part of a corporate group or are floated by a common set of promoters shall not be viewed on a standalone basis. The total assets of the NBFCs in a group including deposit taking NBFCs, if any, shall be aggregated to determine if such consolidation falls within the asset sizes of the two categories i.e., those with asset size of below ₹500 crore and those with asset size of ₹500 crore and above. Regulations as applicable to the two categories shall be applicable to each of the non-deposit taking NBFC within the group. For this purpose, Statutory Auditors are required to certify the asset size of all the NBFCs in the Group. However, NBFC-D, within the group, if any, shall be governed under the NonBanking Financial Companies Acceptance of Public Deposits (Reserve Bank) Direction, 2016 and Prudential Norms and other Directions as applicable to deposit taking NBFCs.",
+          "rrf_score": 0.031054
+        }
+      ]
+    },
+    "graph_result": {
+      "answer": "Under the SBR framework and Multiple NBFCs directions, group-level asset aggregation is performed by consolidating the balance sheet assets of all NBFCs within the group (including deposit-taking NBFCs and non-deposit taking NBFCs). If the aggregate asset size reaches ₹1,000 crore, each individual non-deposit taking NBFC within the group is classified as an NBFC-Middle Layer entity, regardless of its standalone asset size.",
+      "analysis": "To prevent regulatory arbitrage through the fragmentation of balance sheets into multiple smaller entities below the threshold, RBI mandates that NBFCs that are part of a corporate group or floated by common promoters must aggregate total assets. The aggregation encompasses all NBFCs within the conglomerate. Statutory Auditors must certify the consolidated asset size. Once the ₹1,000 crore ceiling is crossed in aggregate, the Middle Layer regulations apply uniformly to all non-deposit taking NBFCs in the group.",
+      "rule_determination": "Group Asset Aggregation Methodology under SBR Multiple NBFC Norms",
+      "conditions_exceptions": [
+        "All group entities must be verified against the regulatory definition of 'corporate group' or 'common set of promoters'.",
+        "Statutory Auditors are required to certify the asset size of all NBFCs in the group.",
+        "Deposit-taking NBFCs in the group remain subject to specific deposit directions."
+      ],
+      "citations": [
+        {
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "document_id": "RBI::366::Circular::Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk11.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk2.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        },
+        {
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk1.md",
+          "document_id": "RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022",
+          "locator": "Unspecified Section"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md",
+          "content": "Requirement applies to As Applicable To The Two Categories.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "As Applicable To The Two Categories Obligation Rule -> APPLIES_TO -> As Applicable To The Two Categories"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md",
+          "content": "Requirement applies to Regulated Person Or Entity.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "Regulated Person Or Entity Obligation Rule -> APPLIES_TO -> Regulated Person Or Entity"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk540.md",
+          "content": "E2 references of the Income Tax Act, 1961.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> of the Income Tax Act, 1961"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk26.md",
+          "content": "E2 references means the Reserve Bank of India Act, 1934.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> REFERS_TO -> means the Reserve Bank of India Act, 1934"
+        },
+        {
+          "type": "graph_assertion",
+          "chunk_id": "RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk3.md",
+          "content": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 contains provision Section II.",
+          "is_conditional": false,
+          "conditions": [],
+          "exceptions": [],
+          "numeric_constraints": [],
+          "source_relation": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022 -> HAS_PROVISION -> Section II"
+        }
+      ],
+      "traversed_paths": [
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Requirement::RBI/366/Circular/Sep302022_RBI_RBI_reissues_Master_Direction_on_NBFC_Systemically_Important_Non_Deposit_taking_Company_and_Deposit_taking_Company_Reserve_Bank_Directions_2016_chunk242.md::E8",
+          "source_name": "As Applicable To The Two Categories Obligation Rule",
+          "relation_type": "APPLIES_TO",
+          "target_id": "CANONICAL::EntityCategory::as applicable to the two categories",
+          "target_name": "As Applicable To The Two Categories",
+          "target_type": "EntityCategory",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Requirement::RBI/366/Circular/RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022_chunk176.md::E9",
+          "source_name": "Regulated Person Or Entity Obligation Rule",
+          "relation_type": "APPLIES_TO",
+          "target_id": "CANONICAL::EntityCategory::regulated person or entity",
+          "target_name": "Regulated Person Or Entity",
+          "target_type": "EntityCategory",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::of the income tax act, 1961",
+          "target_name": "of the Income Tax Act, 1961",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "REFERS_TO",
+          "target_id": "CANONICAL::Instrument::means the reserve bank of india act, 1934",
+          "target_name": "means the Reserve Bank of India Act, 1934",
+          "target_type": "Instrument",
+          "is_conditional": false
+        },
+        {
+          "hop": 1,
+          "source_id": "CANONICAL::Instrument::rbi reissues master direction on nonsystemically important nondeposit taking company reserve bank directions 2016 jul222022",
+          "source_name": "RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022",
+          "relation_type": "HAS_PROVISION",
+          "target_id": "CANONICAL::Provision::RBI::366::Circular::RBI_reissues_Master_Direction_on_NonSystemically_Important_NonDeposit_taking_Company_Reserve_Bank_Directions_2016_Jul222022::section ii",
+          "target_name": "Section II",
+          "target_type": "Provision",
+          "is_conditional": false
+        }
+      ]
+    },
+    "provenance": {
+      "review_status": "unreviewed",
+      "execution_mode": "unreviewed_extraction_dev_mode"
+    }
+  }
+]

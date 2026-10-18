@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-18T08:25:17Z",
+  "audit_duration_seconds": 36.91,
+  "execution_mode": "unreviewed_extraction_dev_mode",
+  "summary": {
+    "total_documents": 1080,
+    "total_manifest_chunks": 140296,
+    "valid_entities": 571326,
+    "quarantined_entities": 0,
+    "valid_relationships": 438670,
+    "quarantined_relationships": 0,
+    "valid_evidence_spans": 294849,
+    "quarantined_evidence_spans": 0,
+    "unresolved_references": 53365,
+    "canonical_resolved_clusters": 157589,
+    "human_reviewed_records": 0,
+    "unreviewed_candidate_records": 571326
+  },
+  "quarantined_samples": {
+    "entities": [],
+    "relationships": [],
+    "evidence": []
+  }
+}

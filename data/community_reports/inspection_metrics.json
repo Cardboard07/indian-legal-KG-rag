@@ -1,0 +1,133 @@
+{
+  "total_communities": 4920,
+  "level_counts": {
+    "0": 146,
+    "1": 2273,
+    "2": 2501
+  },
+  "leaf_counts": {
+    "false": 284,
+    "true": 4636
+  },
+  "termination_reasons": {
+    "unsplittable_community": 50,
+    "size_below_threshold": 2084,
+    "max_level_reached": 2501,
+    "isolated_entities": 1
+  },
+  "isolates_count": 130895,
+  "l0_stats": {
+    "count": 145,
+    "min": 2,
+    "max": 4206,
+    "mean": 184.09655172413792,
+    "median": 10
+  },
+  "l1_stats": {
+    "count": 2273,
+    "min": 2,
+    "max": 432,
+    "mean": 11.50549934007919,
+    "median": 5
+  },
+  "l2_stats": {
+    "count": 2501,
+    "min": 2,
+    "max": 354,
+    "mean": 6.0103958416633345,
+    "median": 2
+  },
+  "total_reports": 195,
+  "top_l0_communities": [
+    {
+      "id": "COMM::v1::L0::0",
+      "title": "Regulatory Domain: RBI updated Master Direction Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 Sept292022, Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 April22, Master Non Banking Financial Company Housing Finance Company Reserve Bank Directions 2021 June142022",
+      "size": 4206,
+      "internal_edges": 6743,
+      "boundary_edges": 1473,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::1",
+      "title": "Regulatory Domain: RBI reissues Master Direction on NonSystemically Important NonDeposit taking Company Reserve Bank Directions 2016 Jul222022, JUL22 RBI, Sep302022 RBI RBI reissues Master Direction on NBFC Systemically Important Non Deposit taking Company and Deposit taking Company Reserve Bank Directions 2016",
+      "size": 3751,
+      "internal_edges": 6232,
+      "boundary_edges": 3483,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::2",
+      "title": "Regulatory Domain: RBI reissues Master Direction on Standalone Primary Dealers Reserve Bank Directions 2016 Nov142022, Master Standalone Primary Dealers Reserve Bank Directions 2016 April222022, Master Direction - Standalone Primary Dealers Reserve Bank Directions 2016",
+      "size": 1741,
+      "internal_edges": 2331,
+      "boundary_edges": 886,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::3",
+      "title": "Regulatory Domain: Banks, Master Direction - Classification Valuation and Operation of Investment Portfolio of Commercial Banks Directions 2021, Updated Master Direction Classification Valuation and Operation of Investment Portfolio of Commercial Banks Directions 2021 dated December 08 2022",
+      "size": 1430,
+      "internal_edges": 1872,
+      "boundary_edges": 500,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::4",
+      "title": "Regulatory Domain: RBI re issued the Master Directions on Prepaid Payment Instruments PPIs Feb102023, Master Directions on Prepaid Payment Instruments PPIs dated 27th August 2021, August302021 RBI issues Reserve Bank of India Master Directions on Prepaid Payment Instruments 2021 MDPPIs 2021",
+      "size": 1424,
+      "internal_edges": 2354,
+      "boundary_edges": 418,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::5",
+      "title": "Regulatory Domain: Reserve Bank of India Act 1934, Bank, Banking Financial Company",
+      "size": 1108,
+      "internal_edges": 1440,
+      "boundary_edges": 268,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::6",
+      "title": "Regulatory Domain: MD-KYC, MD18KYCF6E92C82E1E1419D87323E3869BC9F13, Res",
+      "size": 904,
+      "internal_edges": 1085,
+      "boundary_edges": 288,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::7",
+      "title": "Regulatory Domain: Rupee Interest Rate Derivatives Reserve Bank Directions 2019, RBI DIRECTIONS 2021, Se Directions",
+      "size": 853,
+      "internal_edges": 1053,
+      "boundary_edges": 274,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::8",
+      "title": "Regulatory Domain: securitisation RBI, Trabsfer RBI, Prudential Framework for Resolution of Stressed Assets",
+      "size": 818,
+      "internal_edges": 893,
+      "boundary_edges": 164,
+      "findings_count": 5,
+      "top_entities": []
+    },
+    {
+      "id": "COMM::v1::L0::9",
+      "title": "Regulatory Domain: Financial Benchmark Administrators Reserve Bank Directions 2019, As The Case, Reserve Bank",
+      "size": 682,
+      "internal_edges": 901,
+      "boundary_edges": 216,
+      "findings_count": 5,
+      "top_entities": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Python environments & caches
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Large Datasets & Parsed Corpora (>900 MB)
+hpc_results/
+data/raw/
+data/chunks/
+data/processed/
+
+# High-volume Database Files & Indexes (Multi-GB)
+*.db
+*.sqlite
+*.sqlite3
+*.rdb
+data/extraction_store.db
+data/indexes/
+data/indexes/baseline/rbi_fts.db
+
+# Large Export Dumps (>1.5 GB jsonl)
+data/exports/
+data/manifest.json
+
+# Large Generated Graph Artifacts (>25 MB)
+data/community_reports/communities.json
+
+# Development logs & temp files
+*.log
+scratch/
+tmp/
+.temp/
+
+# IDE & OS specifics
+.vscode/
+.idea/
+.gemini/
+.DS_Store
+Thumbs.db

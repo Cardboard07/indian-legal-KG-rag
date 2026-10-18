@@ -1,0 +1,1361 @@
+{
+  "run_id": "pilot_run_1792247863",
+  "model": "Gemini-3.8-Flash-High",
+  "execution_route": "Antigravity Execution Environment",
+  "total_pilot_chunks": 150,
+  "succeeded": 150,
+  "empty": 0,
+  "failed": 0,
+  "results": [
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk1.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 14,
+      "relationships_count": 13,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk1.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk1.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 7,
+      "relationships_count": 6,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk1.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Jun92022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2022_chunk1.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Jun92022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk1.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk2.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk2.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk2.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 36,
+      "relationships_count": 47,
+      "unresolved_count": 2,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk2.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk2.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 2,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk3.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016_chunk3.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk3.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk3.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 8,
+      "relationships_count": 7,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk3.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk4.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 2,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016_chunk4.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk4.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk4.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk4.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk4.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk4.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk5.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk5.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk5.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk5.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk5.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk5.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk6.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 2,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016_chunk6.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk6.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk6.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 2,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk6.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk6.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk6.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk7.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016_chunk7.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Jun92022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2022_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Jun92022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020_chunk7.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::June292020_MCA_Companies_Removal_of_names_from_the_Register_of_Companies_Amendment_Rules_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Act_2013_chunk8.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Act_2013",
+      "status": "succeeded",
+      "entities_count": 6,
+      "relationships_count": 5,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Act _ Rules _ Regulations/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016_chunk8.md",
+      "document_id": "MCA::1192::Act _ Rules _ Regulations::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Rules_2016",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/Companies_Amendment_Act_2019_chunk8.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::Companies_Amendment_Act_2019",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Acts )/THE_COMPANIES_AMENDMENT_ACT_2017_chunk8.md",
+      "document_id": "MCA::1192::Amendments ( Acts )::THE_COMPANIES_AMENDMENT_ACT_2017",
+      "status": "succeeded",
+      "entities_count": 8,
+      "relationships_count": 7,
+      "unresolved_count": 7,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022_chunk8.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Aug262022_MCA_Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Second_Amendment_Rules_2022",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "MCA/1192/Amendments ( Rules _ Regulations )/Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017_chunk8.md",
+      "document_id": "MCA::1192::Amendments ( Rules _ Regulations )::Companies_Removal_of_Names_of_Companies_from_the_Register_of_Companies_Amendment_Rules_2017",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk1.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk2.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020_chunk2.md",
+      "document_id": "RBI::1375::Circular::RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk3.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk3.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 6,
+      "relationships_count": 5,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020_chunk3.md",
+      "document_id": "RBI::1375::Circular::RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk4.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk4.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020_chunk4.md",
+      "document_id": "RBI::1375::Circular::RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk5.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk5.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020_chunk5.md",
+      "document_id": "RBI::1375::Circular::RBI_Risk_Management_and_Inter-bank_Dealings_27_03_2020",
+      "status": "succeeded",
+      "entities_count": 7,
+      "relationships_count": 7,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk6.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020_chunk6.md",
+      "document_id": "RBI::1375::Circular::RBI_Provisioning_on_interbank_exposure_UCBs_20_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk7.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk8.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk9.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk10.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk11.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk12.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk13.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk14.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk15.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk16.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk17.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk18.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk19.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk20.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk21.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk22.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk23.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk24.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 6,
+      "relationships_count": 5,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk25.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk26.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk27.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk29.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk30.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 5,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk31.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk32.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk33.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk34.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk35.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 5,
+      "relationships_count": 4,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk36.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk37.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk38.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 6,
+      "relationships_count": 5,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk39.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 6,
+      "relationships_count": 5,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk40.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk41.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk42.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "RBI/1375/Circular/RBI_Hedging_of_foreign_exchange_risk_07_04_2020_chunk43.md",
+      "document_id": "RBI::1375::Circular::RBI_Hedging_of_foreign_exchange_risk_07_04_2020",
+      "status": "succeeded",
+      "entities_count": 4,
+      "relationships_count": 3,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk1.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk1.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 1,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk2.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk3.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk3.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk4.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk5.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk5.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk6.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk7.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk7.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk8.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk8.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk9.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk9.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk10.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk11.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk12.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk13.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk13.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk14.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk14.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk15.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk16.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk16.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk17.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk17.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk18.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk19.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk19.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk20.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk21.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk21.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk22.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk22.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk23.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk23.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk24.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk24.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk25.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk25.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk26.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk27.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk27.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk28.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk28.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk29.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk30.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Circular/SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020_chunk30.md",
+      "document_id": "SEBI::1001::Circular::SEBI_Regulatory_Sandbox_Amendment_Regulations_2020_17_04_2020",
+      "status": "succeeded",
+      "entities_count": 2,
+      "relationships_count": 1,
+      "unresolved_count": 0,
+      "warnings": []
+    },
+    {
+      "chunk_id": "SEBI/1001/Act _ Rules _ Regulations/Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992_chunk31.md",
+      "document_id": "SEBI::1001::Act _ Rules _ Regulations::Securities_and_Exchange_Board_of_India_Merchant_Bankers_Regulations_1992",
+      "status": "succeeded",
+      "entities_count": 3,
+      "relationships_count": 2,
+      "unresolved_count": 0,
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "load_run_id": "load_run_1792292829",
+  "graph_name": "legal_kg_dev",
+  "regulator_filter": "RBI",
+  "duration_seconds": 44.91,
+  "counts": {
+    "Document": 357,
+    "Chunk": 34731,
+    "Entity": 157589,
+    "RelationshipAssertion": 78185,
+    "EvidenceSpan": 40348,
+    "RELATION_edges": 78185,
+    "MENTIONS_edges": 112158,
+    "SUPPORTED_BY_edges": 203097
+  },
+  "status": "COMPLETED",
+  "review_mode": "unreviewed_extraction_dev_mode"
+}
