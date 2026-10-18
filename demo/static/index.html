@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Legal KG-RAG | Hierarchical Community GraphRAG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand-wrapper">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Indian Legal KG-RAG</h1>
+          <p>Hierarchical Leiden GraphRAG for RBI Regulatory Frameworks (FalkorDB Snapshot v1)</p>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-dev">
+          <span class="badge-pulse"></span>
+          Unreviewed Dev Mode
+        </span>
+        <span class="badge badge-falkor">
+          FalkorDB Active
+        </span>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="playground">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+        </svg>
+        Query Playground
+      </button>
+      <button class="tab-btn" data-tab="communities">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Hierarchical Communities
+      </button>
+      <button class="tab-btn" data-tab="benchmark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>
+        </svg>
+        Empirical Benchmark
+      </button>
+      <button class="tab-btn" data-tab="verification">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        17 Failure Verifications
+      </button>
+    </nav>
+
+    <!-- Tab 1: Query Playground -->
+    <section id="tab-playground" class="tab-content">
+      <div class="query-grid">
+        
+        <!-- Left: Query Inputs -->
+        <div class="glass-panel">
+          <div class="panel-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            Select Retrieval Mode
+          </div>
+
+          <div class="mode-selector">
+            <label>
+              <input type="radio" name="mode" value="global_with_evidence" class="mode-radio" checked>
+              <div class="mode-card">
+                <span class="mode-name">Global + Evidence</span>
+                <span class="mode-desc">Community themes + direct statutory passage proof</span>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="global_community" class="mode-radio">
+              <div class="mode-card">
+                <span class="mode-name">Global Community</span>
+                <span class="mode-desc">Hierarchical Leiden map-reduce across domain reports</span>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="hybrid_graph" class="mode-radio">
+              <div class="mode-card">
+                <span class="mode-name">Hybrid Graph</span>
+                <span class="mode-desc">Personalized PageRank local graph expansion</span>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="baseline_hybrid" class="mode-radio">
+              <div class="mode-card">
+                <span class="mode-name">Baseline Hybrid</span>
+                <span class="mode-desc">BM25 lexical + dense vector chunk retrieval</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="panel-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Regulatory Query
+          </div>
+
+          <div class="query-box-wrapper">
+            <textarea id="queryInput" class="query-textarea" placeholder="Enter an Indian regulatory question (e.g. governance responsibilities, asset size thresholds, statutory audit rules)...">Across the NBFC regulatory framework, what recurring governance mandates, Board-level committee requirements, and oversight responsibilities apply to regulated financial institutions?</textarea>
+          </div>
+
+          <div class="query-actions">
+            <div class="frontier-select">
+              <span>Frontier Depth:</span>
+              <select id="levelSelect" class="select-dropdown">
+                <option value="0">Level 0: Root Regulatory Domains (145 comms)</option>
+                <option value="1">Level 1: Sub-frameworks (2,273 comms)</option>
+              </select>
+            </div>
+            <button id="runBtn" class="btn-primary">
+              <span id="btnText">Execute Query</span>
+              <span id="btnSpinner" class="spinner" style="display: none;"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Preset Benchmark Questions -->
+        <div class="glass-panel">
+          <div class="panel-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            Benchmark Presets
+          </div>
+          <div id="presetList" class="preset-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Query Results Panel -->
+      <div id="resultPanel" class="glass-panel" style="display: none;">
+        <div class="result-header">
+          <div class="panel-title" style="margin: 0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Synthesized Legal Answer
+          </div>
+          <div class="result-meta">
+            <span id="metaMode" class="meta-pill">Mode: global_with_evidence</span>
+            <span id="metaLatency" class="meta-pill">Latency: -- ms</span>
+            <span id="metaCitations" class="meta-pill">Citations: --</span>
+          </div>
+        </div>
+
+        <div class="result-answer">
+          <div id="answerText" class="answer-text"></div>
+          <div id="analysisText" class="analysis-block"></div>
+        </div>
+
+        <div class="details-split">
+          <!-- Citations -->
+          <div>
+            <div class="section-subtitle">Supporting Regulatory Citations & Chunks</div>
+            <div id="citationsList" class="citations-list"></div>
+          </div>
+
+          <!-- Preserved Exceptions -->
+          <div>
+            <div class="section-subtitle">Preserved Legal Conditions & Exceptions</div>
+            <div id="qualifiersBox" class="qualifiers-box">
+              <div class="qualifier-item">
+                <span>&bull;</span>
+                <span>Mandatory bundling: Conditions, exceptions, and numeric thresholds are preserved alongside primary obligations.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Communities Explorer -->
+    <section id="tab-communities" class="tab-content" style="display: none;">
+      <div class="comm-stats-row">
+        <div class="stat-card">
+          <div class="stat-number">4,920</div>
+          <div class="stat-label">Total Communities</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">145</div>
+          <div class="stat-label">Level 0 Root Domains</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">26,694</div>
+          <div class="stat-label">Connected Legal Entities</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100.0%</div>
+          <div class="stat-label">Frontier Coverage</div>
+        </div>
+      </div>
+
+      <div class="glass-panel">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+          Primary RBI Regulatory Domains (Level 0 Leiden Clusters)
+        </div>
+        <div id="commGrid" class="comm-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Empirical Benchmark -->
+    <section id="tab-benchmark" class="tab-content" style="display: none;">
+      <div class="glass-panel">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+          Multi-Mode Performance Comparison (5,000 Char Budget)
+        </div>
+        <div class="table-responsive">
+          <table class="eval-table">
+            <thead>
+              <tr>
+                <th>Retrieval Mode</th>
+                <th>Avg Latency</th>
+                <th>Citations</th>
+                <th>Context Density</th>
+                <th>Comprehensiveness</th>
+                <th>Directness</th>
+                <th>Overall Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>baseline_hybrid</strong> (BM25 + Dense)</td>
+                <td>2,225.4 ms</td>
+                <td>5.0</td>
+                <td>1,784.4 chars</td>
+                <td>6.4 / 10</td>
+                <td>8.5 / 10</td>
+                <td><span class="score-pill score-med">7.86 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>hybrid_graph</strong> (Local PPR)</td>
+                <td>1,767.5 ms</td>
+                <td>8.0</td>
+                <td>4,998.2 chars</td>
+                <td>10.0 / 10</td>
+                <td>9.0 / 10</td>
+                <td><span class="score-pill score-high">9.62 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>global_community_l0</strong> (Root Frontier)</td>
+                <td><strong>8.8 ms</strong></td>
+                <td>8.0</td>
+                <td>4,837.6 chars</td>
+                <td>10.0 / 10</td>
+                <td>9.0 / 10</td>
+                <td><span class="score-pill score-high">9.62 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>global_community_l1</strong> (Sub-Frameworks)</td>
+                <td><strong>7.2 ms</strong></td>
+                <td>7.0</td>
+                <td>4,144.0 chars</td>
+                <td>8.6 / 10</td>
+                <td>8.8 / 10</td>
+                <td><span class="score-pill score-high">9.01 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>global_with_evidence</strong> (Stage 3 Combined)</td>
+                <td><strong>8.8 ms</strong></td>
+                <td>8.0</td>
+                <td>4,837.6 chars</td>
+                <td>10.0 / 10</td>
+                <td>9.0 / 10</td>
+                <td><span class="score-pill score-high">9.62 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>text_map_reduce</strong> (Naive Chunk MR)</td>
+                <td>798.2 ms</td>
+                <td>6.0</td>
+                <td>4,903.2 chars</td>
+                <td>9.2 / 10</td>
+                <td>8.5 / 10</td>
+                <td><span class="score-pill score-high">9.03 / 10</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: 17 Failure Verifications -->
+    <section id="tab-verification" class="tab-content" style="display: none;">
+      <div class="glass-panel">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          17-Point Stage 3 Failure & Edge-Case Verification Suite (All Passed)
+        </div>
+        <div id="verificationGrid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px;">
+          <!-- Dynamically populated verification cases -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Modal for Community Report Details -->
+  <div id="reportModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
