@@ -18,19 +18,38 @@ echo "Initializing LLM Cluster directories under /home/$USER"
 echo "=========================================================="
 mkdir -p "$MODELS_DIR" "$CONTAINER_DIR" "$REGISTRY_DIR" "$LOGS_DIR"
 
-# 1. Load Singularity module
-echo "Loading Singularity module..."
-source /etc/profile
-module load u22/singularity-ce
+# 1. Attempt to load Singularity module if available in environment
+echo "Checking Singularity availability..."
+if [ -f /etc/profile.d/modules.sh ]; then
+    source /etc/profile.d/modules.sh
+fi
+source /etc/profile 2>/dev/null || true
 
-# 2. Pull official llama.cpp CUDA container if not present
+if command -v module &>/dev/null; then
+    module load u22/singularity-ce 2>/dev/null || module load singularity 2>/dev/null || true
+fi
+
+# 2. Check / Pull official llama.cpp CUDA container
 CONTAINER_PATH="$CONTAINER_DIR/llama-cpp-cuda.sif"
 if [ -f "$CONTAINER_PATH" ]; then
     echo "Found existing Singularity container: $CONTAINER_PATH"
-else
+elif command -v singularity &>/dev/null; then
     echo "Pulling llama.cpp CUDA container from GitHub Container Registry..."
     singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
     echo "Container pulled successfully: $CONTAINER_PATH"
+elif command -v apptainer &>/dev/null; then
+    echo "Pulling llama.cpp CUDA container using Apptainer..."
+    apptainer pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
+    echo "Container pulled successfully: $CONTAINER_PATH"
+else
+    echo "--------------------------------------------------------------------------"
+    echo "NOTE: 'singularity' runtime is not available on this login node."
+    echo "On Turing, Singularity is loaded on the GPU compute nodes ('u22' partition)."
+    echo "The container will be automatically pulled by the Slurm worker job on the"
+    echo "compute node, or you can pull it inside an interactive compute session:"
+    echo "   srun -p u22 -C l40s --pty bash -l"
+    echo "Proceeding with model download on the login node..."
+    echo "--------------------------------------------------------------------------"
 fi
 
 # 3. Model Download: Qwen 2.5 32B Instruct (Q6_K)

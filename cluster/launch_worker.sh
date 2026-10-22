@@ -28,8 +28,18 @@ MODEL_PATH="${MODEL_PATH:-$MODELS_DIR/qwen2.5-32b-instruct-q6_k.gguf}"
 mkdir -p "$REGISTRY_DIR" "$BASE_DIR/logs"
 
 # Load modules
-source /etc/profile
-module load u22/singularity-ce
+if [ -f /etc/profile.d/modules.sh ]; then
+    source /etc/profile.d/modules.sh
+fi
+source /etc/profile 2>/dev/null || true
+module load u22/singularity-ce 2>/dev/null || module load singularity 2>/dev/null || true
+
+# Auto-pull container image if not already present
+if [ ! -f "$CONTAINER_PATH" ]; then
+    echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node..."
+    mkdir -p "$(dirname "$CONTAINER_PATH")"
+    singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
+fi
 
 # Determine Job and Task ID
 JOB_ID="${SLURM_JOB_ID:-manual_$$}"
