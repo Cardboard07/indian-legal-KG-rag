@@ -53,8 +53,8 @@ else
 fi
 
 # 3. Model Download: Qwen 2.5 32B Instruct (Q6_K)
-# Model size: ~26.4 GB (fits with full 32k context into 48GB VRAM on RTX 6000 / L40S)
-MODEL_NAME="qwen2.5-32b-instruct-q6_k.gguf"
+# Model size: ~26.89 GB (single-file GGUF, full 32k context on RTX 6000 / L40S 48GB VRAM)
+MODEL_NAME="Qwen2.5-32B-Instruct-Q6_K.gguf"
 MODEL_PATH="$MODELS_DIR/$MODEL_NAME"
 
 echo ""
@@ -68,8 +68,8 @@ if [ -f "$MODEL_PATH" ]; then
     ls -lh "$MODEL_PATH"
 else
     echo "Model not found. Downloading Qwen2.5-32B-Instruct-GGUF (Q6_K)..."
-    HF_REPO="Qwen/Qwen2.5-32B-Instruct-GGUF"
-    HF_URL="https://huggingface.co/Qwen/Qwen2.5-32B-Instruct-GGUF/resolve/main/$MODEL_NAME"
+    HF_REPO="bartowski/Qwen2.5-32B-Instruct-GGUF"
+    HF_URL="https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/$MODEL_NAME"
 
     # Check if huggingface-cli is available, else use wget or curl
     if command -v huggingface-cli &> /dev/null; then
