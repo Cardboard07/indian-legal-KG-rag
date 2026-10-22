@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LTRC — Language Technologies Research Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0c;
+    --paper: #f5f2eb;
+    --accent: #c94f2c;
+    --accent2: #3a5f8a;
+    --muted: #8a8478;
+    --border: #d6d0c4;
+    --card: #fffdf8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--ink);
+    color: #fff;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 3rem;
+    height: 56px;
+    border-bottom: 2px solid var(--accent);
+  }
+  .nav-brand {
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem; font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #fff;
+  }
+  .nav-brand span { color: var(--accent); }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav ul li a {
+    color: #ccc; text-decoration: none;
+    font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  nav ul li a:hover { color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    display: grid; grid-template-columns: 1fr 1fr;
+    min-height: 88vh;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-left {
+    padding: 5rem 4rem 4rem 4rem;
+    display: flex; flex-direction: column; justify-content: center;
+    border-right: 1px solid var(--border);
+  }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.2rem;
+  }
+  .hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+    line-height: 1.08;
+    color: var(--ink);
+    margin-bottom: 1.8rem;
+  }
+  .hero-title em { font-style: italic; color: var(--accent2); }
+  .hero-sub {
+    font-size: 1.05rem; color: var(--muted);
+    max-width: 420px; line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  .hero-pillars {
+    display: flex; flex-direction: column; gap: 0.9rem;
+  }
+  .pillar {
+    display: flex; align-items: flex-start; gap: 1rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: 2px;
+    position: relative; overflow: hidden;
+  }
+  .pillar::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px; background: var(--accent);
+  }
+  .pillar-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; color: var(--accent);
+    margin-top: 3px; flex-shrink: 0;
+  }
+  .pillar-text strong { display: block; font-size: 0.9rem; margin-bottom: 0.2rem; }
+  .pillar-text span { font-size: 0.82rem; color: var(--muted); }
+
+  /* HERO RIGHT — people strip */
+  .hero-right {
+    background: var(--ink);
+    padding: 3rem 2.5rem;
+    display: flex; flex-direction: column;
+  }
+  .people-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.5rem;
+  }
+  .people-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+    flex: 1;
+  }
+  .person-card {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 0.6rem;
+  }
+  .avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: #2a2826;
+    border: 2px solid #3a3832;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem; color: var(--muted);
+  }
+  .person-name {
+    font-size: 0.72rem; color: #ccc; font-weight: 500;
+    line-height: 1.3;
+  }
+  .person-role {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem; color: var(--accent2); letter-spacing: 0.05em;
+  }
+  .people-cta {
+    margin-top: 2rem;
+    display: inline-block; align-self: flex-start;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--paper); text-decoration: none;
+    border: 1px solid #3a3832; padding: 0.6rem 1.2rem;
+    transition: all 0.2s;
+  }
+  .people-cta:hover { background: var(--accent); border-color: var(--accent); }
+
+  /* ── LABS ── */
+  .section { padding: 5rem 4rem; }
+  .section-header {
+    display: flex; align-items: baseline; gap: 1.5rem;
+    margin-bottom: 3rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;
+  }
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent);
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem; color: var(--ink);
+  }
+
+  .labs-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  .lab-card {
+    background: var(--card);
+    padding: 2.5rem;
+    transition: background 0.2s;
+    cursor: pointer;
+    position: relative;
+  }
+  .lab-card:hover { background: #fff; }
+  .lab-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent2);
+    background: rgba(58,95,138,0.08);
+    padding: 0.2rem 0.6rem; border-radius: 1px;
+    display: inline-block; margin-bottom: 1rem;
+  }
+  .lab-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem; margin-bottom: 0.8rem; line-height: 1.2;
+  }
+  .lab-desc { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
+  .lab-link {
+    display: inline-block; margin-top: 1.5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent); text-decoration: none;
+    border-bottom: 1px solid var(--accent); padding-bottom: 1px;
+  }
+  .lab-card:hover .lab-link { letter-spacing: 0.16em; }
+  .lab-accent-bar {
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .lab-card:nth-child(1) .lab-accent-bar { background: var(--accent); }
+  .lab-card:nth-child(2) .lab-accent-bar { background: var(--accent2); }
+  .lab-card:nth-child(3) .lab-accent-bar { background: #5a8a4a; }
+  .lab-card:nth-child(4) .lab-accent-bar { background: #8a6a3a; }
+
+  /* ── RESEARCH + EDUCATION ── */
+  .re-section {
+    display: grid; grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--border);
+  }
+  .re-panel {
+    padding: 5rem 4rem;
+  }
+  .re-panel:first-child { border-right: 1px solid var(--border); }
+  .re-panel .section-label { display: block; margin-bottom: 1rem; }
+  .re-panel .section-title { font-size: 1.6rem; margin-bottom: 1.5rem; }
+  .re-panel p { font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.7; }
+  .re-items { display: flex; flex-direction: column; gap: 0.8rem; }
+  .re-item {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 0.9rem 1rem;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 2px; text-decoration: none; color: var(--ink);
+    font-size: 0.85rem; transition: border-color 0.2s;
+  }
+  .re-item:hover { border-color: var(--accent2); }
+  .re-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    background: var(--accent2);
+  }
+  .re-item span { color: var(--muted); font-size: 0.75rem; margin-left: auto;
+    font-family: 'DM Mono', monospace; }
+
+  /* courses */
+  .course-table { width: 100%; border-collapse: collapse; }
+  .course-table tr { border-bottom: 1px solid var(--border); }
+  .course-table td { padding: 0.9rem 0; font-size: 0.85rem; }
+  .course-table td:last-child { color: var(--muted); font-size: 0.75rem;
+    font-family: 'DM Mono', monospace; text-align: right; }
+
+  /* ── BLOG / NEWSLETTER ── */
+  .blog-section {
+    background: var(--ink); color: var(--paper);
+    border-top: 2px solid var(--accent);
+  }
+  .blog-inner {
+    display: grid; grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+  }
+  .blog-left {
+    padding: 5rem 4rem;
+    border-right: 1px solid #2a2826;
+  }
+  .blog-left .section-label { color: var(--accent); }
+  .blog-left .section-title { color: var(--paper); font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .blog-left p { color: #9a9490; font-size: 0.9rem; margin-bottom: 2.5rem; }
+  .blog-cards { display: flex; flex-direction: column; gap: 1rem; }
+  .blog-card {
+    padding: 1.2rem 1.4rem;
+    border: 1px solid #2a2826;
+    cursor: pointer; transition: border-color 0.2s;
+  }
+  .blog-card:hover { border-color: var(--accent); }
+  .blog-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem; color: var(--accent); letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+  .blog-title-text { font-size: 0.9rem; color: var(--paper); font-weight: 500; }
+
+  /* newsletter */
+  .newsletter-right {
+    padding: 5rem 4rem;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .newsletter-right .section-label { color: var(--accent2); }
+  .newsletter-right h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem; color: var(--paper);
+    margin: 0.8rem 0 0.6rem;
+  }
+  .newsletter-right p { color: #9a9490; font-size: 0.88rem; margin-bottom: 2rem; }
+  .nl-form { display: flex; flex-direction: column; gap: 0.8rem; }
+  .nl-input {
+    background: #1a1916; border: 1px solid #3a3832;
+    padding: 0.9rem 1.2rem; color: var(--paper);
+    font-family: 'Instrument Sans', sans-serif; font-size: 0.9rem;
+    outline: none; width: 100%;
+    transition: border-color 0.2s;
+  }
+  .nl-input:focus { border-color: var(--accent2); }
+  .nl-input::placeholder { color: #5a5650; }
+  .nl-btn {
+    background: var(--accent); color: #fff;
+    border: none; padding: 0.9rem 2rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+    cursor: pointer; transition: background 0.2s; align-self: flex-start;
+  }
+  .nl-btn:hover { background: #a83e20; }
+  .nl-note { font-size: 0.72rem; color: #5a5650; margin-top: 0.5rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0a0908; color: #5a5650;
+    padding: 3rem 4rem;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid #1a1916;
+  }
+  .footer-brand {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem; letter-spacing: 0.1em;
+    color: #9a9490;
+  }
+  .footer-brand span { color: var(--accent); }
+  .footer-info { font-size: 0.75rem; line-height: 1.8; text-align: right; }
+  .footer-info a { color: var(--accent2); text-decoration: none; }
+
+  /* wireframe annotation overlay */
+  .wf-tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase;
+    background: rgba(201,79,44,0.12); color: var(--accent);
+    border: 1px dashed rgba(201,79,44,0.35);
+    padding: 0.15rem 0.5rem; border-radius: 1px;
+    vertical-align: middle; margin-left: 0.6rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { min-height: 300px; }
+    .re-section { grid-template-columns: 1fr; }
+    .blog-inner { grid-template-columns: 1fr; }
+    .labs-grid { grid-template-columns: 1fr; }
+    .section { padding: 3rem 1.5rem; }
+    .people-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand"><span>LTRC</span> · Language Technologies Research Centre</div>
+  <ul>
+    <li><a href="#people">People</a></li>
+    <li><a href="#labs">Labs</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">IIIT Hyderabad · Est. 1999</p>
+    <h1 class="hero-title">
+      Advancing <em>Human</em><br/>Language &amp;<br/>Technology
+    </h1>
+    <p class="hero-sub">
+      LTRC is one of India's foremost research centres in natural language processing, speech, machine translation, and information retrieval — bridging linguistic insight with computational innovation.
+    </p>
+
+    <!-- 3 PILLARS -->
+    <div class="hero-pillars">
+      <div class="pillar">
+        <span class="pillar-num">01</span>
+        <div class="pillar-text">
+          <strong>Foundational NLP Research</strong>
+          <span>Pushing the frontiers of language understanding, syntax, semantics, and discourse across Indian and world languages.</span>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">02</span>
+        <div class="pillar-text">
+          <strong>Inclusive Language Technology</strong>
+          <span>Building tools, datasets, and systems that serve linguistically diverse and historically underrepresented communities.</span>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">03</span>
+        <div class="pillar-text">
+          <strong>Education &amp; Open Scholarship</strong>
+          <span>Training the next generation of researchers through rigorous coursework, mentorship, and open publication of resources.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PEOPLE STRIP -->
+  <div class="hero-right" id="people">
+    <p class="people-label">Our People <span class="wf-tag">spotlight section</span></p>
+    <div class="people-grid">
+      <!-- Row 1 — Faculty -->
+      <div class="person-card">
+        <div class="avatar">V</div>
+        <div class="person-name">Prof. Vasudeva Varma</div>
+        <div class="person-role">Faculty</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">R</div>
+        <div class="person-name">Prof. Radhika Mamidi</div>
+        <div class="person-role">Faculty</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">K</div>
+        <div class="person-name">Prof. Kishore Prahallad</div>
+        <div class="person-role">Faculty</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">S</div>
+        <div class="person-name">Prof. Sobha Lalitha</div>
+        <div class="person-role">Faculty</div>
+      </div>
+      <!-- Row 2 — PhD Students -->
+      <div class="person-card">
+        <div class="avatar">A</div>
+        <div class="person-name">Anusha Iyer</div>
+        <div class="person-role">PhD Student</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">M</div>
+        <div class="person-name">Mohammed Rafi</div>
+        <div class="person-role">PhD Student</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">P</div>
+        <div class="person-name">Priya Suresh</div>
+        <div class="person-role">MS Student</div>
+      </div>
+      <div class="person-card">
+        <div class="avatar">D</div>
+        <div class="person-name">Dhruv Chand</div>
+        <div class="person-role">MS Student</div>
+      </div>
+    </div>
+    <a href="#" class="people-cta">View All Members →</a>
+  </div>
+</section>
+
+<!-- LABS -->
+<section class="section" id="labs">
+  <div class="section-header">
+    <span class="section-label">Research Clusters</span>
+    <h2 class="section-title">Our Labs <span class="wf-tag">unified view</span></h2>
+  </div>
+  <div class="labs-grid">
+    <div class="lab-card">
+      <div class="lab-accent-bar"></div>
+      <span class="lab-tag">NLP · Machine Translation</span>
+      <h3 class="lab-name">MT-NLP Lab</h3>
+      <p class="lab-desc">Syntax, parsing, semantics, WSD, discourse, treebanking, and machine translation. Computational models inspired by linguistics, combined with modern ML methods.</p>
+      <a href="#" class="lab-link">Explore Lab →</a>
+    </div>
+    <div class="lab-card">
+      <div class="lab-accent-bar"></div>
+      <span class="lab-tag">Classical · Translation</span>
+      <h3 class="lab-name">Anusaaraka Lab</h3>
+      <p class="lab-desc">Fusion of traditional Indian shastras and advanced modern technologies. A joint initiative with CIF and University of Hyderabad for Sanskrit-based MT.</p>
+      <a href="#" class="lab-link">Explore Lab →</a>
+    </div>
+    <div class="lab-card">
+      <div class="lab-accent-bar"></div>
+      <span class="lab-tag">Speech · Audio · Vision</span>
+      <h3 class="lab-name">Speech Processing Lab</h3>
+      <p class="lab-desc">Robust ASR, natural TTS, spoken information retrieval, and biometrics using speech and video. Goal-oriented basic research at the intersection of signal and language.</p>
+      <a href="#" class="lab-link">Explore Lab →</a>
+    </div>
+    <div class="lab-card">
+      <div class="lab-accent-bar"></div>
+      <span class="lab-tag">IR · IE · IA</span>
+      <h3 class="lab-name">IREL — Information Retrieval &amp; Extraction Lab</h3>
+      <p class="lab-desc">Search, retrieval, and extraction for complex information needs. Fundamental research in Information Retrieval, Extraction, and Access for multilingual settings.</p>
+      <a href="#" class="lab-link">Explore Lab →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH + EDUCATION -->
+<div class="re-section">
+  <div class="re-panel" id="research">
+    <span class="section-label">Publications &amp; Projects</span>
+    <h2 class="section-title">Research</h2>
+    <p>Recent work from across LTRC labs — from NLP benchmarks and multilingual corpora to speech systems and machine translation breakthroughs.</p>
+    <div class="re-items">
+      <a class="re-item" href="#">
+        <span class="re-dot" style="background: var(--accent)"></span>
+        Cross-lingual Transfer for Low-Resource Indian Languages
+        <span>2024</span>
+      </a>
+      <a class="re-item" href="#">
+        <span class="re-dot" style="background: var(--accent2)"></span>
+        IndicNLP: A Benchmark Suite for Indian Language NLP
+        <span>2024</span>
+      </a>
+      <a class="re-item" href="#">
+        <span class="re-dot" style="background: #5a8a4a"></span>
+        Anaphora Resolution in Sanskrit Texts
+        <span>2023</span>
+      </a>
+      <a class="re-item" href="#">
+        <span class="re-dot" style="background: #8a6a3a"></span>
+        End-to-End Neural TTS for Telugu
+        <span>2023</span>
+      </a>
+    </div>
+  </div>
+  <div class="re-panel" id="education">
+    <span class="section-label">Courses &amp; Training</span>
+    <h2 class="section-title">Education</h2>
+    <p>LTRC offers a rich curriculum spanning NLP fundamentals to advanced research seminars. The annual IASNLP school is a flagship training programme drawing participants globally.</p>
+    <table class="course-table">
+      <tr>
+        <td>Foundations of NLP</td><td>UG / PG</td>
+      </tr>
+      <tr>
+        <td>Statistical Machine Translation</td><td>PG</td>
+      </tr>
+      <tr>
+        <td>Speech Technology</td><td>PG</td>
+      </tr>
+      <tr>
+        <td>Information Retrieval</td><td>PG</td>
+      </tr>
+      <tr>
+        <td>IASNLP Summer School</td><td>Annual</td>
+      </tr>
+    </table>
+    <br/>
+    <a href="#" class="lab-link">View All Courses →</a>
+  </div>
+</div>
+
+<!-- BLOG + NEWSLETTER -->
+<section class="blog-section" id="blog">
+  <div class="blog-inner">
+    <div class="blog-left">
+      <span class="section-label">Updates &amp; Insights</span>
+      <h2 class="section-title">Blog <span class="wf-tag" style="border-color:rgba(201,79,44,.4)">recent posts</span></h2>
+      <p>Long-form writing from our researchers — covering breakthroughs, perspectives on Indian language AI, and reflections on the field.</p>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <div class="blog-date">Feb 2025</div>
+          <div class="blog-title-text">Why Low-Resource NLP Still Needs Linguists</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">Nov 2024</div>
+          <div class="blog-title-text">Lessons from Building a Telugu TTS System at Scale</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">Sep 2024</div>
+          <div class="blog-title-text">Sanskrit Computational Grammar: A Practical Primer</div>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter-right">
+      <span class="section-label">Stay Connected</span>
+      <h3>Newsletter</h3>
+      <p>Get LTRC updates — new research, open datasets, upcoming events, and job opportunities — delivered to your inbox. No noise, just signal.</p>
+      <div class="nl-form">
+        <input class="nl-input" type="text" placeholder="Your name" />
+        <input class="nl-input" type="email" placeholder="Email address" />
+        <button class="nl-btn">Subscribe →</button>
+        <p class="nl-note">We respect your inbox. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div>
+    <div class="footer-brand"><span>LTRC</span> · Language Technologies Research Centre</div>
+    <div style="font-size:0.72rem; margin-top:0.5rem;">© 2025 IIIT Hyderabad. All rights reserved.</div>
+  </div>
+  <div class="footer-info">
+    1st Floor, Kohli Center on Intelligent Systems (KCIS)<br/>
+    IIIT Hyderabad, Gachibowli — 500 032<br/>
+    <a href="mailto:ltrc.office1@iiit.ac.in">ltrc.office1@iiit.ac.in</a> &nbsp;·&nbsp; +91-40-6653 1581
+  </div>
+</footer>
+
+</body>
+</html>
