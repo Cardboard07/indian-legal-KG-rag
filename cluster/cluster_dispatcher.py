@@ -44,11 +44,33 @@ class LLMNode:
     def id(self) -> str:
         return f"{self.hostname}:{self.port} (Job {self.job_id}.{self.task_id})"
 
-    async def check_health(self, session: "aiohttp.ClientSession", timeout_sec: float = 3.0) -> bool:
-        """Pings the node's health / models endpoint."""
+    def check_health_sync(self, timeout_sec: float = 3.0) -> bool:
+        """Pings the node health using standard library urllib (zero dependencies)."""
+        import urllib.request
+        import urllib.error
+
+        t0 = time.time()
+        for endpoint in [f"{self.url}/health", f"{self.url}/v1/models"]:
+            try:
+                req = urllib.request.Request(endpoint, headers={"User-Agent": "ClusterDispatcher"})
+                with urllib.request.urlopen(req, timeout=timeout_sec) as resp:
+                    if resp.status == 200:
+                        self.is_healthy = True
+                        self.last_latency_ms = (time.time() - t0) * 1000.0
+                        return True
+            except Exception:
+                pass
+
+        self.is_healthy = False
+        return False
+
+    async def check_health(self, session: Optional["aiohttp.ClientSession"] = None, timeout_sec: float = 3.0) -> bool:
+        """Pings the node's health / models endpoint with aiohttp or urllib fallback."""
+        if not session or not aiohttp:
+            return await asyncio.to_thread(self.check_health_sync, timeout_sec)
+
         t0 = time.time()
         try:
-            # Check /health or /v1/models
             async with session.get(f"{self.url}/health", timeout=aiohttp.ClientTimeout(total=timeout_sec)) as resp:
                 if resp.status == 200:
                     self.is_healthy = True
@@ -57,7 +79,6 @@ class LLMNode:
         except Exception:
             pass
 
-        # Fallback check on /v1/models
         try:
             async with session.get(f"{self.url}/v1/models", timeout=aiohttp.ClientTimeout(total=timeout_sec)) as resp:
                 if resp.status == 200:
@@ -128,15 +149,16 @@ class MultiNodeLLMDispatcher:
 
     async def update_health(self) -> List[LLMNode]:
         """Refreshes discovery and verifies all nodes' health concurrently."""
-        if not aiohttp:
-            raise ImportError("aiohttp is required for MultiNodeLLMDispatcher. Install with: pip install aiohttp")
-
         self.discover_nodes()
         if not self.nodes:
             return []
 
-        async with aiohttp.ClientSession() as session:
-            tasks = [node.check_health(session) for node in self.nodes.values()]
+        if aiohttp:
+            async with aiohttp.ClientSession() as session:
+                tasks = [node.check_health(session) for node in self.nodes.values()]
+                await asyncio.gather(*tasks, return_exceptions=True)
+        else:
+            tasks = [node.check_health(None) for node in self.nodes.values()]
             await asyncio.gather(*tasks, return_exceptions=True)
 
         healthy_nodes = [n for n in self.nodes.values() if n.is_healthy]
@@ -155,6 +177,22 @@ class MultiNodeLLMDispatcher:
         healthy.sort(key=lambda n: (n.active_requests, n.last_latency_ms))
         return healthy[0]
 
+    def _chat_completion_urllib(self, node: LLMNode, payload: Dict[str, Any]) -> Dict[str, Any]:
+        """Synchronous chat completion using standard library urllib."""
+        import urllib.request
+        import urllib.error
+
+        endpoint = f"{node.url}/v1/chat/completions"
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            endpoint,
+            data=data,
+            headers={"Content-Type": "application/json", "User-Agent": "ClusterDispatcher"},
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=self.request_timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
     async def chat_completion(
         self,
         messages: List[Dict[str, str]],
@@ -164,9 +202,6 @@ class MultiNodeLLMDispatcher:
         max_retries: int = 3,
     ) -> Dict[str, Any]:
         """Sends an OpenAI-compatible /v1/chat/completions request to an available worker node."""
-        if not aiohttp:
-            raise ImportError("aiohttp is required. Install via: pip install aiohttp")
-
         payload: Dict[str, Any] = {
             "messages": messages,
             "temperature": temperature,
@@ -191,24 +226,30 @@ class MultiNodeLLMDispatcher:
                 )
 
             node.active_requests += 1
-            endpoint = f"{node.url}/v1/chat/completions"
 
             try:
-                timeout = aiohttp.ClientTimeout(total=self.request_timeout)
-                async with aiohttp.ClientSession(timeout=timeout) as session:
-                    async with session.post(endpoint, json=payload) as resp:
-                        if resp.status == 200:
-                            data = await resp.json()
-                            node.active_requests = max(0, node.active_requests - 1)
-                            node.total_completed += 1
-                            return data
-                        else:
-                            err_text = await resp.text()
-                            logger.warning(
-                                f"Worker {node.id} returned HTTP {resp.status} on attempt {attempt+1}: {err_text[:200]}"
-                            )
-                            node.total_errors += 1
-                            last_error = RuntimeError(f"HTTP {resp.status}: {err_text}")
+                if aiohttp:
+                    endpoint = f"{node.url}/v1/chat/completions"
+                    timeout = aiohttp.ClientTimeout(total=self.request_timeout)
+                    async with aiohttp.ClientSession(timeout=timeout) as session:
+                        async with session.post(endpoint, json=payload) as resp:
+                            if resp.status == 200:
+                                data = await resp.json()
+                                node.active_requests = max(0, node.active_requests - 1)
+                                node.total_completed += 1
+                                return data
+                            else:
+                                err_text = await resp.text()
+                                logger.warning(
+                                    f"Worker {node.id} returned HTTP {resp.status} on attempt {attempt+1}: {err_text[:200]}"
+                                )
+                                node.total_errors += 1
+                                last_error = RuntimeError(f"HTTP {resp.status}: {err_text}")
+                else:
+                    data = await asyncio.to_thread(self._chat_completion_urllib, node, payload)
+                    node.active_requests = max(0, node.active_requests - 1)
+                    node.total_completed += 1
+                    return data
             except Exception as e:
                 logger.warning(f"Worker {node.id} request failed on attempt {attempt+1}: {e}")
                 node.is_healthy = False  # Mark node unhealthy on connection drops
