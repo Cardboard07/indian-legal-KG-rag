@@ -7,13 +7,13 @@
 
 #SBATCH --job-name=llm_worker
 #SBATCH --partition=u22
-#SBATCH --constraint=l40s|rtx6000
+#SBATCH --constraint=l40s
 #SBATCH --gres=gpu:1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=48G
-#SBATCH --time=02:00:00
-#SBATCH --output=/home/%u/llm_cluster/logs/worker_%A_%a.log
-#SBATCH --error=/home/%u/llm_cluster/logs/worker_%A_%a.err
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --time=01:00:00
+#SBATCH --output=/home/%u/llm_cluster/logs/worker_%j.log
+#SBATCH --error=/home/%u/llm_cluster/logs/worker_%j.err
 
 set -e
 
