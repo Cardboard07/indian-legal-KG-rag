@@ -63,9 +63,19 @@ echo "Checking model: $MODEL_NAME"
 echo "Target path: $MODEL_PATH"
 echo "=========================================================="
 
+EXPECTED_BYTES=26886155136
+
 if [ -f "$MODEL_PATH" ]; then
-    echo "Model already exists at: $MODEL_PATH"
-    ls -lh "$MODEL_PATH"
+    ACTUAL_BYTES=$(stat -c %s "$MODEL_PATH" 2>/dev/null || echo 0)
+    if [ "$ACTUAL_BYTES" -eq "$EXPECTED_BYTES" ]; then
+        echo "Model is VERIFIED COMPLETE! ($ACTUAL_BYTES bytes)"
+        ls -lh "$MODEL_PATH"
+    else
+        echo "Model file exists but is INCOMPLETE: $ACTUAL_BYTES / $EXPECTED_BYTES bytes."
+        echo "Resuming download with wget --continue..."
+        HF_URL="https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/$MODEL_NAME"
+        wget --continue --show-progress -O "$MODEL_PATH" "$HF_URL"
+    fi
 else
     echo "Model not found. Downloading Qwen2.5-32B-Instruct-GGUF (Q6_K)..."
     HF_REPO="bartowski/Qwen2.5-32B-Instruct-GGUF"
