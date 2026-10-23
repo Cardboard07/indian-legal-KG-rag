@@ -7,6 +7,7 @@
 
 NUM_WORKERS="${1:-2}"
 CONSTRAINT="${2:-l40s|rtx6000}"
+TIME_LIMIT="${3:-02:00:00}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKER_SCRIPT="$SCRIPT_DIR/launch_worker.sh"
@@ -14,10 +15,11 @@ WORKER_SCRIPT="$SCRIPT_DIR/launch_worker.sh"
 echo "=========================================================="
 echo "Submitting Slurm Array Job for $NUM_WORKERS LLM Worker Nodes"
 echo "Constraint: $CONSTRAINT"
+echo "Time Limit: $TIME_LIMIT"
 echo "Worker Script: $WORKER_SCRIPT"
 echo "=========================================================="
 
-JOB_ID=$(sbatch --parsable --array=1-"$NUM_WORKERS" --constraint="$CONSTRAINT" "$WORKER_SCRIPT")
+JOB_ID=$(sbatch --parsable --array=1-"$NUM_WORKERS" --constraint="$CONSTRAINT" --time="$TIME_LIMIT" "$WORKER_SCRIPT")
 
 echo "Slurm Array Job Submitted Successfully!"
 echo "Array Job ID: $JOB_ID"
