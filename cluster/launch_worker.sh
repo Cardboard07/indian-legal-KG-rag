@@ -39,35 +39,42 @@ fi
 source /etc/profile 2>/dev/null || true
 module load u22/singularity-ce 2>/dev/null || module load singularity 2>/dev/null || true
 
-# Auto-detect existing container or pull if missing
-if [ ! -f "$CONTAINER_PATH" ] && [ -f "/home/$USER/llama_server/llama-cpp-cuda.sif" ]; then
-    echo "[Worker] Found existing container in ~/llama_server/llama-cpp-cuda.sif. Linking..."
-    mkdir -p "$(dirname "$CONTAINER_PATH")"
-    ln -sf "/home/$USER/llama_server/llama-cpp-cuda.sif" "$CONTAINER_PATH"
+# Check for Native CUDA binary first (preferred over Singularity)
+NATIVE_BIN="$BASE_DIR/bin/llama-server"
+
+if [ ! -x "$NATIVE_BIN" ] && [ ! -f "$CONTAINER_PATH" ]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    if [ -f "$SCRIPT_DIR/setup_native_llama.sh" ]; then
+        echo "[Worker] Native binary not found. Running setup_native_llama.sh..."
+        bash "$SCRIPT_DIR/setup_native_llama.sh" || true
+    fi
 fi
 
-if [ ! -f "$CONTAINER_PATH" ]; then
-    echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node using /tmp scratch..."
-    mkdir -p "$(dirname "$CONTAINER_PATH")"
-
-    # Free any partial cache in /home to stay under 50GB quota
-    rm -rf "$HOME/.singularity/cache" 2>/dev/null || true
-
-    # Direct temporary cache & layer extraction to node-local /tmp (prevents home quota exhaustion)
-    export SINGULARITY_TMPDIR="/tmp/${USER}_sing_tmp_$$"
-    export SINGULARITY_CACHEDIR="/tmp/${USER}_sing_cache_$$"
-    mkdir -p "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR"
-    export GODEBUG=http2client=0
-
-    echo "[Worker] Pulling container with temporary dirs in /tmp..."
-    if ! singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda; then
-        echo "[Worker] Initial pull failed. Retrying with fallback..."
-        singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
+# Auto-detect existing container or pull if missing and native binary not present
+if [ ! -x "$NATIVE_BIN" ]; then
+    if [ ! -f "$CONTAINER_PATH" ] && [ -f "/home/$USER/llama_server/llama-cpp-cuda.sif" ]; then
+        echo "[Worker] Found existing container in ~/llama_server/llama-cpp-cuda.sif. Linking..."
+        mkdir -p "$(dirname "$CONTAINER_PATH")"
+        ln -sf "/home/$USER/llama_server/llama-cpp-cuda.sif" "$CONTAINER_PATH"
     fi
 
-    # Clean up node /tmp build artifacts
-    rm -rf "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR" 2>/dev/null || true
-    echo "[Worker] Container built successfully at $CONTAINER_PATH!"
+    if [ ! -f "$CONTAINER_PATH" ]; then
+        echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node using /tmp scratch..."
+        mkdir -p "$(dirname "$CONTAINER_PATH")"
+
+        # Free any partial cache in /home to stay under 50GB quota
+        rm -rf "$HOME/.singularity/cache" 2>/dev/null || true
+
+        # Direct temporary cache & layer extraction to node-local /tmp (prevents home quota exhaustion)
+        export SINGULARITY_TMPDIR="/tmp/${USER}_sing_tmp_$$"
+        export SINGULARITY_CACHEDIR="/tmp/${USER}_sing_cache_$$"
+        mkdir -p "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR"
+        export GODEBUG=http2client=0
+
+        echo "[Worker] Pulling container with temporary dirs in /tmp..."
+        singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda || true
+        rm -rf "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR" 2>/dev/null || true
+    fi
 fi
 
 # Determine Job and Task ID
@@ -140,17 +147,32 @@ EOF
 
 # Run llama-server inside Singularity with full GPU offload and OpenAI API endpoint
 # Context size: 32,768 tokens (full legal instrument context)
+# Run llama-server with full GPU offload and OpenAI API endpoint
+# Context size: 32,768 tokens (full legal instrument context)
 # -ngl 99: offload all transformer layers to GPU
 # --parallel 2: process up to 2 concurrent generation slots per node
-# --fit on: automatically fit memory
-exec singularity exec --nv \
-  -B /home:/home \
-  "$CONTAINER_PATH" \
-  bash -c "export LD_LIBRARY_PATH=/app:/usr/local/lib:/usr/local/lib64:\$LD_LIBRARY_PATH && \
-    /app/llama-server \
-      -m \"$MODEL_PATH\" \
+
+if [ -x "$NATIVE_BIN" ]; then
+    echo "[Worker] Launching NATIVE CUDA llama-server binary directly..."
+    export LD_LIBRARY_PATH="$BASE_DIR/bin:$LD_LIBRARY_PATH"
+    exec "$NATIVE_BIN" \
+      -m "$MODEL_PATH" \
       --ctx-size 32768 \
       -ngl 99 \
       --parallel 2 \
       --host 0.0.0.0 \
-      --port $PORT"
+      --port $PORT
+else
+    echo "[Worker] Launching llama-server inside Singularity container..."
+    exec singularity exec --nv \
+      -B /home:/home \
+      "$CONTAINER_PATH" \
+      bash -c "export LD_LIBRARY_PATH=/app:/usr/local/lib:/usr/local/lib64:\$LD_LIBRARY_PATH && \
+        /app/llama-server \
+          -m \"$MODEL_PATH\" \
+          --ctx-size 32768 \
+          -ngl 99 \
+          --parallel 2 \
+          --host 0.0.0.0 \
+          --port $PORT"
+fi
