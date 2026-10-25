@@ -6,8 +6,8 @@
 # ==============================================================================
 
 NUM_WORKERS="${1:-2}"
-CONSTRAINT="${2:-l40s|rtx6000}"
-TIME_LIMIT="${3:-02:00:00}"
+CONSTRAINT="${2:-l40s}"
+TIME_LIMIT="${3:-01:00:00}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKER_SCRIPT="$SCRIPT_DIR/launch_worker.sh"
