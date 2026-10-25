@@ -18,8 +18,8 @@ echo "Compiling Native llama-server for Turing (Ubuntu 22.04)"
 echo "Target directory: $BIN_DIR"
 echo "=========================================================="
 
-# Explicit verified Turing paths for CMake 3.31.7 and CUDA 12.4
-export PATH="/usr/local/apps/cmake-3.31.7/bin:/home/u22/cuda-12.4/bin:$PATH"
+# Explicit verified Turing paths for CUDA 12.4 and local tools
+export PATH="$HOME/.local/bin:/home/u22/cuda-12.4/bin:/usr/local/apps/cmake-3.31.7/bin:$PATH"
 export LD_LIBRARY_PATH="/home/u22/cuda-12.4/lib64:$LD_LIBRARY_PATH"
 export CUDA_HOME="/home/u22/cuda-12.4"
 export CUDACXX="/home/u22/cuda-12.4/bin/nvcc"
@@ -27,6 +27,13 @@ export CUDACXX="/home/u22/cuda-12.4/bin/nvcc"
 # Also load environment modules if supported
 module load u22/cmake/3.31.7 2>/dev/null || true
 module load u22/cuda/12.4 2>/dev/null || true
+
+# Auto-install cmake via pip if not in PATH
+if ! command -v cmake &>/dev/null; then
+    echo "cmake not found in system path. Installing modern cmake via pip to ~/.local/bin..."
+    python3 -m pip install --user cmake || pip install --user cmake || true
+    export PATH="$HOME/.local/bin:$PATH"
+fi
 
 echo "Compiler & Tooling Check:"
 which gcc || echo "gcc: not found"
