@@ -10,6 +10,7 @@ import sys
 import time
 import asyncio
 import argparse
+import json
 
 # Ensure cluster directory and root are on sys.path
 sys.path.insert(0, os.path.abspath("."))
@@ -83,6 +84,8 @@ async def run_benchmark(dispatcher: MultiNodeLLMDispatcher, num_requests: int = 
 async def main_async():
     parser = argparse.ArgumentParser(description="Test and monitor LLM cluster status.")
     parser.add_argument("--registry-dir", type=str, default=None, help="Path to registry directory containing node JSONs.")
+    parser.add_argument("--verify", action="store_true", help="Require distinct healthy hosts and valid JSON inference on every worker.")
+    parser.add_argument("--min-nodes", type=int, default=2, help="Minimum distinct healthy hosts for --verify.")
     parser.add_argument("--bench", action="store_true", help="Run concurrent inference benchmark across nodes.")
     parser.add_argument("--num-requests", type=int, default=8, help="Number of benchmark requests to dispatch.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated static URLs to test (e.g. http://10.4.1.2:8080).")
@@ -95,6 +98,23 @@ async def main_async():
     print("Discovering and checking health of cluster nodes...")
     healthy = await dispatcher.update_health()
     print_cluster_status(dispatcher, healthy)
+
+    if args.verify:
+        if len({n.hostname for n in healthy}) < args.min_nodes:
+            raise SystemExit(f"Verification failed: need {args.min_nodes} distinct healthy hosts")
+        async def verify_node(node):
+            worker = MultiNodeLLMDispatcher(explicit_urls=[node.url], request_timeout=180)
+            # Pin this check to this node; registry discovery could select another worker.
+            worker.nodes = {node.url: node}
+            result = await worker.chat_completion(
+                messages=[{"role": "user", "content": 'Return only this JSON object: {"ready": true}'}],
+                temperature=0, max_tokens=128, response_format={"type": "json_object"})
+            choice = result["choices"][0]
+            if choice.get("finish_reason") != "stop" or json.loads(choice["message"]["content"]) != {"ready": True}:
+                raise ValueError(f"Invalid inference from {node.id}")
+            print(f"Verified inference: {node.id} | model={result.get('model', 'unreported')}")
+        await asyncio.gather(*(verify_node(node) for node in healthy))
+        print("All workers passed JSON inference. Check worker logs/nvidia-smi separately for GPU offload.")
 
     if args.bench:
         await run_benchmark(dispatcher, num_requests=args.num_requests)

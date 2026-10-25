@@ -79,12 +79,23 @@ JOB_ID="${SLURM_JOB_ID:-manual_$$}"
 TASK_ID="${SLURM_ARRAY_TASK_ID:-0}"
 REG_FILE="$REGISTRY_DIR/node_${JOB_ID}_${TASK_ID}.json"
 
-# Clean up registration file on exit
+SERVER_PID=""
+HEALTH_PID=""
 cleanup() {
-    echo "[Worker $JOB_ID.$TASK_ID] Shutting down. Removing registry entry $REG_FILE..."
-    rm -f "$REG_FILE"
+    trap - EXIT INT TERM
+    if [ -n "$HEALTH_PID" ]; then
+        kill "$HEALTH_PID" 2>/dev/null || true
+        wait "$HEALTH_PID" 2>/dev/null || true
+    fi
+    if [ -n "$SERVER_PID" ]; then
+        kill "$SERVER_PID" 2>/dev/null || true
+        wait "$SERVER_PID" 2>/dev/null || true
+    fi
+    rm -f "$REG_FILE" "$REG_FILE.tmp"
 }
-trap cleanup EXIT INT TERM
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
 
 # Detect Node IP and Hostname
 NODE_HOSTNAME=$(hostname)
@@ -102,7 +113,7 @@ echo "Model:  $MODEL_PATH"
 echo "=========================================================="
 
 # Write initial starting status to registry
-cat <<EOF > "$REG_FILE"
+cat <<EOF > "$REG_FILE.tmp"
 {
   "job_id": "$JOB_ID",
   "task_id": "$TASK_ID",
@@ -116,6 +127,7 @@ cat <<EOF > "$REG_FILE"
   "status": "starting"
 }
 EOF
+mv "$REG_FILE.tmp" "$REG_FILE"
 
 # Background health-checker to mark ready once server is responding
 (
@@ -123,7 +135,7 @@ EOF
         sleep 2
         if curl -s "http://127.0.0.1:$PORT/health" | grep -q "ok" || curl -s "http://127.0.0.1:$PORT/v1/models" | grep -q "object"; then
             echo "[Worker $JOB_ID.$TASK_ID] llama-server is healthy! Updating status to ready."
-            cat <<EOF > "$REG_FILE"
+            cat <<EOF > "$REG_FILE.tmp"
 {
   "job_id": "$JOB_ID",
   "task_id": "$TASK_ID",
@@ -137,10 +149,12 @@ EOF
   "status": "ready"
 }
 EOF
+mv "$REG_FILE.tmp" "$REG_FILE"
             break
         fi
     done
 ) &
+HEALTH_PID=$!
 
 # Run llama-server inside Singularity with full GPU offload and OpenAI API endpoint
 # Context size: 32,768 tokens (full legal instrument context)
@@ -152,17 +166,17 @@ EOF
 if [ -x "$NATIVE_BIN" ]; then
     echo "[Worker] Launching NATIVE CUDA llama-server binary directly..."
     export LD_LIBRARY_PATH="/home/u22/cuda-12.4/lib64:$BASE_DIR/bin:$LD_LIBRARY_PATH"
-    exec "$NATIVE_BIN" \
+    "$NATIVE_BIN" \
       -m "$MODEL_PATH" \
       --ctx-size 32768 \
       -ngl 99 \
       --parallel 2 \
       --flash-attn on \
       --host 0.0.0.0 \
-      --port $PORT
+      --port "$PORT" &
 else
     echo "[Worker] Launching llama-server inside Singularity container..."
-    exec singularity exec --nv \
+    singularity exec --nv \
       -B /home:/home \
       "$CONTAINER_PATH" \
       bash -c "export LD_LIBRARY_PATH=/app:/usr/local/lib:/usr/local/lib64:\$LD_LIBRARY_PATH && \
@@ -172,5 +186,7 @@ else
           -ngl 99 \
           --parallel 2 \
           --host 0.0.0.0 \
-          --port $PORT"
+          --port $PORT" &
 fi
+SERVER_PID=$!
+wait "$SERVER_PID"

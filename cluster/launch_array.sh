@@ -5,6 +5,8 @@
 # Example: ./launch_array.sh 4 l40s
 # ==============================================================================
 
+set -euo pipefail
+
 NUM_WORKERS="${1:-2}"
 CONSTRAINT="${2:-l40s}"
 TIME_LIMIT="${3:-01:00:00}"
@@ -18,6 +20,8 @@ echo "Constraint: $CONSTRAINT"
 echo "Time Limit: $TIME_LIMIT"
 echo "Worker Script: $WORKER_SCRIPT"
 echo "=========================================================="
+
+mkdir -p "/home/$USER/llm_cluster/logs" "/home/$USER/llm_cluster/registry"
 
 JOB_ID=$(sbatch --parsable --array=1-"$NUM_WORKERS" --constraint="$CONSTRAINT" --time="$TIME_LIMIT" "$WORKER_SCRIPT")
 

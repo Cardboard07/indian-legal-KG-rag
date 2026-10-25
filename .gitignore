@@ -44,3 +44,10 @@ data/eval_batches/results/
 .gemini/
 .DS_Store
 Thumbs.db
+
+data/eval_batches/dry_run_results/
+
+# SQLite transient journals and local review handoff bundle
+*.db-shm
+*.db-wal
+refinement_hpc_review.zip

@@ -148,7 +148,7 @@ def resolve_falkordb_host() -> str:
             pass
     import subprocess
     try:
-        out = subprocess.check_output(["wsl", "hostname", "-I"], text=True)
+        out = subprocess.check_output(["wsl", "hostname", "-I"], text=True, timeout=5)
         return out.strip().split()[0]
     except Exception:
         return "127.0.0.1"

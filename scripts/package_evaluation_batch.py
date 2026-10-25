@@ -117,13 +117,14 @@ def package_document_batch(
         if not fpath.is_absolute():
             fpath = ROOT_DIR / fpath
 
-        raw_text = ""
-        if fpath.exists():
-            try:
-                with open(fpath, "r", encoding="utf-8", errors="replace") as fp:
-                    raw_text = fp.read().strip()
-            except Exception as ex:
-                raw_text = f"[ERROR reading file: {ex}]"
+        if not fpath.is_file():
+            # Stored Windows paths are not portable to the Linux cluster.
+            fpath = ROOT_DIR / "hpc_results" / "chunks_docling_hybrid" / row["relative_path"]
+        if not fpath.is_file():
+            raise FileNotFoundError(f"Missing source for {cid}: {fpath}")
+        raw_text = fpath.read_text(encoding="utf-8").strip()
+        if not raw_text:
+            raise ValueError(f"Empty source for {cid}")
 
         chunks_data.append({
             "chunk_id": cid,
@@ -250,7 +251,7 @@ def main():
     parser.add_argument("--doc-id", type=str, default=None, help="Exact document_id to package.")
     parser.add_argument("--all", action="store_true", help="Package all matching documents into sliced batches.")
     parser.add_argument("--chunk-slice-size", type=int, default=50, help="Max chunks per batch file (default: 50).")
-    parser.add_argument("--min-triplets", type=int, default=1, help="Minimum triplets required for inclusion (default: 1).")
+    parser.add_argument("--min-triplets", type=int, default=1, help="Minimum triplets required for inclusion (default: 1; use 0 to include missed documents).")
     parser.add_argument("--batch-name", type=str, default=None, help="Custom filename prefix.")
     parser.add_argument("--output-dir", type=str, default=None, help="Output directory for packaged batches.")
 

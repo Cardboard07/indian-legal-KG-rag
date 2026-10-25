@@ -20,6 +20,8 @@ import sys
 import json
 import sqlite3
 import argparse
+import hashlib
+from contextlib import closing
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 
@@ -29,6 +31,7 @@ sys.path.insert(0, str(ROOT_DIR))
 
 from src.config import DB_PATH, ENTITY_TYPES, RELATIONSHIP_TYPES
 from src.db import get_db_connection
+from src.refinement_contract import validate_proposal
 
 
 def init_audit_tables(conn: sqlite3.Connection):
@@ -58,22 +61,6 @@ def locate_quote_offsets(raw_text: str, quote: str) -> Tuple[int, int]:
     if idx != -1:
         return idx, idx + len(quote)
 
-    # 2. Case-insensitive match
-    idx = raw_text.lower().find(quote.lower())
-    if idx != -1:
-        return idx, idx + len(quote)
-
-    # 3. Clean whitespace match
-    clean_quote = " ".join(quote.split())
-    if clean_quote in raw_text:
-        idx = raw_text.find(clean_quote)
-        return idx, idx + len(clean_quote)
-
-    # 4. First 40 chars prefix match
-    prefix = quote[:40].strip()
-    if len(prefix) >= 15 and prefix in raw_text:
-        idx = raw_text.find(prefix)
-        return idx, min(len(raw_text), idx + len(quote))
 
     return -1, -1
 
@@ -87,7 +74,9 @@ def reconcile_result_file(
 
     batch_id = results_data["batch_id"]
     doc_title = results_data.get("document_title", "Unknown")
-    chunk_evaluations = results_data.get("results", [])
+    if results_data.get("execution_mode") != "live":
+        raise ValueError("Only explicitly identified live results may be reconciled")
+    chunk_evaluations = [item for item in results_data.get("results", []) if item.get("status") == "success"]
 
     print("\n" + "=" * 80)
     print(f"RECONCILING REFINEMENT RESULTS: {results_path.name}")
@@ -108,8 +97,13 @@ def reconcile_result_file(
         "relationships_created": 0,
     }
 
-    with get_db_connection(DB_PATH) as conn:
-        init_audit_tables(conn)
+    # Read-only preview must not create tables, journals or an empty database.
+    connection = get_db_connection(DB_PATH) if apply_changes else closing(
+        sqlite3.connect(DB_PATH.resolve().as_uri() + "?mode=ro", uri=True))
+    with connection as conn:
+        conn.row_factory = sqlite3.Row
+        if apply_changes:
+            init_audit_tables(conn)
 
         # Cache document_id and raw text for chunks
         chunk_cache: Dict[str, Dict[str, Any]] = {}
@@ -145,12 +139,21 @@ def reconcile_result_file(
             for a in audited:
                 stats["total_audited"] += 1
                 rid = a.get("relationship_id")
-                is_valid = bool(a.get("is_valid", True))
+                is_valid = a.get("is_valid")
+                if not isinstance(rid, str) or (is_valid is not None and type(is_valid) is not bool):
+                    raise ValueError("Invalid audit identity or boolean")
+                if is_valid is None:
+                    continue
+                matched = conn.execute(
+                    "SELECT relationship_id FROM relationships WHERE chunk_id=? AND (relationship_id=? OR local_relationship_id=?)",
+                    (cid, rid, rid)).fetchone()
+                if matched is None:
+                    raise ValueError(f"Unknown relationship {rid} for chunk {cid}")
                 critique = a.get("critique", "")
                 err_type = a.get("error_type", "none")
 
                 # Resolve relationship in DB
-                global_rel_id = f"{cid}::{rid}" if not rid.startswith(cid) else rid
+                global_rel_id = matched["relationship_id"]
 
                 if is_valid:
                     stats["valid_kept"] += 1
@@ -196,13 +199,11 @@ def reconcile_result_file(
                 if not subj or not obj or not pred:
                     continue
 
-                if pred not in RELATIONSHIP_TYPES:
-                    pred = "REQUIRES" if "require" in pred.lower() else ("APPLIES_TO" if "appl" in pred.lower() else "REFERS_TO")
-
-                if s_type not in ENTITY_TYPES:
-                    s_type = "Organization"
-                if o_type not in ENTITY_TYPES:
-                    o_type = "Requirement"
+                try:
+                    validate_proposal(m, raw_text)
+                except (ValueError, TypeError):
+                    stats["missing_ungrounded"] += 1
+                    continue
 
                 # Check quote grounding
                 c_start, c_end = locate_quote_offsets(raw_text, quote)
@@ -213,14 +214,17 @@ def reconcile_result_file(
                 stats["missing_grounded"] += 1
 
                 if apply_changes:
-                    src_ent_id = f"{cid}::REF_E{counter}_S"
-                    tgt_ent_id = f"{cid}::REF_E{counter}_O"
-                    rel_id = f"{cid}::REF_R{counter}"
-                    counter += 1
+                    digest = hashlib.sha256(json.dumps(m, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:24]
+                    src_ent_id = f"{cid}::REF_{digest}_S"
+                    tgt_ent_id = f"{cid}::REF_{digest}_O"
+                    rel_id = f"{cid}::REF_{digest}"
+                    if conn.execute("SELECT 1 FROM relationships WHERE relationship_id=?", (rel_id,)).fetchone():
+                        continue
+                    counter = digest
 
                     ev_list = [{
                         "source_chunk_id": cid,
-                        "exact_quote": quote,
+                        "exact_quote": raw_text[c_start:c_end],
                         "char_start": c_start,
                         "char_end": c_end,
                         "provision_locator": locator

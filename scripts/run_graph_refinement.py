@@ -27,60 +27,9 @@ sys.path.insert(0, str(ROOT_DIR))
 from cluster.cluster_dispatcher import MultiNodeLLMDispatcher
 
 
-SYSTEM_PROMPT = """You are an expert Indian Regulatory Legal Knowledge Graph Auditor.
-Your task is to analyze the provided Verbatim Legal Text against its Currently Extracted Knowledge Graph Triplets.
-
-You must perform two tasks:
-1. AUDIT EXISTING TRIPLETS:
-   - For each extracted triplet, verify whether it is accurately grounded in the text.
-   - Mark is_valid: true if accurate, false if hallucinated, inverted, or distorted, with a concise critique.
-   - Include error_type: one of ["none", "hallucination", "inversion_or_lost_exception", "wrong_predicate", "unsupported_scope"]
-
-2. DISCOVER MISSING TRIPLETS:
-   - Identify regulatory obligations, prohibitions, permissions, defined terms, exceptions, or thresholds in the text that were MISSED by the current extraction.
-   - For every missing relation, provide:
-     * subject (canonical entity name) and subject_type (Authority, Instrument, Provision, Organization, Role, Requirement, DefinedTerm)
-     * predicate (MUST be one of: REQUIRES, PROHIBITS, PERMITS, APPLIES_TO, DEFINES, HAS_PROVISION, REFERS_TO, EXEMPTS_FROM, AMENDS, SUPERSEDES)
-     * object and object_type
-     * description: clear, qualified summary of the statutory relation
-     * exact_quote: verbatim text from the passage proving this relationship
-     * conditions: list of logical conditions (e.g. ["if asset turnover exceeds 10 crore"])
-     * exceptions: list of explicit statutory exceptions (e.g. ["Regional Rural Banks are exempt"])
-     * numeric_constraints: list of numeric thresholds (e.g. [{"metric": "CRAR", "operator": ">=", "value": 15, "unit": "percent"}])
-     * temporal_qualifiers: list of temporal constraints (e.g. [{"qualifier_type": "deadline", "value_text": "within 30 days"}])
-
-OUTPUT FORMAT:
-Return ONLY valid JSON matching this exact structure:
-{
-  "audited_triplets": [
-    {
-      "relationship_id": "R1",
-      "is_valid": true,
-      "critique": "Accurately represents Section 4 mandate.",
-      "error_type": "none"
-    }
-  ],
-  "missing_triplets": [
-    {
-      "subject": "Commercial Bank",
-      "subject_type": "Organization",
-      "predicate": "REQUIRES",
-      "object": "Submit Quarterly Capital Return",
-      "object_type": "Requirement",
-      "description": "Commercial Banks must submit quarterly capital adequacy returns to RBI.",
-      "exact_quote": "Every commercial bank shall submit a quarterly return on capital adequacy...",
-      "conditions": [],
-      "exceptions": ["Regional Rural Banks are exempt"],
-      "numeric_constraints": [
-        {"metric": "reporting frequency", "operator": "==", "value": "quarterly", "unit": "frequency"}
-      ],
-      "temporal_qualifiers": [
-        {"qualifier_type": "deadline", "value_text": "within 21 days from quarter end"}
-      ]
-    }
-  ]
-}
-"""
+from src.refinement_contract import SYSTEM_PROMPT, PROMPT_VERSION, validate_evaluation
+from src.config import ENTITY_TYPES, PERMITTED_RELATIONSHIP_ENDPOINTS
+import hashlib
 
 
 def extract_json_response(content: str) -> Dict[str, Any]:
@@ -108,36 +57,14 @@ def extract_json_response(content: str) -> Dict[str, Any]:
 
 
 def build_chunk_prompt(chunk: Dict[str, Any], existing_triplets: List[Dict[str, Any]]) -> str:
-    triplet_lines = []
-    for idx, t in enumerate(existing_triplets, 1):
-        subj = t.get("subject", "Unknown")
-        s_type = t.get("subject_type", "Entity")
-        pred = t.get("predicate", "RELATION")
-        obj = t.get("object", "Unknown")
-        o_type = t.get("object_type", "Entity")
-        desc = t.get("description", "")
-        conds = t.get("conditions_json") or []
-        excs = t.get("exceptions_json") or []
-
-        q_info = []
-        if conds:
-            q_info.append(f"Conditions: {conds}")
-        if excs:
-            q_info.append(f"Exceptions: {excs}")
-        q_str = f" ({'; '.join(q_info)})" if q_info else ""
-
-        triplet_lines.append(f"[{t.get('local_relationship_id') or f'R{idx}'}] ({subj}:{s_type}) --[{pred}]--> ({obj}:{o_type}) | {desc}{q_str}")
-
-    triplets_block = "\n".join(triplet_lines) if triplet_lines else "None (0 existing triplets extracted for this chunk)"
-
-    prompt = f"""=== VERBATIM REGULATORY TEXT (Chunk ID: {chunk['chunk_id']}) ===
-{chunk.get('raw_text', '').strip()}
-
-=== CURRENTLY EXTRACTED TRIPLETS ({len(existing_triplets)}) ===
-{triplets_block}
-
-Analyze the verbatim text, audit the existing triplets, and extract any missing statutory triplets. Output ONLY valid JSON."""
-    return prompt
+    payload = {
+        "chunk": chunk,
+        "existing_triplets": [dict(t, relationship_id=t.get("relationship_id") or t.get("local_relationship_id")) for t in existing_triplets],
+        "schema": {"entity_types": ENTITY_TYPES, "endpoint_rules": {
+            k: {side: sorted(types) for side, types in rule.items()}
+            for k, rule in PERMITTED_RELATIONSHIP_ENDPOINTS.items()}},
+    }
+    return json.dumps(payload, ensure_ascii=False)
 
 
 async def evaluate_batch(
@@ -145,11 +72,15 @@ async def evaluate_batch(
     dispatcher: MultiNodeLLMDispatcher,
     max_chunks: Optional[int] = None,
     concurrency: int = 8,
-    dry_run: bool = False
+    dry_run: bool = False,
+    max_tokens: int = 2048,
+    max_prompt_bytes: Optional[int] = None,
 ) -> Dict[str, Any]:
     with open(batch_path, "r", encoding="utf-8") as f:
         batch_data = json.load(f)
 
+    if concurrency < 1 or max_tokens < 1 or (max_prompt_bytes is not None and max_prompt_bytes < 1) or (max_chunks is not None and max_chunks < 1):
+        raise ValueError("concurrency and max_chunks must be positive")
     chunks = batch_data["chunks"]
     if max_chunks:
         chunks = chunks[:max_chunks]
@@ -168,7 +99,11 @@ async def evaluate_batch(
     # Set up checkpoints directory & file
     checkpoints_dir = batch_path.parent / "checkpoints"
     checkpoints_dir.mkdir(parents=True, exist_ok=True)
-    checkpoint_file = checkpoints_dir / f"checkpoint_{batch_id}.jsonl"
+    model_identity = sorted((n.url, n.model) for n in dispatcher.discover_nodes()) if not dry_run else []
+    fingerprint = hashlib.sha256((SYSTEM_PROMPT + json.dumps({"batch": batch_data, "models": model_identity,
+        "max_tokens": max_tokens, "max_prompt_bytes": max_prompt_bytes}, sort_keys=True)).encode()).hexdigest()
+    run_mode = "dry_run" if dry_run else "live"
+    checkpoint_file = checkpoints_dir / f"checkpoint_{batch_id}_{run_mode}_{fingerprint[:16]}.jsonl"
 
     # Load existing checkpoint items to support idempotent resumption
     completed_chunks: Dict[str, Dict[str, Any]] = {}
@@ -179,7 +114,7 @@ async def evaluate_batch(
                 if line_str:
                     try:
                         record = json.loads(line_str)
-                        if record.get("status") in ("success", "dry_run"):
+                        if record.get("status") == ("dry_run" if dry_run else "success") and record.get("input_hash") == fingerprint:
                             completed_chunks[record["chunk_id"]] = record
                     except Exception:
                         pass
@@ -209,7 +144,7 @@ async def evaluate_batch(
                 # Deterministic mock response for dry-run validation
                 audited = []
                 for i, t in enumerate(existing, 1):
-                    rid = t.get("local_relationship_id") or f"R{i}"
+                    rid = t.get("relationship_id") or t.get("local_relationship_id")
                     audited.append({
                         "relationship_id": rid,
                         "is_valid": True,
@@ -218,21 +153,7 @@ async def evaluate_batch(
                     })
                 mock_eval = {
                     "audited_triplets": audited,
-                    "missing_triplets": [
-                        {
-                            "subject": "Regulated Entity",
-                            "subject_type": "Organization",
-                            "predicate": "REQUIRES",
-                            "object": "Compliance Audit",
-                            "object_type": "Requirement",
-                            "description": "Entity must conduct an annual compliance audit.",
-                            "exact_quote": chunk.get("raw_text", "")[:80].strip(),
-                            "conditions": [],
-                            "exceptions": [],
-                            "numeric_constraints": [],
-                            "temporal_qualifiers": []
-                        }
-                    ] if len(existing) == 0 and len(chunk.get("raw_text", "")) > 50 else []
+                    "missing_triplets": []
                 }
                 res = {
                     "chunk_id": cid,
@@ -247,19 +168,23 @@ async def evaluate_batch(
                 ]
                 t0 = time.time()
                 try:
+                    if not chunk.get("raw_text", "").strip():
+                        raise ValueError("Cannot audit without source text")
+                    if max_prompt_bytes is not None and len((SYSTEM_PROMPT + prompt).encode("utf-8")) > max_prompt_bytes:
+                        raise ValueError("Prompt exceeds byte budget; split the work or explicitly increase budget after checking worker context")
                     resp = await dispatcher.chat_completion(
                         messages=messages,
                         temperature=0.0,
-                        max_tokens=2048,
+                        max_tokens=max_tokens,
                         response_format={"type": "json_object"}
                     )
                     elapsed = time.time() - t0
+                    if resp["choices"][0].get("finish_reason") != "stop":
+                        raise ValueError("Incomplete model response (not finish_reason=stop)")
                     content = resp["choices"][0]["message"]["content"]
                     parsed = extract_json_response(content)
 
-                    # Ensure standard keys exist
-                    parsed.setdefault("audited_triplets", [])
-                    parsed.setdefault("missing_triplets", [])
+                    validate_evaluation(parsed, existing, chunk["raw_text"])
 
                     res = {
                         "chunk_id": cid,
@@ -275,7 +200,14 @@ async def evaluate_batch(
                         "status": "failed"
                     }
 
-            # Atomically append to checkpoint file
+            res["user_prompt"] = prompt
+            res["input_hash"] = fingerprint
+            res["prompt_version"] = PROMPT_VERSION
+            res["prompt_hash"] = hashlib.sha256((SYSTEM_PROMPT + prompt).encode()).hexdigest()
+            if not dry_run and res["status"] == "success":
+                res["model"] = resp.get("model")
+                res["usage"] = resp.get("usage")
+            # Serialize checkpoint writes within this process
             async with file_lock:
                 completed_count += 1
                 with open(checkpoint_file, "a", encoding="utf-8") as fp:
@@ -299,7 +231,7 @@ async def evaluate_batch(
     # Run pending chunks concurrently
     if pending_chunks:
         tasks = [process_single_chunk(c, i) for i, c in enumerate(pending_chunks, 1)]
-        await asyncio.gather(*tasks, return_exceptions=True)
+        await asyncio.gather(*tasks)
 
     # Read back complete consolidated results from checkpoint file
     all_records: Dict[str, Dict[str, Any]] = {}
@@ -331,7 +263,7 @@ async def evaluate_batch(
             total_audited += 1
             if a.get("is_valid"):
                 total_valid += 1
-            else:
+            elif a.get("is_valid") is False:
                 total_invalid += 1
         total_missing += len(eval_data.get("missing_triplets", []))
 
@@ -339,6 +271,10 @@ async def evaluate_batch(
 
     summary = {
         "batch_id": batch_id,
+        "input_hash": fingerprint,
+        "prompt_version": PROMPT_VERSION,
+        "system_prompt": SYSTEM_PROMPT,
+        "execution_mode": run_mode,
         "document_title": batch_data.get("document_title", "Unknown"),
         "total_chunks_evaluated": len(chunks),
         "total_audited_triplets": total_audited,
@@ -350,7 +286,7 @@ async def evaluate_batch(
     }
 
     # Save finalized results JSON
-    results_dir = batch_path.parent / "results"
+    results_dir = batch_path.parent / ("dry_run_results" if dry_run else "results")
     results_dir.mkdir(parents=True, exist_ok=True)
     out_file = results_dir / f"refinement_results_{batch_id}.json"
 
@@ -380,6 +316,8 @@ def main():
     parser.add_argument("--concurrency", type=int, default=8, help="Number of concurrent requests across cluster workers (default: 8).")
     parser.add_argument("--registry-dir", type=str, default=None, help="Path to cluster node registry directory.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated static node URLs.")
+    parser.add_argument("--max-tokens", type=int, default=2048, help="Maximum response tokens; incomplete responses fail validation.")
+    parser.add_argument("--max-prompt-bytes", type=int, default=None, help="Optional input byte budget; unset preserves existing request sizes.")
     parser.add_argument("--dry-run", action="store_true", help="Run local mock dry-run without calling LLMs.")
 
     args = parser.parse_args()
@@ -397,7 +335,9 @@ def main():
             dispatcher=dispatcher,
             max_chunks=args.max_chunks,
             concurrency=args.concurrency,
-            dry_run=args.dry_run
+            dry_run=args.dry_run,
+            max_tokens=args.max_tokens,
+            max_prompt_bytes=args.max_prompt_bytes
         )
     )
 

@@ -11,6 +11,7 @@ import asyncio
 import logging
 from typing import Dict, Any, List, Optional, Tuple
 from pathlib import Path
+from urllib.parse import urlsplit
 
 try:
     import aiohttp
@@ -120,8 +121,8 @@ class MultiNodeLLMDispatcher:
             discovered[clean_url] = LLMNode({
                 "job_id": "static",
                 "task_id": str(i),
-                "hostname": clean_url.replace("http://", "").split(":")[0],
-                "port": clean_url.split(":")[-1] if ":" in clean_url else 8080,
+                "hostname": urlsplit(clean_url).hostname or "unknown",
+                "port": urlsplit(clean_url).port or (443 if urlsplit(clean_url).scheme == "https" else 80),
                 "url": clean_url,
                 "gpu": "Pre-configured",
                 "model": "Default",
@@ -235,7 +236,6 @@ class MultiNodeLLMDispatcher:
                         async with session.post(endpoint, json=payload) as resp:
                             if resp.status == 200:
                                 data = await resp.json()
-                                node.active_requests = max(0, node.active_requests - 1)
                                 node.total_completed += 1
                                 return data
                             else:
@@ -247,7 +247,6 @@ class MultiNodeLLMDispatcher:
                                 last_error = RuntimeError(f"HTTP {resp.status}: {err_text}")
                 else:
                     data = await asyncio.to_thread(self._chat_completion_urllib, node, payload)
-                    node.active_requests = max(0, node.active_requests - 1)
                     node.total_completed += 1
                     return data
             except Exception as e:
