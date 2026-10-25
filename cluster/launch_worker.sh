@@ -36,8 +36,12 @@ mkdir -p "$REGISTRY_DIR" "$BASE_DIR/logs"
 if [ -f /etc/profile.d/modules.sh ]; then
     source /etc/profile.d/modules.sh
 fi
-source /etc/profile 2>/dev/null || true
 module load u22/singularity-ce 2>/dev/null || module load singularity 2>/dev/null || true
+module load cuda/12.2 2>/dev/null || module load cuda/12.1 2>/dev/null || module load cuda/11.8 2>/dev/null || module load u22/cuda-12.2 2>/dev/null || module load cuda 2>/dev/null || true
+
+if [ -d "/usr/local/cuda/lib64" ]; then
+    export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+fi
 
 # Check for Native CUDA binary first (preferred over Singularity)
 NATIVE_BIN="$BASE_DIR/bin/llama-server"
