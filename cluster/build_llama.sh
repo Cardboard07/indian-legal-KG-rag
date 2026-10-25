@@ -72,9 +72,9 @@ cmake -B build \
     -DCMAKE_CUDA_ARCHITECTURES="89;75" \
     -DCMAKE_BUILD_TYPE=Release
 
-# Cap compilation concurrency to 4 to avoid OOM memory limits on login nodes
-NUM_CORES=4
-echo "Compiling llama-server using $NUM_CORES parallel jobs (OOM-safe)..."
+# Cap parallel jobs to 4 to prevent Out-Of-Memory (Signal 9 / Kill signal) during heavy CUDA compilation
+NUM_CORES="${BUILD_JOBS:-4}"
+echo "Compiling llama-server using $NUM_CORES parallel compiler jobs..."
 cmake --build build --config Release -j "$NUM_CORES" --target llama-server
 
 # 4. Install binaries and libraries to $BIN_DIR
