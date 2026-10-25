@@ -24,17 +24,9 @@ if [ -f /etc/profile.d/modules.sh ]; then
 fi
 source /etc/profile 2>/dev/null || true
 
-# Try loading CUDA modules if nvcc is not in PATH
-if ! command -v nvcc &>/dev/null; then
-    echo "Searching and loading CUDA module..."
-    module load cuda/12.2 2>/dev/null || \
-    module load cuda/12.1 2>/dev/null || \
-    module load cuda/12.0 2>/dev/null || \
-    module load cuda/11.8 2>/dev/null || \
-    module load u22/cuda-12.2 2>/dev/null || \
-    module load u22/cuda-12.1 2>/dev/null || \
-    module load cuda 2>/dev/null || true
-fi
+# Load exact Turing environment modules
+module load u22/cmake/3.31.7 2>/dev/null || module load u22/cmake/4.0.1 2>/dev/null || true
+module load u22/cuda/12.4 2>/dev/null || module load u22/cuda/12.9 2>/dev/null || module load u22/cuda/11.8 2>/dev/null || true
 
 # Fallback: check /usr/local/cuda
 if ! command -v nvcc &>/dev/null; then
@@ -42,11 +34,6 @@ if ! command -v nvcc &>/dev/null; then
         export PATH="/usr/local/cuda/bin:$PATH"
         export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
     fi
-fi
-
-# Try loading cmake if missing
-if ! command -v cmake &>/dev/null; then
-    module load cmake 2>/dev/null || module load u22/cmake 2>/dev/null || true
 fi
 
 echo "Compiler & Tooling Check:"
@@ -83,6 +70,7 @@ echo ""
 echo "Configuring build with CMake (CUDA enabled)..."
 cmake -B build \
     -DGGML_CUDA=ON \
+    -DCMAKE_CUDA_ARCHITECTURES="89;75" \
     -DCMAKE_BUILD_TYPE=Release
 
 NUM_CORES=$(nproc 2>/dev/null || echo 8)
