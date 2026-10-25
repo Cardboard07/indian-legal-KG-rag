@@ -65,11 +65,15 @@ fi
 
 # 3. Build native llama-server with CUDA
 cd "$SRC_DIR"
-echo ""
-echo "Configuring build with CMake (CUDA enabled)..."
+# Remove old cache to ensure new flags (e.g. LLAMA_OPENSSL=OFF) are picked up cleanly
+rm -f build/CMakeCache.txt
+
 cmake -B build \
     -DGGML_CUDA=ON \
     -DCMAKE_CUDA_ARCHITECTURES="89;75" \
+    -DLLAMA_OPENSSL=OFF \
+    -DCMAKE_INSTALL_RPATH="\$ORIGIN" \
+    -DCMAKE_BUILD_RPATH="\$ORIGIN;$BIN_DIR" \
     -DCMAKE_BUILD_TYPE=Release
 
 # Cap parallel jobs to 4 to prevent Out-Of-Memory (Signal 9 / Kill signal) during heavy CUDA compilation
