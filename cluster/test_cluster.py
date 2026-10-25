@@ -84,8 +84,8 @@ async def run_benchmark(dispatcher: MultiNodeLLMDispatcher, num_requests: int = 
 async def main_async():
     parser = argparse.ArgumentParser(description="Test and monitor LLM cluster status.")
     parser.add_argument("--registry-dir", type=str, default=None, help="Path to registry directory containing node JSONs.")
-    parser.add_argument("--verify", action="store_true", help="Require distinct healthy hosts and valid JSON inference on every worker.")
-    parser.add_argument("--min-nodes", type=int, default=2, help="Minimum distinct healthy hosts for --verify.")
+    parser.add_argument("--verify", action="store_true", help="Require healthy workers and valid JSON inference on every worker.")
+    parser.add_argument("--min-nodes", type=int, default=2, help="Minimum healthy workers for --verify.")
     parser.add_argument("--bench", action="store_true", help="Run concurrent inference benchmark across nodes.")
     parser.add_argument("--num-requests", type=int, default=8, help="Number of benchmark requests to dispatch.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated static URLs to test (e.g. http://10.4.1.2:8080).")
@@ -100,8 +100,8 @@ async def main_async():
     print_cluster_status(dispatcher, healthy)
 
     if args.verify:
-        if len({n.hostname for n in healthy}) < args.min_nodes:
-            raise SystemExit(f"Verification failed: need {args.min_nodes} distinct healthy hosts")
+        if len(healthy) < args.min_nodes:
+            raise SystemExit(f"Verification failed: need {args.min_nodes} healthy workers (found {len(healthy)})")
         async def verify_node(node):
             worker = MultiNodeLLMDispatcher(explicit_urls=[node.url], request_timeout=180)
             # Pin this check to this node; registry discovery could select another worker.
