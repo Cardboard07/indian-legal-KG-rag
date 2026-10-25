@@ -23,9 +23,9 @@ REGISTRY_DIR="$BASE_DIR/registry"
 MODELS_DIR="$BASE_DIR/models"
 CONTAINER_PATH="$BASE_DIR/containers/llama-cpp-cuda.sif"
 
-# Auto-detect GGUF model if not explicitly specified
+# Auto-detect GGUF model if not explicitly specified (filter for valid >1GB files)
 if [ -z "$MODEL_PATH" ]; then
-    DETECTED_MODEL=$(find "$MODELS_DIR" -maxdepth 1 -name "*.gguf" 2>/dev/null | head -n 1)
+    DETECTED_MODEL=$(find "$MODELS_DIR" -maxdepth 1 -name "*.gguf" -size +1G 2>/dev/null | head -n 1)
     MODEL_PATH="${DETECTED_MODEL:-$MODELS_DIR/Qwen2.5-32B-Instruct-Q6_K.gguf}"
 fi
 
