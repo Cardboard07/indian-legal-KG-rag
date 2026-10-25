@@ -75,6 +75,18 @@ async def run_overnight_queue(
     explicit_urls = [u.strip() for u in urls.split(",") if u.strip()] if urls else None
     dispatcher = MultiNodeLLMDispatcher(registry_dir=registry_dir, explicit_urls=explicit_urls)
 
+    print("Checking LLM cluster connectivity before queue startup...")
+    healthy_nodes = await dispatcher.update_health()
+    if not healthy_nodes:
+        print("\n" + "!" * 85)
+        print("FATAL ERROR: 0 healthy LLM worker nodes found in cluster!")
+        print("Cannot start overnight queue without active inference workers.")
+        print("Check cluster health with: python cluster/test_cluster.py")
+        print("Launch workers with      : bash cluster/launch_array.sh 4 l40s 08:00:00")
+        print("!" * 85 + "\n")
+        return
+    print(f"Cluster Ready: {len(healthy_nodes)} healthy worker node(s) online: {', '.join(n.id for n in healthy_nodes)}\n")
+
     # Find matching batch files
     all_files = sorted(list(batch_dir.glob(pattern)), key=natural_sort_key)
     # Filter out result and checkpoint files if placed in the same folder
@@ -99,6 +111,7 @@ async def run_overnight_queue(
     cum_valid = 0
     cum_invalid = 0
     cum_missing = 0
+    consecutive_failures = 0
     t_start_total = time.time()
 
     for idx, bpath in enumerate(batch_files, 1):
@@ -119,6 +132,7 @@ async def run_overnight_queue(
                 dry_run=False,
             )
             elapsed = time.time() - t0
+            consecutive_failures = 0
 
             chunks_cnt = summary.get("total_chunks_evaluated", 0)
             audited_cnt = summary.get("total_audited_triplets", 0)
@@ -147,9 +161,26 @@ async def run_overnight_queue(
             )
 
         except Exception as ex:
+            consecutive_failures += 1
+            err_str = str(ex)
             print(f"\n[ERROR] Failed processing batch {bpath.name}: {ex}")
             with open(log_file, "a", encoding="utf-8") as fp:
                 fp.write(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Batch {bpath.name} FAILED: {ex}\n")
+
+            if any(s in err_str for s in ("FATAL CLUSTER ERROR", "No healthy LLM worker", "Cannot start batch: 0")):
+                print("\n" + "!" * 85)
+                print("FATAL: LLM Cluster outage detected! Halting overnight queue runner immediately.")
+                print("Please check Turing worker status: python cluster/test_cluster.py")
+                print("To launch new 8-hour workers    : bash cluster/launch_array.sh 4 l40s 08:00:00")
+                print("!" * 85 + "\n")
+                break
+
+            if consecutive_failures >= 3:
+                print("\n" + "!" * 85)
+                print(f"CIRCUIT BREAKER TRIGGERED: {consecutive_failures} consecutive batches failed!")
+                print("Aborting queue runner to prevent runaway failures.")
+                print("!" * 85 + "\n")
+                break
 
         if delay_between_batches > 0:
             await asyncio.sleep(delay_between_batches)

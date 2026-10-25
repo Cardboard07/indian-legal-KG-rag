@@ -96,10 +96,21 @@ async def evaluate_batch(
     print(f"Mode            : {'DRY RUN (Mock Inference)' if dry_run else 'LIVE CLUSTER INFERENCE'}")
     print("=" * 80 + "\n")
 
+    if not dry_run:
+        healthy_nodes = await dispatcher.update_health()
+        if not healthy_nodes:
+            raise RuntimeError(
+                f"FATAL CLUSTER ERROR: No healthy LLM worker nodes available in cluster! "
+                f"Registered nodes: {len(dispatcher.nodes)}. "
+                f"Did the Slurm job hit its time limit or are workers offline? "
+                f"Check with 'python cluster/test_cluster.py' or 'squeue -u $USER'."
+            )
+        print(f"Active Cluster Nodes: {len(healthy_nodes)} | {', '.join(n.id for n in healthy_nodes)}\n")
+
     # Set up checkpoints directory & file
     checkpoints_dir = batch_path.parent / "checkpoints"
     checkpoints_dir.mkdir(parents=True, exist_ok=True)
-    model_identity = sorted((n.url, n.model) for n in dispatcher.discover_nodes()) if not dry_run else []
+    model_identity = sorted(list({n.model for n in dispatcher.discover_nodes() if n.model})) if not dry_run else []
     fingerprint = hashlib.sha256((SYSTEM_PROMPT + json.dumps({"batch": batch_data, "models": model_identity,
         "max_tokens": max_tokens, "max_prompt_bytes": max_prompt_bytes}, sort_keys=True)).encode()).hexdigest()
     run_mode = "dry_run" if dry_run else "live"
@@ -193,10 +204,14 @@ async def evaluate_batch(
                         "status": "success"
                     }
                 except Exception as ex:
+                    err_msg = str(ex)
+                    # Escalate fatal cluster connection drops immediately!
+                    if any(s in err_msg for s in ("No healthy LLM worker", "Cannot start batch: 0", "Connection refused")):
+                        raise RuntimeError(f"FATAL CLUSTER ERROR: {err_msg}") from ex
                     res = {
                         "chunk_id": cid,
                         "elapsed_sec": 0.0,
-                        "error": str(ex),
+                        "error": err_msg,
                         "status": "failed"
                     }
 
@@ -218,10 +233,11 @@ async def evaluate_batch(
                 n_audited = len(eval_data.get("audited_triplets", []))
                 n_missing = len(eval_data.get("missing_triplets", []))
                 status_str = "OK" if res["status"] in ("success", "dry_run") else "ERR"
+                err_snippet = f" | ERROR: {res['error'][:60]}" if res.get("error") else ""
 
                 print(
                     f"[{completed_count:3d}/{total_chunks_count:3d}] Chunk {cid[:28]} | "
-                    f"Status: {status_str} | Audited: {n_audited} | Missing: {n_missing} | "
+                    f"Status: {status_str}{err_snippet} | Audited: {n_audited} | Missing: {n_missing} | "
                     f"{res.get('elapsed_sec', 0.0):.2f}s",
                     flush=True
                 )
@@ -242,7 +258,13 @@ async def evaluate_batch(
                 if line_str:
                     try:
                         record = json.loads(line_str)
-                        all_records[record["chunk_id"]] = record
+                        cid = record.get("chunk_id")
+                        if not cid:
+                            continue
+                        # Never overwrite a successful evaluation with a failed record from a crash
+                        if cid in all_records and all_records[cid].get("status") in ("success", "dry_run") and record.get("status") not in ("success", "dry_run"):
+                            continue
+                        all_records[cid] = record
                     except Exception:
                         pass
 
@@ -252,11 +274,14 @@ async def evaluate_batch(
     total_invalid = 0
     total_missing = 0
     final_results = []
+    failed_chunks = []
 
     for c in chunks:
         cid = c["chunk_id"]
         rec = all_records.get(cid, {"chunk_id": cid, "status": "unprocessed"})
         final_results.append(rec)
+        if rec.get("status") in ("failed", "unprocessed"):
+            failed_chunks.append(rec)
 
         eval_data = rec.get("evaluation", {})
         for a in eval_data.get("audited_triplets", []):
@@ -268,6 +293,14 @@ async def evaluate_batch(
         total_missing += len(eval_data.get("missing_triplets", []))
 
     total_time = time.time() - t_start
+
+    # If chunks failed, abort before saving corrupted final result file
+    if failed_chunks:
+        first_err = failed_chunks[0].get("error", "Unknown error")
+        raise RuntimeError(
+            f"Batch {batch_id} incomplete: {len(failed_chunks)}/{len(chunks)} chunks failed! "
+            f"First error: {first_err}. Checkpoint preserved at {checkpoint_file.name} for resumption."
+        )
 
     summary = {
         "batch_id": batch_id,
@@ -285,7 +318,7 @@ async def evaluate_batch(
         "results": final_results
     }
 
-    # Save finalized results JSON
+    # Save finalized results JSON only on 100% completion
     results_dir = batch_path.parent / ("dry_run_results" if dry_run else "results")
     results_dir.mkdir(parents=True, exist_ok=True)
     out_file = results_dir / f"refinement_results_{batch_id}.json"

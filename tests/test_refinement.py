@@ -81,6 +81,11 @@ class RefinementTests(unittest.TestCase):
     def test_dry_run_cannot_skip_live_inference(self):
         class FakeDispatcher(MultiNodeLLMDispatcher):
             calls = 0
+            async def update_health(self):
+                n = LLMNode({"url": "http://127.0.0.1:8080", "model": "mock-qwen"})
+                n.is_healthy = True
+                self.nodes[n.url] = n
+                return [n]
             async def chat_completion(self, **kwargs):
                 self.calls += 1
                 return {"choices": [{"finish_reason": "stop", "message": {"content": json.dumps(response())}}]}
