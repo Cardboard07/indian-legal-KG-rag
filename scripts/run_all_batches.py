@@ -68,6 +68,7 @@ async def run_overnight_queue(
     max_tokens: int = 2048,
     max_prompt_bytes: Optional[int] = None,
     delay_between_batches: float = 1.0,
+    reset: bool = False,
     registry_dir: Optional[str] = None,
     urls: Optional[str] = None,
 ):
@@ -83,14 +84,13 @@ async def run_overnight_queue(
         print(f"No matching batch files found in {batch_dir} with pattern '{pattern}'.")
         return
 
-    print("=" * 85)
-    print(" " * 26 + "OVERNIGHT MULTI-BATCH REFINEMENT QUEUE")
-    print("=" * 85)
-    print(f"Batch Directory       : {batch_dir}")
-    print(f"Total Batches Found   : {len(batch_files)}")
-    print(f"Concurrency per Batch : {concurrency}")
-    print(f"Max Response Tokens   : {max_tokens}")
-    print("=" * 85 + "\n")
+    if reset:
+        print("[RESET] Clearing previous checkpoints and results in batch directory...")
+        for p in (batch_dir / "checkpoints").glob("*.jsonl"):
+            p.unlink()
+        for p in (batch_dir / "results").glob("*.json"):
+            p.unlink()
+        print("[RESET] Clean state ready.")
 
     log_file = batch_dir / "overnight_run.log"
 
@@ -178,6 +178,7 @@ def main():
     parser.add_argument("--max-tokens", type=int, default=2048, help="Maximum response tokens per request (default: 2048).")
     parser.add_argument("--max-prompt-bytes", type=int, default=None, help="Optional maximum prompt bytes.")
     parser.add_argument("--delay", type=float, default=1.0, help="Seconds to pause between batches.")
+    parser.add_argument("--reset", action="store_true", help="Clear prior checkpoints and results in batch directory before starting.")
     parser.add_argument("--registry-dir", type=str, default=None, help="Cluster registry directory.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated explicit URLs.")
 
@@ -195,6 +196,7 @@ def main():
             max_tokens=args.max_tokens,
             max_prompt_bytes=args.max_prompt_bytes,
             delay_between_batches=args.delay,
+            reset=args.reset,
             registry_dir=args.registry_dir,
             urls=args.urls,
         )

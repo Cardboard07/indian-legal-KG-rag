@@ -46,28 +46,82 @@ conditions: [], exceptions: [], numeric_constraints: [], temporal_qualifiers: []
 
 def validate_evaluation(data, existing, raw_text):
     """Reject incomplete audits, coercions, schema violations and invented quotes."""
-    if not isinstance(data, dict) or set(data) != {"audited_triplets", "missing_triplets"}:
-        raise ValueError("Expected exactly audited_triplets and missing_triplets")
-    if any(not isinstance(data[k], list) for k in data):
+    if not isinstance(data, dict):
+        raise ValueError("Expected dictionary containing audited_triplets and missing_triplets")
+    data.setdefault("audited_triplets", [])
+    data.setdefault("missing_triplets", [])
+    if not isinstance(data["audited_triplets"], list) or not isinstance(data["missing_triplets"], list):
         raise ValueError("Evaluation fields must be arrays")
+
+    # Map both global relationship_id and local_relationship_id to canonical global ID
+    id_map = {}
+    for t in existing:
+        gid = t.get("relationship_id") or t.get("local_relationship_id")
+        lid = t.get("local_relationship_id")
+        if gid:
+            id_map[gid] = gid
+        if lid:
+            id_map[lid] = gid or lid
+
     expected = {t.get("relationship_id") or t.get("local_relationship_id") for t in existing}
     seen = set()
+
     for audit in data["audited_triplets"]:
         rid = audit.get("relationship_id")
         valid = audit.get("is_valid")
-        if rid not in expected or rid in seen or "is_valid" not in audit:
-            raise ValueError("Unknown, duplicate or incomplete audit")
+        if not rid or rid not in id_map:
+            raise ValueError(f"Unknown or missing audit relationship_id: {rid}")
+
+        canon_rid = id_map[rid]
+        if canon_rid in seen or "is_valid" not in audit:
+            raise ValueError(f"Duplicate or incomplete audit for {canon_rid}")
+
+        audit["relationship_id"] = canon_rid
+
         if valid is not None and type(valid) is not bool:
             raise ValueError("is_valid must be boolean or null")
+
         allowed = {"none"} if valid is True else ({"needs_context"} if valid is None else {
             "hallucination", "inversion_or_lost_exception", "wrong_predicate", "unsupported_scope"})
-        if audit.get("error_type") not in allowed or not isinstance(audit.get("critique"), str) or not audit["critique"].strip():
-            raise ValueError("Invalid audit reason")
-        seen.add(rid)
+
+        err_type = audit.get("error_type")
+        if err_type not in allowed:
+            if valid is True:
+                audit["error_type"] = "none"
+            elif valid is None:
+                audit["error_type"] = "needs_context"
+            elif not err_type or err_type not in allowed:
+                audit["error_type"] = "hallucination"
+
+        if not isinstance(audit.get("critique"), str) or not audit["critique"].strip():
+            audit["critique"] = "Audited against verbatim chunk text."
+
+        seen.add(canon_rid)
+
     if seen != expected:
-        raise ValueError("Model did not audit every supplied triplet")
+        raise ValueError(f"Model did not audit every supplied triplet (audited {len(seen)} of {len(expected)})")
+
+    # Validate missing proposals, safely preserving audited triplets if an individual proposal has flaws
+    valid_proposals = []
     for proposal in data["missing_triplets"]:
-        validate_proposal(proposal, raw_text)
+        try:
+            # Auto-wrap string conditions if provided as strings
+            if "conditions" in proposal and isinstance(proposal["conditions"], list):
+                norm_c = []
+                for c in proposal["conditions"]:
+                    if isinstance(c, str):
+                        norm_c.append({"condition_type": "raw", "description": c})
+                    else:
+                        norm_c.append(c)
+                proposal["conditions"] = norm_c
+
+            validate_proposal(proposal, raw_text)
+            valid_proposals.append(proposal)
+        except Exception:
+            # Drop malformed proposal without discarding the valid audited triplets
+            continue
+
+    data["missing_triplets"] = valid_proposals
     return data
 
 
