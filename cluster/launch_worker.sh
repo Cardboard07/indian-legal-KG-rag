@@ -157,7 +157,7 @@ if [ -x "$NATIVE_BIN" ]; then
       --ctx-size 32768 \
       -ngl 99 \
       --parallel 2 \
-      -fa \
+      --flash-attn on \
       --host 0.0.0.0 \
       --port $PORT
 else
