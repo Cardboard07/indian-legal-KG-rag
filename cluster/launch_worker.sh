@@ -39,10 +39,19 @@ fi
 source /etc/profile 2>/dev/null || true
 module load u22/singularity-ce 2>/dev/null || module load singularity 2>/dev/null || true
 
-# Auto-pull container image if not already present
+# Auto-detect existing container or pull if missing
+if [ ! -f "$CONTAINER_PATH" ] && [ -f "/home/$USER/llama_server/llama-cpp-cuda.sif" ]; then
+    echo "[Worker] Found existing container in ~/llama_server/llama-cpp-cuda.sif. Linking..."
+    mkdir -p "$(dirname "$CONTAINER_PATH")"
+    ln -sf "/home/$USER/llama_server/llama-cpp-cuda.sif" "$CONTAINER_PATH"
+fi
+
 if [ ! -f "$CONTAINER_PATH" ]; then
     echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node..."
     mkdir -p "$(dirname "$CONTAINER_PATH")"
+    # GODEBUG=http2client=0 disables HTTP/2 to prevent stream PROTOCOL_ERROR on large GHCR layers
+    export GODEBUG=http2client=0
+    singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda || \
     singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
 fi
 
