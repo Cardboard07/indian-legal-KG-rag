@@ -151,12 +151,13 @@ EOF
 
 if [ -x "$NATIVE_BIN" ]; then
     echo "[Worker] Launching NATIVE CUDA llama-server binary directly..."
-    export LD_LIBRARY_PATH="$BASE_DIR/bin:$LD_LIBRARY_PATH"
+    export LD_LIBRARY_PATH="/home/u22/cuda-12.4/lib64:$BASE_DIR/bin:$LD_LIBRARY_PATH"
     exec "$NATIVE_BIN" \
       -m "$MODEL_PATH" \
       --ctx-size 32768 \
       -ngl 99 \
       --parallel 2 \
+      -fa \
       --host 0.0.0.0 \
       --port $PORT
 else
