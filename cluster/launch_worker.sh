@@ -47,12 +47,27 @@ if [ ! -f "$CONTAINER_PATH" ] && [ -f "/home/$USER/llama_server/llama-cpp-cuda.s
 fi
 
 if [ ! -f "$CONTAINER_PATH" ]; then
-    echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node..."
+    echo "[Worker] Container image not found at $CONTAINER_PATH. Pulling on compute node using /tmp scratch..."
     mkdir -p "$(dirname "$CONTAINER_PATH")"
-    # GODEBUG=http2client=0 disables HTTP/2 to prevent stream PROTOCOL_ERROR on large GHCR layers
+
+    # Free any partial cache in /home to stay under 50GB quota
+    rm -rf "$HOME/.singularity/cache" 2>/dev/null || true
+
+    # Direct temporary cache & layer extraction to node-local /tmp (prevents home quota exhaustion)
+    export SINGULARITY_TMPDIR="/tmp/${USER}_sing_tmp_$$"
+    export SINGULARITY_CACHEDIR="/tmp/${USER}_sing_cache_$$"
+    mkdir -p "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR"
     export GODEBUG=http2client=0
-    singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda || \
-    singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
+
+    echo "[Worker] Pulling container with temporary dirs in /tmp..."
+    if ! singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda; then
+        echo "[Worker] Initial pull failed. Retrying with fallback..."
+        singularity pull "$CONTAINER_PATH" docker://ghcr.io/ggml-org/llama.cpp:server-cuda
+    fi
+
+    # Clean up node /tmp build artifacts
+    rm -rf "$SINGULARITY_TMPDIR" "$SINGULARITY_CACHEDIR" 2>/dev/null || true
+    echo "[Worker] Container built successfully at $CONTAINER_PATH!"
 fi
 
 # Determine Job and Task ID
