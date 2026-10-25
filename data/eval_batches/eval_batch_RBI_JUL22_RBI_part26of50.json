@@ -1,0 +1,4057 @@
+{
+  "batch_id": "eval_batch_RBI_JUL22_RBI_part26of50",
+  "document_id": "RBI::366::Circular::JUL22_RBI",
+  "document_title": "JUL22 RBI",
+  "regulator": "RBI",
+  "part_index": 26,
+  "total_parts": 50,
+  "total_chunks": 30,
+  "total_existing_entities": 97,
+  "total_existing_triplets": 67,
+  "chunks": [
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk757.md",
+      "chunk_index": 757,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 32,
+      "raw_text": "- iv. Cut-loss limit prescribed;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk758.md",
+      "chunk_index": 758,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 148,
+      "raw_text": "- v. Defeasance periods (product-wise), i.e., time taken to liquidate the position on the basis of liquidity in the secondary market are prescribed;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "chunk_index": 759,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 296,
+      "raw_text": "- e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "chunk_index": 760,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 705,
+      "raw_text": "- f) Within each time bucket, there could be mismatches depending on cash inflows and outflows. While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days. The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets. NBFCs, however, are expected to monitor their cumulative mismatches (running total) across all other time buckets upto 1 year by establishing internal prudential limits"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "chunk_index": 761,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 262,
+      "raw_text": "- g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows. A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "chunk_index": 762,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 282,
+      "raw_text": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "chunk_index": 763,
+      "section_locator": null,
+      "heading_hierarchy": "[\"E. Liquidity Risk Measurement - Stock Approach\"]",
+      "char_count": 723,
+      "raw_text": "## E. Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board. The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile. An indicative list of certain critical ratios to monitor re short-term 23 liability to total assets; shortterm liability to long term assets; commercial papers to total assets; non-convertible debentures (NCDs)(original maturity of less than one year) to total assets; short-term liabilities to total liabilities; long-term assets to total assets; etc."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk764.md",
+      "chunk_index": 764,
+      "section_locator": null,
+      "heading_hierarchy": "[\"F. Currency Risk\"]",
+      "char_count": 298,
+      "raw_text": "## F. Currency Risk  \nExchange rate volatility imparts a new dimension to the risk profile of an NBFC's balance sheets having foreign assets or liabilities. The Board of NBFCs should recognise the liquidity risk arising out of such exposures and develop suitable preparedness for managing the risk."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk765.md",
+      "chunk_index": 765,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 482,
+      "raw_text": "- a) The operational flexibility given to NBFCs in pricing most of the assets and liabilities imply the need for the financial system to hedge the Interest Rate Risk. Interest rate risk is the risk where changes in market interest rates might adversely affect an NBFC's financial condition. The changes in interest rates affect NBFCs in a larger way. The immediate impact of changes in interest rates is on NBFC's earnings (i.e. reported profits) by changing its Net Interest Income"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+      "chunk_index": 766,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 1004,
+      "raw_text": "- (NII). A long-term impact of changing interest rates is on NBFC's Market Value of Equity (MVE) or Net Worth as the economic value of NBFC's assets, liabilities and off-balance sheet positions get affected due to variation in market interest rates. The interest rate risk when viewed from these two perspectives is known as 'earnings perspective' and 'economic value perspective', respectively. The risk from the earnings perspective can be measured as changes in the Net Interest Income (NII) or Net Interest Margin (NIM). There are many analytical techniques for measurement and management of Interest Rate Risk. To begin with, the traditional Gap analysis is considered as a suitable method to measure the Interest Rate Risk in the first place. It is the intention of RBI to move over to the modern techniques of Interest Rate Risk measurement like Duration Gap Analysis, Simulation and Value at Risk over time when NBFCs acquire sufficient expertise and sophistication in acquiring and handling MIS."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk767.md",
+      "chunk_index": 767,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 317,
+      "raw_text": "- b) The Gap or Mismatch risk can be measured by calculating Gaps over different time intervals as at a given date. Gap analysis measures mismatches between rate sensitive liabilities and rate sensitive assets (including off-balance sheet positions). An asset or liability is normally classified as rate sensitive if:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk768.md",
+      "chunk_index": 768,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 72,
+      "raw_text": "- i. within the time interval under consideration, there is a cash flow;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk769.md",
+      "chunk_index": 769,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 74,
+      "raw_text": "- ii. the interest rate resets/reprices contractually during the interval;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+      "chunk_index": 770,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 64,
+      "raw_text": "- iii. dependent on RBI changes in the interest rates/Bank Rate;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk771.md",
+      "chunk_index": 771,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 81,
+      "raw_text": "- iv. it is contractually pre-payable or withdrawal before the stated maturities."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "chunk_index": 772,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 980,
+      "raw_text": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier. The difficult task in Gap analysis is determining rate sensitivity. All investments, advances, deposits, borrowings, purchased funds, etc. that mature/ reprice within a specified timeframe are interest rate sensitive. Similarly, any principal repayment of loan is also rate sensitive if the NBFC expects to receive it within the time horizon. This includes final principal payment and interim instalments. Certain assets and liabilities to receive/pay rates that vary with a reference rate. These assets and liabilities are repriced at pre-determined intervals and are rate sensitive at the time of repricing. While the interest rates on term deposits are fixed during their currency, the tranches of advances portfolio are basically floating. The interest rates on"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "chunk_index": 773,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 62,
+      "raw_text": "- d) The Gaps may be identified in the following time buckets:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk774.md",
+      "chunk_index": 774,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 20,
+      "raw_text": "- i) 1 day to 7 days"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "chunk_index": 775,
+      "section_locator": "Section/Clause 3",
+      "heading_hierarchy": "[]",
+      "char_count": 24,
+      "raw_text": "3. ii) 8 days to 14 days"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "chunk_index": 776,
+      "section_locator": "Section/Clause 4",
+      "heading_hierarchy": "[]",
+      "char_count": 39,
+      "raw_text": "4. iii) 15 days -30/31 days (One month)"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "chunk_index": 777,
+      "section_locator": "Section/Clause 5",
+      "heading_hierarchy": "[]",
+      "char_count": 33,
+      "raw_text": "5. iv) Over one month to 2 months"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk778.md",
+      "chunk_index": 778,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 32,
+      "raw_text": "- v) Over two months to 3 months"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "chunk_index": 779,
+      "section_locator": "Section/Clause 7",
+      "heading_hierarchy": "[]",
+      "char_count": 32,
+      "raw_text": "7. vi) Over 3 months to 6 months"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "chunk_index": 780,
+      "section_locator": "Section/Clause 8",
+      "heading_hierarchy": "[]",
+      "char_count": 31,
+      "raw_text": "8. vii) Over 6 months to 1 year"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "chunk_index": 781,
+      "section_locator": "Section/Clause 9",
+      "heading_hierarchy": "[]",
+      "char_count": 31,
+      "raw_text": "9. viii) Over 1 year to 3 years"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "chunk_index": 782,
+      "section_locator": "Section/Clause 10",
+      "heading_hierarchy": "[]",
+      "char_count": 31,
+      "raw_text": "10. ix) Over 3 years to 5 years"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk783.md",
+      "chunk_index": 783,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 17,
+      "raw_text": "- x) Over 5 years"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "chunk_index": 784,
+      "section_locator": "Section/Clause 12",
+      "heading_hierarchy": "[]",
+      "char_count": 21,
+      "raw_text": "12. xi) Non-sensitive"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk785.md",
+      "chunk_index": 785,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 577,
+      "raw_text": "- e) The Gap is the difference between Rate Sensitive Assets (RSA) and Rate Sensitive Liabilities (RSL) for each time bucket. The positive Gap indicates that it has more RSAs than RSLs whereas the negative Gap indicates that it has more RSLs than RLAs. The Gap reports indicate whether the institution is in a position to benefit from rising interest rates by having a positive Gap (RSA &gt; RSL) or whether it is in a position to benefit from declining interest rates by a negative Gap (RSL &gt; RSA). The Gap can, therefore, be used as a measure of interest rate sensitivity."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "chunk_index": 786,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 477,
+      "raw_text": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee. The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity. The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee. For working out EaR or NIM any of the current models may be used."
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk757.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk757.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk757.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk757.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk758.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk758.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk758.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk758.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_entity_id": "E3",
+      "mention": "ALCO",
+      "canonical_name": "Alco",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Alco.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Alco"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_entity_id": "E4",
+      "mention": "- e) The policy note recorded by the NBFCs on treatment of the investment portfo",
+      "canonical_name": "Alco Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Alco: - e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E3",
+      "mention": "main focus",
+      "canonical_name": "Main Focus",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Main Focus.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Main Focus"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E4",
+      "mention": "While the mismatches up to one year would be relevant since these provide early ",
+      "canonical_name": "Main Focus Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Main Focus: While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E5",
+      "mention": "days",
+      "canonical_name": "Days",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Days.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Days"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::E6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_entity_id": "E6",
+      "mention": "The net cumulative negative mismatches in the Statement of Structural Liquidity ",
+      "canonical_name": "Days Prohibition Rule",
+      "entity_type": "Requirement",
+      "description": "Prohibition governing Days: The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E6"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E3",
+      "mention": "Statement of Structural Liquidity",
+      "canonical_name": "Statement Of Structural Liquidity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Statement Of Structural Liquidity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Statement Of Structural Liquidity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E4",
+      "mention": "- g) The Statement of Structural Liquidity may be prepared by placing all cash i",
+      "canonical_name": "Statement Of Structural Liquidity Permission Rule",
+      "entity_type": "Requirement",
+      "description": "Permission governing Statement Of Structural Liquidity: - g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E5",
+      "mention": "A maturing liability",
+      "canonical_name": "A Maturing Liability",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: A Maturing Liability.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::A Maturing Liability"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::E6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_entity_id": "E6",
+      "mention": "A maturing liability shall be a cash outflow while a maturing asset shall be a c",
+      "canonical_name": "A Maturing Liability Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing A Maturing Liability: A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E6"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_entity_id": "E3",
+      "mention": "order to",
+      "canonical_name": "Order to",
+      "entity_type": "Provision",
+      "description": "Provision Order to of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Order to"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_entity_id": "E4",
+      "mention": "NBFCs",
+      "canonical_name": "Nbfcs",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Nbfcs.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Nbfcs"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_entity_id": "E5",
+      "mention": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dyn",
+      "canonical_name": "Nbfcs Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Nbfcs: - h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E5"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E3",
+      "mention": "Stock Approach  \nNBFCs",
+      "canonical_name": "Stock Approach  \nNbfcs",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Stock Approach  \nNbfcs.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Stock Approach  \nNbfcs"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E4",
+      "mention": "Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approa",
+      "canonical_name": "Stock Approach  \nNbfcs Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Stock Approach  \nNbfcs: Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E5",
+      "mention": "ratios and the internal limits",
+      "canonical_name": "Ratios And The Internal Limits",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Ratios And The Internal Limits.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Ratios And The Internal Limits"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::E6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_entity_id": "E6",
+      "mention": "The ratios and the internal limits shall be based on an NBFC's liquidity risk ma",
+      "canonical_name": "Ratios And The Internal Limits Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Ratios And The Internal Limits: The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E6"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk764.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk764.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk764.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk764.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk765.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk765.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk765.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk765.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk766.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk766.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk767.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk767.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk767.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk767.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk768.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk768.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk768.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk768.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk769.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk769.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk769.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk769.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk770.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk770.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk771.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk771.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk771.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk771.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_entity_id": "E3",
+      "mention": "Gap Report",
+      "canonical_name": "Gap Report",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Gap Report.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Gap Report"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_entity_id": "E4",
+      "mention": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, a",
+      "canonical_name": "Gap Report Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Gap Report: - c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_entity_id": "E3",
+      "mention": "Gaps",
+      "canonical_name": "Gaps",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Gaps.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Gaps"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_entity_id": "E4",
+      "mention": "- d) The Gaps may be identified in the following time buckets:",
+      "canonical_name": "Gaps Permission Rule",
+      "entity_type": "Requirement",
+      "description": "Permission governing Gaps: - d) The Gaps may be identified in the following time buckets:",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk774.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk774.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk774.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk774.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 3",
+      "canonical_name": "Section/Clause 3",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 3 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 3"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 4",
+      "canonical_name": "Section/Clause 4",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 4 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 5",
+      "canonical_name": "Section/Clause 5",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 5 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 5"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk778.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk778.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk778.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk778.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 7",
+      "canonical_name": "Section/Clause 7",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 7 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 7"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 8",
+      "canonical_name": "Section/Clause 8",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 8 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 8"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 9",
+      "canonical_name": "Section/Clause 9",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 9 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 9"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 10",
+      "canonical_name": "Section/Clause 10",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 10 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 10"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk783.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk783.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk783.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk783.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "local_entity_id": "E3",
+      "mention": "Section/Clause 12",
+      "canonical_name": "Section/Clause 12",
+      "entity_type": "Provision",
+      "description": "Provision Section/Clause 12 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section/Clause 12"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk785.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk785.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk785.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk785.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E3",
+      "mention": "Each NBFC",
+      "canonical_name": "Each Nbfc",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Each Nbfc.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Each Nbfc"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E4",
+      "mention": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval ",
+      "canonical_name": "Each Nbfc Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Each Nbfc: - f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E5",
+      "mention": "prudential limits",
+      "canonical_name": "Prudential Limits",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Prudential Limits.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Prudential Limits"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E6",
+      "mention": "The prudential limits shall have a relationship with the Total Assets, Earning A",
+      "canonical_name": "Prudential Limits Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Prudential Limits: The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E6"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E7",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E7",
+      "mention": "NBFCs",
+      "canonical_name": "Nbfcs",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Nbfcs.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Nbfcs"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E8",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E8",
+      "mention": "The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based",
+      "canonical_name": "Nbfcs Permission Rule",
+      "entity_type": "Requirement",
+      "description": "Permission governing Nbfcs: The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E8"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E9",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E9",
+      "mention": "or NIM any of the current models",
+      "canonical_name": "Or Nim Any Of The Current Models",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Or Nim Any Of The Current Models.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Or Nim Any Of The Current Models"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::E10",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_entity_id": "E10",
+      "mention": "For working out EaR or NIM any of the current models may be used.",
+      "canonical_name": "Or Nim Any Of The Current Models Permission Rule",
+      "entity_type": "Requirement",
+      "description": "Permission governing Or Nim Any Of The Current Models: For working out EaR or NIM any of the current models may be used.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E10"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk757.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk757.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk758.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk758.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+          "exact_quote": "RBI",
+          "char_start": 219,
+          "char_end": 222,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Alco Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Alco.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+          "exact_quote": "- e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located.",
+          "char_start": 0,
+          "char_end": 296,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+      "local_relationship_id": "R3",
+      "subject": "Alco Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Alco",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Alco.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+          "exact_quote": "- e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located.",
+          "char_start": 0,
+          "char_end": 296,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Main Focus Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Main Focus.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [
+        {
+          "operator": "==",
+          "value": 31,
+          "unit": "days",
+          "metric": "regulatory threshold",
+          "context_text": "31 days"
+        }
+      ],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+          "exact_quote": "While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days.",
+          "char_start": 96,
+          "char_end": 298,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_relationship_id": "R3",
+      "subject": "Main Focus Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Main Focus",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Main Focus.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+          "exact_quote": "While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days.",
+          "char_start": 96,
+          "char_end": 298,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_relationship_id": "R4",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PROHIBITS",
+      "object": "Days Prohibition Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI prohibits requirement for Days.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [
+        {
+          "operator": "==",
+          "value": 7,
+          "unit": "days",
+          "metric": "regulatory threshold",
+          "context_text": "7 days"
+        }
+      ],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+          "exact_quote": "The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets.",
+          "char_start": 299,
+          "char_end": 536,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+      "local_relationship_id": "R5",
+      "subject": "Days Prohibition Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Days",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Days.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+          "exact_quote": "The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets.",
+          "char_start": 299,
+          "char_end": 536,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PERMITS",
+      "object": "Statement Of Structural Liquidity Permission Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI permits requirement for Statement Of Structural Liquidity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+          "exact_quote": "- g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows.",
+          "char_start": 0,
+          "char_end": 170,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_relationship_id": "R3",
+      "subject": "Statement Of Structural Liquidity Permission Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Statement Of Structural Liquidity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Statement Of Structural Liquidity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+          "exact_quote": "- g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows.",
+          "char_start": 0,
+          "char_end": 170,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_relationship_id": "R4",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "A Maturing Liability Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for A Maturing Liability.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+          "exact_quote": "A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow.",
+          "char_start": 171,
+          "char_end": 262,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+      "local_relationship_id": "R5",
+      "subject": "A Maturing Liability Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "A Maturing Liability",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to A Maturing Liability.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+          "exact_quote": "A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow.",
+          "char_start": 171,
+          "char_end": 262,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Order to",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Order to.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+          "exact_quote": "order to",
+          "char_start": 8,
+          "char_end": 16,
+          "page_number": null,
+          "provision_locator": "Order to"
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_relationship_id": "R3",
+      "subject": "Order to",
+      "subject_type": "Provision",
+      "predicate": "REQUIRES",
+      "object": "Nbfcs Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Nbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [
+        {
+          "operator": "==",
+          "value": 6,
+          "unit": "months",
+          "metric": "regulatory threshold",
+          "context_text": "6 months"
+        }
+      ],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+          "exact_quote": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes.",
+          "char_start": 0,
+          "char_end": 282,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+      "local_relationship_id": "R4",
+      "subject": "Nbfcs Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Nbfcs",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Nbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+          "exact_quote": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes.",
+          "char_start": 0,
+          "char_end": 282,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Stock Approach  \nNbfcs Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Stock Approach  \nNbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+          "exact_quote": "Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board.",
+          "char_start": 6,
+          "char_end": 243,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_relationship_id": "R3",
+      "subject": "Stock Approach  \nNbfcs Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Stock Approach  \nNbfcs",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Stock Approach  \nNbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+          "exact_quote": "Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board.",
+          "char_start": 6,
+          "char_end": 243,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_relationship_id": "R4",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Ratios And The Internal Limits Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Ratios And The Internal Limits.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+          "exact_quote": "The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile.",
+          "char_start": 244,
+          "char_end": 370,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+      "local_relationship_id": "R5",
+      "subject": "Ratios And The Internal Limits Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Ratios And The Internal Limits",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Ratios And The Internal Limits.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+          "exact_quote": "The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile.",
+          "char_start": 244,
+          "char_end": 370,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk764.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk764.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk765.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk765.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk766.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+          "exact_quote": "RBI",
+          "char_start": 772,
+          "char_end": 775,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk767.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk767.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk768.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk768.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk769.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk769.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk770.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+          "exact_quote": "RBI",
+          "char_start": 20,
+          "char_end": 23,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk771.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk771.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Gap Report Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Gap Report.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+          "exact_quote": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier.",
+          "char_start": 0,
+          "char_end": 214,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+      "local_relationship_id": "R3",
+      "subject": "Gap Report Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Gap Report",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Gap Report.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+          "exact_quote": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier.",
+          "char_start": 0,
+          "char_end": 214,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PERMITS",
+      "object": "Gaps Permission Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI permits requirement for Gaps.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+          "exact_quote": "- d) The Gaps may be identified in the following time buckets:",
+          "char_start": 0,
+          "char_end": 62,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+      "local_relationship_id": "R3",
+      "subject": "Gaps Permission Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Gaps",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Gaps.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+          "exact_quote": "- d) The Gaps may be identified in the following time buckets:",
+          "char_start": 0,
+          "char_end": 62,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk774.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk774.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 3",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 3.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 4",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 4.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 5",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 5.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk778.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk778.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 7",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 7.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 8",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 8.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 9",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 9.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 10",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 10.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk783.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk783.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section/Clause 12",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section/Clause 12.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk785.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk785.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Each Nbfc Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Each Nbfc.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee.",
+          "char_start": 0,
+          "char_end": 114,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R3",
+      "subject": "Each Nbfc Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Each Nbfc",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Each Nbfc.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee.",
+          "char_start": 0,
+          "char_end": 114,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R4",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Prudential Limits Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Prudential Limits.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity.",
+          "char_start": 115,
+          "char_end": 211,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R5",
+      "subject": "Prudential Limits Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Prudential Limits",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Prudential Limits.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity.",
+          "char_start": 115,
+          "char_end": 211,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R6",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PERMITS",
+      "object": "Nbfcs Permission Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI permits requirement for Nbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee.",
+          "char_start": 212,
+          "char_end": 411,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R7",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R7",
+      "subject": "Nbfcs Permission Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Nbfcs",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Nbfcs.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee.",
+          "char_start": 212,
+          "char_end": 411,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R8",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R8",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PERMITS",
+      "object": "Or Nim Any Of The Current Models Permission Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI permits requirement for Or Nim Any Of The Current Models.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "For working out EaR or NIM any of the current models may be used.",
+          "char_start": 412,
+          "char_end": 477,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R9",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+      "local_relationship_id": "R9",
+      "subject": "Or Nim Any Of The Current Models Permission Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Or Nim Any Of The Current Models",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Or Nim Any Of The Current Models.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+          "exact_quote": "For working out EaR or NIM any of the current models may be used.",
+          "char_start": 412,
+          "char_end": 477,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    }
+  ],
+  "triplets_by_chunk": {
+    "RBI/366/Circular/JUL22_RBI_chunk786.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Each Nbfc Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Each Nbfc.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee.",
+            "char_start": 0,
+            "char_end": 114,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R3",
+        "subject": "Each Nbfc Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Each Nbfc",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Each Nbfc.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "- f) Each NBFC shall set prudential limits on individual Gaps with the approval of the Board/Management Committee.",
+            "char_start": 0,
+            "char_end": 114,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R4",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Prudential Limits Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Prudential Limits.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity.",
+            "char_start": 115,
+            "char_end": 211,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R5",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R5",
+        "subject": "Prudential Limits Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Prudential Limits",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Prudential Limits.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "The prudential limits shall have a relationship with the Total Assets, Earning Assets or Equity.",
+            "char_start": 115,
+            "char_end": 211,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R6",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R6",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PERMITS",
+        "object": "Nbfcs Permission Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI permits requirement for Nbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee.",
+            "char_start": 212,
+            "char_end": 411,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R7",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R7",
+        "subject": "Nbfcs Permission Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Nbfcs",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Nbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "The NBFCs may work out Earnings at Risk (EaR) or Net Interest Margin (NIM) based on their views on interest rate movements and fix a prudent level with the approval of the Board/Management Committee.",
+            "char_start": 212,
+            "char_end": 411,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R8",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R8",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PERMITS",
+        "object": "Or Nim Any Of The Current Models Permission Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI permits requirement for Or Nim Any Of The Current Models.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "For working out EaR or NIM any of the current models may be used.",
+            "char_start": 412,
+            "char_end": 477,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk786.md::R9",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+        "local_relationship_id": "R9",
+        "subject": "Or Nim Any Of The Current Models Permission Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Or Nim Any Of The Current Models",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Or Nim Any Of The Current Models.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk786.md",
+            "exact_quote": "For working out EaR or NIM any of the current models may be used.",
+            "char_start": 412,
+            "char_end": 477,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk764.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk764.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk764.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk782.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk782.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk782.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 10",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 10.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk780.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk780.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk780.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 8",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 8.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk774.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk774.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk774.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk759.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+            "exact_quote": "RBI",
+            "char_start": 219,
+            "char_end": 222,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Alco Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Alco.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+            "exact_quote": "- e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located.",
+            "char_start": 0,
+            "char_end": 296,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk759.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+        "local_relationship_id": "R3",
+        "subject": "Alco Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Alco",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Alco.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk759.md",
+            "exact_quote": "- e) The policy note recorded by the NBFCs on treatment of the investment portfolio for the purpose of ALM and approved by their Board/ ALCO shall be forwarded to the Regional Office of the Department of Supervision of RBI under whose jurisdiction the registered office of the company is located.",
+            "char_start": 0,
+            "char_end": 296,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk775.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk775.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk775.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 3",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 3.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk773.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PERMITS",
+        "object": "Gaps Permission Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI permits requirement for Gaps.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+            "exact_quote": "- d) The Gaps may be identified in the following time buckets:",
+            "char_start": 0,
+            "char_end": 62,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk773.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+        "local_relationship_id": "R3",
+        "subject": "Gaps Permission Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Gaps",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Gaps.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk773.md",
+            "exact_quote": "- d) The Gaps may be identified in the following time buckets:",
+            "char_start": 0,
+            "char_end": 62,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk785.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk785.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk785.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk761.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PERMITS",
+        "object": "Statement Of Structural Liquidity Permission Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI permits requirement for Statement Of Structural Liquidity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+            "exact_quote": "- g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows.",
+            "char_start": 0,
+            "char_end": 170,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+        "local_relationship_id": "R3",
+        "subject": "Statement Of Structural Liquidity Permission Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Statement Of Structural Liquidity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Statement Of Structural Liquidity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+            "exact_quote": "- g) The Statement of Structural Liquidity may be prepared by placing all cash inflows and outflows in the maturity ladder according to the expected timing of cash flows.",
+            "char_start": 0,
+            "char_end": 170,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+        "local_relationship_id": "R4",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "A Maturing Liability Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for A Maturing Liability.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+            "exact_quote": "A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow.",
+            "char_start": 171,
+            "char_end": 262,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk761.md::R5",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+        "local_relationship_id": "R5",
+        "subject": "A Maturing Liability Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "A Maturing Liability",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to A Maturing Liability.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk761.md",
+            "exact_quote": "A maturing liability shall be a cash outflow while a maturing asset shall be a cash inflow.",
+            "char_start": 171,
+            "char_end": 262,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk765.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk765.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk765.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk778.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk778.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk778.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk766.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk766.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk766.md",
+            "exact_quote": "RBI",
+            "char_start": 772,
+            "char_end": 775,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk767.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk767.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk767.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk760.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Main Focus Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Main Focus.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [
+          {
+            "operator": "==",
+            "value": 31,
+            "unit": "days",
+            "metric": "regulatory threshold",
+            "context_text": "31 days"
+          }
+        ],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+            "exact_quote": "While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days.",
+            "char_start": 96,
+            "char_end": 298,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+        "local_relationship_id": "R3",
+        "subject": "Main Focus Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Main Focus",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Main Focus.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+            "exact_quote": "While the mismatches up to one year would be relevant since these provide early warning signals of impending liquidity problems, the main focus shall be on the short-term mismatches, viz., 1-30/31 days.",
+            "char_start": 96,
+            "char_end": 298,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+        "local_relationship_id": "R4",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PROHIBITS",
+        "object": "Days Prohibition Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI prohibits requirement for Days.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [
+          {
+            "operator": "==",
+            "value": 7,
+            "unit": "days",
+            "metric": "regulatory threshold",
+            "context_text": "7 days"
+          }
+        ],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+            "exact_quote": "The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets.",
+            "char_start": 299,
+            "char_end": 536,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk760.md::R5",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+        "local_relationship_id": "R5",
+        "subject": "Days Prohibition Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Days",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Days.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk760.md",
+            "exact_quote": "The net cumulative negative mismatches in the Statement of Structural Liquidity in the maturity buckets 1-7 days, 8-14 days, and 15-30 days shall not exceed 10%, 10% and 20% of the cumulative cash outflows in the respective time buckets.",
+            "char_start": 299,
+            "char_end": 536,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk779.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk779.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk779.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 7",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 7.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk771.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk771.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk771.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk769.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk769.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk769.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk763.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Stock Approach  \nNbfcs Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Stock Approach  \nNbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+            "exact_quote": "Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board.",
+            "char_start": 6,
+            "char_end": 243,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+        "local_relationship_id": "R3",
+        "subject": "Stock Approach  \nNbfcs Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Stock Approach  \nNbfcs",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Stock Approach  \nNbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+            "exact_quote": "Liquidity Risk Measurement - Stock Approach  \nNBFCs shall adopt a \"stock\" approach to liquidity risk measurement and monitor certain critical ratios in this regard by putting in place internally defined limits as approved by their Board.",
+            "char_start": 6,
+            "char_end": 243,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+        "local_relationship_id": "R4",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Ratios And The Internal Limits Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Ratios And The Internal Limits.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+            "exact_quote": "The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile.",
+            "char_start": 244,
+            "char_end": 370,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk763.md::R5",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+        "local_relationship_id": "R5",
+        "subject": "Ratios And The Internal Limits Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Ratios And The Internal Limits",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Ratios And The Internal Limits.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk763.md",
+            "exact_quote": "The ratios and the internal limits shall be based on an NBFC's liquidity risk management capabilities, experience and profile.",
+            "char_start": 244,
+            "char_end": 370,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk784.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk784.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk784.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 12",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 12.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk777.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk777.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk777.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 5",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 5.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk772.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Gap Report Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Gap Report.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+            "exact_quote": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier.",
+            "char_start": 0,
+            "char_end": 214,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk772.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+        "local_relationship_id": "R3",
+        "subject": "Gap Report Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Gap Report",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Gap Report.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk772.md",
+            "exact_quote": "- c) The Gap Report shall be generated by grouping rate sensitive liabilities, assets and off-balance sheet positions into time buckets according to residual maturity or next repricing period, whichever is earlier.",
+            "char_start": 0,
+            "char_end": 214,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk768.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk768.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk768.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk783.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk783.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk783.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk757.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk757.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk757.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk776.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk776.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk776.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 4",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 4.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk758.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk758.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk758.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk770.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk770.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk770.md",
+            "exact_quote": "RBI",
+            "char_start": 20,
+            "char_end": 23,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk781.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk781.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk781.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section/Clause 9",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section/Clause 9.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk762.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Order to",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Order to.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+            "exact_quote": "order to",
+            "char_start": 8,
+            "char_end": 16,
+            "page_number": null,
+            "provision_locator": "Order to"
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+        "local_relationship_id": "R3",
+        "subject": "Order to",
+        "subject_type": "Provision",
+        "predicate": "REQUIRES",
+        "object": "Nbfcs Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Nbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [
+          {
+            "operator": "==",
+            "value": 6,
+            "unit": "months",
+            "metric": "regulatory threshold",
+            "context_text": "6 months"
+          }
+        ],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+            "exact_quote": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes.",
+            "char_start": 0,
+            "char_end": 282,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk762.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+        "local_relationship_id": "R4",
+        "subject": "Nbfcs Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Nbfcs",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Nbfcs.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk762.md",
+            "exact_quote": "- h) In order to enable the NBFCs to monitor their short-term liquidity on a dynamic basis over a time horizon spanning from 1 day to 6 months, NBFCs shall estimate their short-term liquidity profiles on the basis of business projections and other commitments for planning purposes.",
+            "char_start": 0,
+            "char_end": 282,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -35,6 +35,8 @@ data/community_reports/communities.json
 scratch/
 tmp/
 .temp/
+data/eval_batches/checkpoints/
+data/eval_batches/results/
 
 # IDE & OS specifics
 .vscode/

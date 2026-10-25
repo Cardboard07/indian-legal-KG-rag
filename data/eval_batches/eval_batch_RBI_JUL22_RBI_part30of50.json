@@ -1,0 +1,2977 @@
+{
+  "batch_id": "eval_batch_RBI_JUL22_RBI_part30of50",
+  "document_id": "RBI::366::Circular::JUL22_RBI",
+  "document_title": "JUL22 RBI",
+  "regulator": "RBI",
+  "part_index": 30,
+  "total_parts": 50,
+  "total_chunks": 30,
+  "total_existing_entities": 78,
+  "total_existing_triplets": 48,
+  "chunks": [
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk878.md",
+      "chunk_index": 878,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 127,
+      "raw_text": "- vi. unscheduled draws on committed but unused credit and liquidity facilities that the NBFC has provided to its clients; and,"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk879.md",
+      "chunk_index": 879,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 141,
+      "raw_text": "- vii. the potential need for the NBFC to buy back debt or honour noncontractual obligations in the interest of mitigating reputational risk."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "chunk_index": 880,
+      "section_locator": null,
+      "heading_hierarchy": "[\"4) High Quality Liquid Assets\"]",
+      "char_count": 1547,
+      "raw_text": "## 4) High Quality Liquid Assets  \nA) Liquid assets comprise of high quality assets that can be readily sold or used as collateral to obtain funds in a range of stress scenarios. They shall be unencumbered. Assets are considered to be high quality liquid assets if they can be easily and immediately converted into cash at little or no loss of value. The liquidity of an asset depends on the underlying stress scenario, the volume to be monetized and the timeframe considered. Nevertheless, there are certain assets that are more likely to generate funds without incurring large discounts due to fire-sales even in times of stress.  \n- B) The fundamental characteristics of HQLAs include low credit and market risk; ease and certainty of valuation; low correlation with risky assets and listing on a developed and recognized exchange market. The market related characteristics of HQLAs include active and sizeable market; presence of committed market makers;  \nlow market concentration and flight to quality (tendencies to move into these types of assets in a systemic crisis).  \nC) Assets to be included in the computation of HQLAs are those that the NBFC is holding on the first day of the stress period. Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR. Depending upon the nature of assets, they have been assigned different haircuts below, which are to be applied while calculating the HQLA for the purpose of calculation of LCR. The assets and the haircuts are as under:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk881.md",
+      "chunk_index": 881,
+      "section_locator": null,
+      "heading_hierarchy": "[\"(I) Assets to be included as HQLA without any haircut\"]",
+      "char_count": 71,
+      "raw_text": "## (I) Assets to be included as HQLA without any haircut  \n- i. Cash 25"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk882.md",
+      "chunk_index": 882,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 85,
+      "raw_text": "- (a) Assigned a 0% risk weight by banks under standardized approach for credit risk;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk883.md",
+      "chunk_index": 883,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 228,
+      "raw_text": "- (b) Traded in large, deep and active repo or cash markets characterised by a low level of concentration; and proven record as a reliable source of liquidity in the markets (repo or sale) even during stressed market conditions."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk884.md",
+      "chunk_index": 884,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 90,
+      "raw_text": "- (c) Not issued by a bank/ financial institution/ NBFC or any of its affiliated entities."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk885.md",
+      "chunk_index": 885,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 348,
+      "raw_text": "- i. Marketable securities representing claims on or claims guaranteed by sovereigns, Public Sector Entities (PSEs) or multilateral development banks that are assigned a 20% risk weight by banks under standardised approach for credit risk and provided that they are not issued by a bank/financial institution/NBFC or any of its affiliated entities."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk886.md",
+      "chunk_index": 886,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 177,
+      "raw_text": "- ii. Corporate bonds, not issued by a bank/financial institution/NBFC or any of its affiliated entities, which have been rated AA- or above by an eligible credit rating agency."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk887.md",
+      "chunk_index": 887,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 226,
+      "raw_text": "- iii. Commercial Papers not issued by a bank/ PD/ financial institution or any of its affiliated entities, which have a short-term rating equivalent to the long-term rating of AA- or above by an eligible credit rating agency."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk888.md",
+      "chunk_index": 888,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 237,
+      "raw_text": "- i. Marketable securities representing claims on or claims guaranteed by sovereigns having risk weights higher than 20% but not higher than 50%, i.e., they should have a credit rating not lower than BBB-as prescribed for banks in India."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk889.md",
+      "chunk_index": 889,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 73,
+      "raw_text": "- ii. Common Equity Shares which satisfy all of the following conditions:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk890.md",
+      "chunk_index": 890,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 90,
+      "raw_text": "3. (a) not issued by a bank/ financial institution/NBFC or any of its affiliated entities;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk891.md",
+      "chunk_index": 891,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 71,
+      "raw_text": "4. (b) included in NSE CNX Nifty index and/or S&amp;P BSE Sensex index."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk892.md",
+      "chunk_index": 892,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 188,
+      "raw_text": "- iii. Corporate debt securities (including commercial paper) and the securities having usual fundamental and market related characteristics for HQLAs and meeting the following conditions:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk893.md",
+      "chunk_index": 893,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 95,
+      "raw_text": "6. (a) not issued by a bank, financial institution, PD, NBFC or any of its affiliated entities;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk894.md",
+      "chunk_index": 894,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 203,
+      "raw_text": "7. (b) have a long-term credit rating from an eligible credit rating agency between A+ and BBB- or in the absence of a long-term rating, a short-term rating equivalent in quality to the long-term rating;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk895.md",
+      "chunk_index": 895,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 111,
+      "raw_text": "8. (c) traded in large, deep and active repo or cash markets characterised by a low level of concentration; and"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk896.md",
+      "chunk_index": 896,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 318,
+      "raw_text": "9. (d) have a proven record as a reliable source of liquidity in the markets (repo or sale) even during stressed market conditions, i.e. a maximum decline of price not exceeding 20% or increase in haircut over a 30-day period not exceeding 20 percentage points during a relevant period of significant liquidity stress."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "chunk_index": 897,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 234,
+      "raw_text": "- D) For the purpose of computing LCR for deposit taking NBFCs, such unencumbered approved securities held as per the provisions of section 45 IB of RBI Act, would be reckoned as HQLA only to the extent of 80% of the required holding."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "chunk_index": 898,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 158,
+      "raw_text": "- E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "chunk_index": 899,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 63,
+      "raw_text": "- (i) must be available at all times to be converted into cash;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "chunk_index": 900,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 29,
+      "raw_text": "- (ii) shall be unencumbered;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "chunk_index": 901,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 184,
+      "raw_text": "- (iii) shall not be co-mingled/ used as hedges on trading position; designated as collateral or credit enhancement in structured transactions or designated to cover operational costs;"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "chunk_index": 902,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 86,
+      "raw_text": "- (iv) shall be managed with sole intent for use as a source of contingent funds; and,"
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "chunk_index": 903,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 116,
+      "raw_text": "- (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g. ALCO."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk904.md",
+      "chunk_index": 904,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 322,
+      "raw_text": "- F) NBFCs should periodically monetize a proportion of assets through repo or outright sale to test the saleability of these assets and to minimize the risk of negative signalling during period of stress. NBFCs are also expected to maintain liquid assets consistent with distribution of their liquidity needs by currency."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "chunk_index": 905,
+      "section_locator": null,
+      "heading_hierarchy": "[]",
+      "char_count": 257,
+      "raw_text": "- G) If an eligible liquid asset becomes ineligible (e.g. due to downgrade), NBFCs will be allowed to keep the asset in their stock of liquid assets for an additional 30 calendar days in order to have sufficient time to adjust the stock / replace the asset."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk906.md",
+      "chunk_index": 906,
+      "section_locator": null,
+      "heading_hierarchy": "[\"5) Total net cash outflows\"]",
+      "char_count": 1102,
+      "raw_text": "## 5) Total net cash outflows  \nA) Total net cash outflows is defined as the total expected cash outflows minus total expected cash inflows for the subsequent 30 calendar days. Considering the unique nature of the balance sheet of the NBFCs, stressed cash flows is computed by assigning a predefined stress percentage to the overall cash inflows and cash outflows. Total expected cash outflows (stressed outflows) are calculated by multiplying the outstanding balances of various categories or types of liabilities and off-balance sheet commitments by 115% (15% being the rate at which they are expected to run off further or be drawn down). Total expected cash inflows (stressed inflows) are calculated by multiplying the outstanding balances of various categories of contractual receivables by 75% (25% being the rate at which they are expected to under-flow). However, total cash inflows will be subjected to an aggregate cap of 75% of total expected cash outflows. In other words, total net cash outflows over the next 30 days = Stressed Outflows - Min (stressed inflows; 75% of stressed outflows)."
+    },
+    {
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk907.md",
+      "chunk_index": 907,
+      "section_locator": null,
+      "heading_hierarchy": "[\"Items of Cash Inflows\"]",
+      "char_count": 24,
+      "raw_text": "## Items of Cash Inflows"
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk878.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk878.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk878.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk878.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk879.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk879.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk879.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk879.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E3",
+      "mention": "They",
+      "canonical_name": "They",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: They.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::They"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E4",
+      "mention": "They shall be unencumbered.",
+      "canonical_name": "They Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing They: They shall be unencumbered.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E5",
+      "mention": "Such assets",
+      "canonical_name": "Assets",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Assets.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Assets"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::E6",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_entity_id": "E6",
+      "mention": "Such assets shall be valued at an amount no greater than their current market va",
+      "canonical_name": "Assets Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Assets: Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E6"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk881.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk881.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk881.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk881.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk882.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk882.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk882.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk882.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk883.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk883.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk883.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk883.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk884.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk884.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk884.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk884.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk885.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk885.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk885.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk885.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk886.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk886.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk886.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk886.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk887.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk887.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk887.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk887.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk888.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk888.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk888.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk888.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk889.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk889.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk889.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk889.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk890.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk890.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk890.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk890.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk891.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk891.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk891.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk891.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk892.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk892.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk892.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk892.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk893.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk893.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk893.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk893.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk894.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk894.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk894.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk894.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk895.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk895.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk895.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk895.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk896.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk896.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk896.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk896.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "local_entity_id": "E3",
+      "mention": "section 45",
+      "canonical_name": "Section 45",
+      "entity_type": "Provision",
+      "description": "Provision Section 45 of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Section 45"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_entity_id": "E3",
+      "mention": "in the stock of liquid assets",
+      "canonical_name": "In The Stock Of Liquid Assets",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: In The Stock Of Liquid Assets.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::In The Stock Of Liquid Assets"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_entity_id": "E4",
+      "mention": "- E) All assets in the stock of liquid assets must be managed as part of that po",
+      "canonical_name": "In The Stock Of Liquid Assets Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing In The Stock Of Liquid Assets: - E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_entity_id": "E3",
+      "mention": "regulated person or entity",
+      "canonical_name": "Regulated Person Or Entity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Regulated Person Or Entity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Regulated Person Or Entity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_entity_id": "E4",
+      "mention": "- (i) must be available at all times to be converted into cash;",
+      "canonical_name": "Regulated Person Or Entity Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Regulated Person Or Entity: - (i) must be available at all times to be converted into cash;",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_entity_id": "E3",
+      "mention": "regulated person or entity",
+      "canonical_name": "Regulated Person Or Entity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Regulated Person Or Entity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Regulated Person Or Entity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_entity_id": "E4",
+      "mention": "- (ii) shall be unencumbered;",
+      "canonical_name": "Regulated Person Or Entity Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Regulated Person Or Entity: - (ii) shall be unencumbered;",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_entity_id": "E3",
+      "mention": "regulated person or entity",
+      "canonical_name": "Regulated Person Or Entity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Regulated Person Or Entity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Regulated Person Or Entity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_entity_id": "E4",
+      "mention": "- (iii) shall not be co-mingled/ used as hedges on trading position;",
+      "canonical_name": "Regulated Person Or Entity Prohibition Rule",
+      "entity_type": "Requirement",
+      "description": "Prohibition governing Regulated Person Or Entity: - (iii) shall not be co-mingled/ used as hedges on trading position;",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_entity_id": "E3",
+      "mention": "regulated person or entity",
+      "canonical_name": "Regulated Person Or Entity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Regulated Person Or Entity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Regulated Person Or Entity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_entity_id": "E4",
+      "mention": "- (iv) shall be managed with sole intent for use as a source of contingent funds",
+      "canonical_name": "Regulated Person Or Entity Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Regulated Person Or Entity: - (iv) shall be managed with sole intent for use as a source of contingent funds;",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_entity_id": "E3",
+      "mention": "regulated person or entity",
+      "canonical_name": "Regulated Person Or Entity",
+      "entity_type": "EntityCategory",
+      "description": "EntityCategory bound by regulatory requirements: Regulated Person Or Entity.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Regulated Person Or Entity"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::E4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_entity_id": "E4",
+      "mention": "- (v) shall be under the control of specific function/s charged with managing li",
+      "canonical_name": "Regulated Person Or Entity Obligation Rule",
+      "entity_type": "Requirement",
+      "description": "Obligation governing Regulated Person Or Entity: - (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Requirement::E4"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk904.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk904.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk904.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk904.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::E3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "local_entity_id": "E3",
+      "mention": "order to",
+      "canonical_name": "Order to",
+      "entity_type": "Provision",
+      "description": "Provision Order to of JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI::Order to"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk906.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk906.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk906.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk906.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk907.md::E1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk907.md",
+      "local_entity_id": "E1",
+      "mention": "RBI",
+      "canonical_name": "Reserve Bank of India",
+      "entity_type": "Authority",
+      "description": "Regulatory and governing authority: Reserve Bank of India.",
+      "identity_scope": "Authority::RBI"
+    },
+    {
+      "entity_id": "RBI/366/Circular/JUL22_RBI_chunk907.md::E2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk907.md",
+      "local_entity_id": "E2",
+      "mention": "JUL22 RBI",
+      "canonical_name": "JUL22 RBI",
+      "entity_type": "Instrument",
+      "description": "Regulatory instrument: JUL22 RBI.",
+      "identity_scope": "Instrument::RBI::366::Circular::JUL22_RBI"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk878.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk878.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk879.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk879.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "They Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for They.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+          "exact_quote": "They shall be unencumbered.",
+          "char_start": 179,
+          "char_end": 206,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_relationship_id": "R3",
+      "subject": "They Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "They",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to They.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+          "exact_quote": "They shall be unencumbered.",
+          "char_start": 179,
+          "char_end": 206,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R4",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_relationship_id": "R4",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Assets Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Assets.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+          "exact_quote": "Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR.",
+          "char_start": 1207,
+          "char_end": 1328,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R5",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+      "local_relationship_id": "R5",
+      "subject": "Assets Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Assets",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Assets.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+          "exact_quote": "Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR.",
+          "char_start": 1207,
+          "char_end": 1328,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk881.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk881.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk882.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk882.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk883.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk883.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk884.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk884.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk885.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk885.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk886.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk886.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk887.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk887.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk888.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk888.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk889.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk889.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk890.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk890.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk891.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk891.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk892.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk892.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk893.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk893.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk894.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk894.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk895.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk895.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk896.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk896.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+          "exact_quote": "RBI",
+          "char_start": 149,
+          "char_end": 152,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Section 45",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Section 45.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+          "exact_quote": "section 45",
+          "char_start": 132,
+          "char_end": 142,
+          "page_number": null,
+          "provision_locator": "Section 45"
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "In The Stock Of Liquid Assets Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for In The Stock Of Liquid Assets.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+          "exact_quote": "- E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:",
+          "char_start": 0,
+          "char_end": 158,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+      "local_relationship_id": "R3",
+      "subject": "In The Stock Of Liquid Assets Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "In The Stock Of Liquid Assets",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to In The Stock Of Liquid Assets.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+          "exact_quote": "- E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:",
+          "char_start": 0,
+          "char_end": 158,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Regulated Person Or Entity Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+          "exact_quote": "- (i) must be available at all times to be converted into cash;",
+          "char_start": 0,
+          "char_end": 63,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+      "local_relationship_id": "R3",
+      "subject": "Regulated Person Or Entity Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Regulated Person Or Entity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+          "exact_quote": "- (i) must be available at all times to be converted into cash;",
+          "char_start": 0,
+          "char_end": 63,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Regulated Person Or Entity Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+          "exact_quote": "- (ii) shall be unencumbered;",
+          "char_start": 0,
+          "char_end": 29,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+      "local_relationship_id": "R3",
+      "subject": "Regulated Person Or Entity Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Regulated Person Or Entity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+          "exact_quote": "- (ii) shall be unencumbered;",
+          "char_start": 0,
+          "char_end": 29,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "PROHIBITS",
+      "object": "Regulated Person Or Entity Prohibition Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI prohibits requirement for Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+          "exact_quote": "- (iii) shall not be co-mingled/ used as hedges on trading position;",
+          "char_start": 0,
+          "char_end": 68,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+      "local_relationship_id": "R3",
+      "subject": "Regulated Person Or Entity Prohibition Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Regulated Person Or Entity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+          "exact_quote": "- (iii) shall not be co-mingled/ used as hedges on trading position;",
+          "char_start": 0,
+          "char_end": 68,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Regulated Person Or Entity Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+          "exact_quote": "- (iv) shall be managed with sole intent for use as a source of contingent funds;",
+          "char_start": 0,
+          "char_end": 81,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+      "local_relationship_id": "R3",
+      "subject": "Regulated Person Or Entity Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Regulated Person Or Entity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+          "exact_quote": "- (iv) shall be managed with sole intent for use as a source of contingent funds;",
+          "char_start": 0,
+          "char_end": 81,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "REQUIRES",
+      "object": "Regulated Person Or Entity Obligation Rule",
+      "object_type": "Requirement",
+      "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+          "exact_quote": "- (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g.",
+          "char_start": 0,
+          "char_end": 110,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R3",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+      "local_relationship_id": "R3",
+      "subject": "Regulated Person Or Entity Obligation Rule",
+      "subject_type": "Requirement",
+      "predicate": "APPLIES_TO",
+      "object": "Regulated Person Or Entity",
+      "object_type": "EntityCategory",
+      "description": "Requirement applies to Regulated Person Or Entity.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+          "exact_quote": "- (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g.",
+          "char_start": 0,
+          "char_end": 110,
+          "page_number": null,
+          "provision_locator": null
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk904.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk904.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::R2",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+      "local_relationship_id": "R2",
+      "subject": "JUL22 RBI",
+      "subject_type": "Instrument",
+      "predicate": "HAS_PROVISION",
+      "object": "Order to",
+      "object_type": "Provision",
+      "description": "JUL22 RBI contains provision Order to.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": [
+        {
+          "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+          "exact_quote": "order to",
+          "char_start": 187,
+          "char_end": 195,
+          "page_number": null,
+          "provision_locator": "Order to"
+        }
+      ]
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk906.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk906.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    },
+    {
+      "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk907.md::R1",
+      "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk907.md",
+      "local_relationship_id": "R1",
+      "subject": "Reserve Bank of India",
+      "subject_type": "Authority",
+      "predicate": "ISSUES",
+      "object": "JUL22 RBI",
+      "object_type": "Instrument",
+      "description": "Reserve Bank of India issues JUL22 RBI.",
+      "conditions_json": [],
+      "exceptions_json": [],
+      "numeric_constraints_json": [],
+      "temporal_qualifiers_json": [],
+      "evidence_json": []
+    }
+  ],
+  "triplets_by_chunk": {
+    "RBI/366/Circular/JUL22_RBI_chunk889.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk889.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk889.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk880.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "They Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for They.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+            "exact_quote": "They shall be unencumbered.",
+            "char_start": 179,
+            "char_end": 206,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+        "local_relationship_id": "R3",
+        "subject": "They Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "They",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to They.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+            "exact_quote": "They shall be unencumbered.",
+            "char_start": 179,
+            "char_end": 206,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R4",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+        "local_relationship_id": "R4",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Assets Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Assets.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+            "exact_quote": "Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR.",
+            "char_start": 1207,
+            "char_end": 1328,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk880.md::R5",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+        "local_relationship_id": "R5",
+        "subject": "Assets Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Assets",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Assets.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk880.md",
+            "exact_quote": "Such assets shall be valued at an amount no greater than their current market value for the purpose of computing the LCR.",
+            "char_start": 1207,
+            "char_end": 1328,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk906.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk906.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk906.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk879.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk879.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk879.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk890.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk890.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk890.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk903.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Regulated Person Or Entity Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+            "exact_quote": "- (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g.",
+            "char_start": 0,
+            "char_end": 110,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk903.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+        "local_relationship_id": "R3",
+        "subject": "Regulated Person Or Entity Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Regulated Person Or Entity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk903.md",
+            "exact_quote": "- (v) shall be under the control of specific function/s charged with managing liquidity risk of the bank, e.g.",
+            "char_start": 0,
+            "char_end": 110,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk881.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk881.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk881.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk897.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+            "exact_quote": "RBI",
+            "char_start": 149,
+            "char_end": 152,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk897.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Section 45",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Section 45.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk897.md",
+            "exact_quote": "section 45",
+            "char_start": 132,
+            "char_end": 142,
+            "page_number": null,
+            "provision_locator": "Section 45"
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk878.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk878.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk878.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk884.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk884.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk884.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk883.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk883.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk883.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk887.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk887.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk887.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk902.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Regulated Person Or Entity Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+            "exact_quote": "- (iv) shall be managed with sole intent for use as a source of contingent funds;",
+            "char_start": 0,
+            "char_end": 81,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk902.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+        "local_relationship_id": "R3",
+        "subject": "Regulated Person Or Entity Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Regulated Person Or Entity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk902.md",
+            "exact_quote": "- (iv) shall be managed with sole intent for use as a source of contingent funds;",
+            "char_start": 0,
+            "char_end": 81,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk896.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk896.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk896.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk894.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk894.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk894.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk892.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk892.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk892.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk904.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk904.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk904.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk899.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Regulated Person Or Entity Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+            "exact_quote": "- (i) must be available at all times to be converted into cash;",
+            "char_start": 0,
+            "char_end": 63,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk899.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+        "local_relationship_id": "R3",
+        "subject": "Regulated Person Or Entity Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Regulated Person Or Entity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk899.md",
+            "exact_quote": "- (i) must be available at all times to be converted into cash;",
+            "char_start": 0,
+            "char_end": 63,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk882.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk882.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk882.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk901.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "PROHIBITS",
+        "object": "Regulated Person Or Entity Prohibition Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI prohibits requirement for Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+            "exact_quote": "- (iii) shall not be co-mingled/ used as hedges on trading position;",
+            "char_start": 0,
+            "char_end": 68,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk901.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+        "local_relationship_id": "R3",
+        "subject": "Regulated Person Or Entity Prohibition Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Regulated Person Or Entity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk901.md",
+            "exact_quote": "- (iii) shall not be co-mingled/ used as hedges on trading position;",
+            "char_start": 0,
+            "char_end": 68,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk891.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk891.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk891.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk907.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk907.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk907.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk888.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk888.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk888.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk898.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "In The Stock Of Liquid Assets Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for In The Stock Of Liquid Assets.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+            "exact_quote": "- E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:",
+            "char_start": 0,
+            "char_end": 158,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk898.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+        "local_relationship_id": "R3",
+        "subject": "In The Stock Of Liquid Assets Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "In The Stock Of Liquid Assets",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to In The Stock Of Liquid Assets.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk898.md",
+            "exact_quote": "- E) All assets in the stock of liquid assets must be managed as part of that pool by the NBFC and shall be subject to the following operational requirements:",
+            "char_start": 0,
+            "char_end": 158,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk885.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk885.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk885.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk905.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk905.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "HAS_PROVISION",
+        "object": "Order to",
+        "object_type": "Provision",
+        "description": "JUL22 RBI contains provision Order to.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk905.md",
+            "exact_quote": "order to",
+            "char_start": 187,
+            "char_end": 195,
+            "page_number": null,
+            "provision_locator": "Order to"
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk886.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk886.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk886.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk893.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk893.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk893.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk900.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R2",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+        "local_relationship_id": "R2",
+        "subject": "JUL22 RBI",
+        "subject_type": "Instrument",
+        "predicate": "REQUIRES",
+        "object": "Regulated Person Or Entity Obligation Rule",
+        "object_type": "Requirement",
+        "description": "JUL22 RBI requires requirement for Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+            "exact_quote": "- (ii) shall be unencumbered;",
+            "char_start": 0,
+            "char_end": 29,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk900.md::R3",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+        "local_relationship_id": "R3",
+        "subject": "Regulated Person Or Entity Obligation Rule",
+        "subject_type": "Requirement",
+        "predicate": "APPLIES_TO",
+        "object": "Regulated Person Or Entity",
+        "object_type": "EntityCategory",
+        "description": "Requirement applies to Regulated Person Or Entity.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": [
+          {
+            "source_chunk_id": "RBI/366/Circular/JUL22_RBI_chunk900.md",
+            "exact_quote": "- (ii) shall be unencumbered;",
+            "char_start": 0,
+            "char_end": 29,
+            "page_number": null,
+            "provision_locator": null
+          }
+        ]
+      }
+    ],
+    "RBI/366/Circular/JUL22_RBI_chunk895.md": [
+      {
+        "relationship_id": "RBI/366/Circular/JUL22_RBI_chunk895.md::R1",
+        "chunk_id": "RBI/366/Circular/JUL22_RBI_chunk895.md",
+        "local_relationship_id": "R1",
+        "subject": "Reserve Bank of India",
+        "subject_type": "Authority",
+        "predicate": "ISSUES",
+        "object": "JUL22 RBI",
+        "object_type": "Instrument",
+        "description": "Reserve Bank of India issues JUL22 RBI.",
+        "conditions_json": [],
+        "exceptions_json": [],
+        "numeric_constraints_json": [],
+        "temporal_qualifiers_json": [],
+        "evidence_json": []
+      }
+    ]
+  }
+}
