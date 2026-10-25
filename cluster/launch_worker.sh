@@ -32,15 +32,9 @@ fi
 # Ensure directories exist
 mkdir -p "$REGISTRY_DIR" "$BASE_DIR/logs"
 
-# Load modules
-if [ -f /etc/profile.d/modules.sh ]; then
-    source /etc/profile.d/modules.sh
-fi
-module load u22/cuda/12.4 2>/dev/null || module load u22/cuda/12.9 2>/dev/null || module load u22/cuda/11.8 2>/dev/null || true
-
-if [ -d "/usr/local/cuda/lib64" ]; then
-    export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
-fi
+export PATH="/home/u22/cuda-12.4/bin:$PATH"
+export LD_LIBRARY_PATH="/home/u22/cuda-12.4/lib64:$BASE_DIR/bin:$LD_LIBRARY_PATH"
+module load u22/cuda/12.4 2>/dev/null || true
 
 # Check for Native CUDA binary first (preferred over Singularity)
 NATIVE_BIN="$BASE_DIR/bin/llama-server"

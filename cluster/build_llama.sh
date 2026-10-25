@@ -18,23 +18,15 @@ echo "Compiling Native llama-server for Turing (Ubuntu 22.04)"
 echo "Target directory: $BIN_DIR"
 echo "=========================================================="
 
-# 1. Load Modules
-if [ -f /etc/profile.d/modules.sh ]; then
-    source /etc/profile.d/modules.sh
-fi
-source /etc/profile 2>/dev/null || true
+# Explicit verified Turing paths for CMake 3.31.7 and CUDA 12.4
+export PATH="/usr/local/apps/cmake-3.31.7/bin:/home/u22/cuda-12.4/bin:$PATH"
+export LD_LIBRARY_PATH="/home/u22/cuda-12.4/lib64:$LD_LIBRARY_PATH"
+export CUDA_HOME="/home/u22/cuda-12.4"
+export CUDACXX="/home/u22/cuda-12.4/bin/nvcc"
 
-# Load exact Turing environment modules
-module load u22/cmake/3.31.7 2>/dev/null || module load u22/cmake/4.0.1 2>/dev/null || true
-module load u22/cuda/12.4 2>/dev/null || module load u22/cuda/12.9 2>/dev/null || module load u22/cuda/11.8 2>/dev/null || true
-
-# Fallback: check /usr/local/cuda
-if ! command -v nvcc &>/dev/null; then
-    if [ -d "/usr/local/cuda/bin" ]; then
-        export PATH="/usr/local/cuda/bin:$PATH"
-        export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
-    fi
-fi
+# Also load environment modules if supported
+module load u22/cmake/3.31.7 2>/dev/null || true
+module load u22/cuda/12.4 2>/dev/null || true
 
 echo "Compiler & Tooling Check:"
 which gcc || echo "gcc: not found"
