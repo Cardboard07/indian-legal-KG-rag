@@ -110,6 +110,8 @@ async def run_overnight_queue(
     cum_audited = 0
     cum_valid = 0
     cum_invalid = 0
+    cum_repaired = 0
+    cum_needs_context = 0
     cum_missing = 0
     consecutive_failures = 0
     t_start_total = time.time()

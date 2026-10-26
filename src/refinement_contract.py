@@ -209,15 +209,36 @@ def validate_proposal(p: Dict[str, Any], raw_text: str):
     for key in ("conditions", "exceptions", "numeric_constraints", "temporal_qualifiers"):
         if not isinstance(p.get(key), list):
             raise ValueError(f"{key} must be an array")
-    from src.schema import LogicalCondition, NumericConstraint, TemporalQualifier
-    for c in p["conditions"]:
-        LogicalCondition.model_validate(c)
-    for c in p["numeric_constraints"]:
-        NumericConstraint.model_validate(c)
-    for c in p["temporal_qualifiers"]:
-        TemporalQualifier.model_validate(c)
     if any(not isinstance(e, str) for e in p["exceptions"]):
         raise ValueError("Exceptions must be strings")
+
+    # Pure Python qualifier validation (zero hard dependency on pydantic)
+    for c in p["conditions"]:
+        if not isinstance(c, dict) or not any(k in c for k in ("description", "condition_text", "text")):
+            raise ValueError(f"Conditions must be structured objects with description: {c}")
+
+    for c in p["numeric_constraints"]:
+        if not isinstance(c, dict) or not all(k in c for k in ("operator", "value", "unit", "metric")):
+            raise ValueError(f"Numeric constraints must be structured objects: {c}")
+
+    for c in p["temporal_qualifiers"]:
+        if not isinstance(c, dict) or not all(k in c for k in ("qualifier_type", "value_text")):
+            raise ValueError(f"Temporal qualifiers must be structured objects: {c}")
+
+    # Optional strict Pydantic check if installed
+    try:
+        from src.schema import LogicalCondition, NumericConstraint, TemporalQualifier
+        for c in p["conditions"]:
+            norm_c = dict(c)
+            if "description" not in norm_c and "condition_text" in norm_c:
+                norm_c["description"] = norm_c["condition_text"]
+            LogicalCondition.model_validate(norm_c)
+        for c in p["numeric_constraints"]:
+            NumericConstraint.model_validate(c)
+        for c in p["temporal_qualifiers"]:
+            TemporalQualifier.model_validate(c)
+    except (ImportError, ModuleNotFoundError):
+        pass
 
 
 def validate_evaluation(data: Dict[str, Any], existing: List[Dict[str, Any]], raw_text: str) -> Dict[str, Any]:
