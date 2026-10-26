@@ -115,5 +115,34 @@ class RefinementTests(unittest.TestCase):
         asyncio.run(check())
 
 
+    def test_corrected_triplet_accepted_for_invalid(self):
+        d = response()
+        d["audited_triplets"][0].update(
+            is_valid=False,
+            error_type="wrong_predicate",
+            corrected_triplet=dict(PROPOSAL, numeric_constraints=["within 30 days"])
+        )
+        res = validate_evaluation(d, [TRIPLET], TEXT)
+        corr = res["audited_triplets"][0]["corrected_triplet"]
+        self.assertIsNotNone(corr)
+        self.assertEqual(corr["numeric_constraints"][0]["metric"], "threshold")
+
+    def test_relaxed_whitespace_quote_accepted(self):
+        text_with_newline = "Banks shall file returns\n  within 30 days unless exempt."
+        p = dict(PROPOSAL, exact_quote="Banks shall file returns within 30 days unless exempt.")
+        validate_proposal(p, text_with_newline)
+
+    def test_string_qualifiers_auto_normalized(self):
+        d = {
+            "audited_triplets": response()["audited_triplets"],
+            "missing_triplets": [
+                dict(PROPOSAL, conditions=["if active"], temporal_qualifiers=["within 30 days"])
+            ]
+        }
+        res = validate_evaluation(d, [TRIPLET], TEXT)
+        self.assertEqual(len(res["missing_triplets"]), 1)
+        self.assertEqual(res["missing_triplets"][0]["conditions"][0]["condition_type"], "raw")
+        self.assertEqual(res["missing_triplets"][0]["temporal_qualifiers"][0]["qualifier_type"], "deadline")
+
 if __name__ == "__main__":
     unittest.main()

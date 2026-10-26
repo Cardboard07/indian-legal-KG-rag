@@ -272,6 +272,8 @@ async def evaluate_batch(
     total_audited = 0
     total_valid = 0
     total_invalid = 0
+    total_repaired = 0
+    total_needs_context = 0
     total_missing = 0
     final_results = []
     failed_chunks = []
@@ -286,10 +288,14 @@ async def evaluate_batch(
         eval_data = rec.get("evaluation", {})
         for a in eval_data.get("audited_triplets", []):
             total_audited += 1
-            if a.get("is_valid"):
+            if a.get("is_valid") is True:
                 total_valid += 1
             elif a.get("is_valid") is False:
                 total_invalid += 1
+                if a.get("corrected_triplet"):
+                    total_repaired += 1
+            elif a.get("is_valid") is None:
+                total_needs_context += 1
         total_missing += len(eval_data.get("missing_triplets", []))
 
     total_time = time.time() - t_start
@@ -313,6 +319,8 @@ async def evaluate_batch(
         "total_audited_triplets": total_audited,
         "valid_triplets": total_valid,
         "invalid_triplets": total_invalid,
+        "repaired_triplets": total_repaired,
+        "needs_context_triplets": total_needs_context,
         "new_missing_triplets_suggested": total_missing,
         "total_wall_time_sec": round(total_time, 2),
         "results": final_results
@@ -331,8 +339,11 @@ async def evaluate_batch(
     print("=" * 80)
     print(f"Total Chunks Evaluated     : {len(chunks)}")
     print(f"Existing Triplets Audited  : {total_audited}")
-    print(f"Valid Existing Triplets    : {total_valid} ({total_valid / max(total_audited, 1) * 100:.1f}%)")
-    print(f"Invalid / Distorted        : {total_invalid} ({total_invalid / max(total_audited, 1) * 100:.1f}%)")
+    print(f"  - Valid Kept             : {total_valid} ({total_valid / max(total_audited, 1) * 100:.1f}%)")
+    print(f"  - Invalid / Distorted    : {total_invalid} ({total_invalid / max(total_audited, 1) * 100:.1f}%)")
+    print(f"    * Repaired / Corrected : {total_repaired} ({total_repaired / max(total_invalid, 1) * 100:.1f}% of invalid)")
+    print(f"    * Quarantined          : {total_invalid - total_repaired} ({(total_invalid - total_repaired) / max(total_invalid, 1) * 100:.1f}% of invalid)")
+    print(f"  - Needs Context (Null)   : {total_needs_context} ({total_needs_context / max(total_audited, 1) * 100:.1f}%)")
     print(f"New Missing Triplets Found : {total_missing}")
     print(f"Wall-Clock Time            : {total_time:.2f} s")
     print(f"Checkpoint Log File        : {checkpoint_file}")

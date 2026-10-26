@@ -61,6 +61,17 @@ def locate_quote_offsets(raw_text: str, quote: str) -> Tuple[int, int]:
     if idx != -1:
         return idx, idx + len(quote)
 
+    # 2. Whitespace-normalized match across linebreaks
+    import re
+    norm_quote = re.sub(r"\s+", " ", quote).strip()
+    words = norm_quote.split()
+    if len(words) >= 2:
+        first_w = re.escape(words[0])
+        last_w = re.escape(words[-1])
+        pattern = re.compile(rf"{first_w}\b.*?\b{last_w}", re.DOTALL)
+        m = pattern.search(raw_text)
+        if m:
+            return m.start(), m.end()
 
     return -1, -1
 
@@ -89,6 +100,7 @@ def reconcile_result_file(
         "chunks_evaluated": len(chunk_evaluations),
         "total_audited": 0,
         "valid_kept": 0,
+        "repaired": 0,
         "quarantined": 0,
         "missing_suggested": 0,
         "missing_grounded": 0,
@@ -151,12 +163,43 @@ def reconcile_result_file(
                     raise ValueError(f"Unknown relationship {rid} for chunk {cid}")
                 critique = a.get("critique", "")
                 err_type = a.get("error_type", "none")
+                corr = a.get("corrected_triplet")
 
                 # Resolve relationship in DB
                 global_rel_id = matched["relationship_id"]
 
                 if is_valid:
                     stats["valid_kept"] += 1
+                elif corr and isinstance(corr, dict):
+                    stats["repaired"] += 1
+                    if apply_changes:
+                        audit_id = f"{batch_id}::{global_rel_id}"
+                        conn.execute("""
+                        INSERT INTO refinement_audits (audit_id, batch_id, chunk_id, relationship_id, is_valid, critique, error_type)
+                        VALUES (?, ?, ?, ?, 2, ?, ?)
+                        ON CONFLICT(audit_id) DO UPDATE SET critique=excluded.critique, error_type=excluded.error_type;
+                        """, (audit_id, batch_id, cid, global_rel_id, critique, err_type))
+
+                        # Apply the repaired relationship directly
+                        conn.execute("""
+                        UPDATE relationships
+                        SET relationship_type = ?,
+                            description = ?,
+                            conditions_json = ?,
+                            exceptions_json = ?,
+                            numeric_constraints_json = ?,
+                            temporal_qualifiers_json = ?,
+                            review_status = 'repaired'
+                        WHERE relationship_id = ? OR (chunk_id = ? AND local_relationship_id = ?);
+                        """, (
+                            corr.get("predicate", "RELATION"),
+                            corr.get("description", ""),
+                            json.dumps(corr.get("conditions", []), ensure_ascii=False),
+                            json.dumps(corr.get("exceptions", []), ensure_ascii=False),
+                            json.dumps(corr.get("numeric_constraints", []), ensure_ascii=False),
+                            json.dumps(corr.get("temporal_qualifiers", []), ensure_ascii=False),
+                            global_rel_id, cid, rid
+                        ))
                 else:
                     stats["quarantined"] += 1
                     if apply_changes:
@@ -294,6 +337,7 @@ def reconcile_result_file(
     print(f"Chunks Evaluated                : {stats['chunks_evaluated']}")
     print(f"Existing Triplets Audited       : {stats['total_audited']}")
     print(f"  - Valid & Kept                : {stats['valid_kept']}")
+    print(f"  - Repaired with Grounding     : {stats['repaired']}")
     print(f"  - Quarantined (False/Distorted): {stats['quarantined']}")
     print(f"Missing Triplets Suggested      : {stats['missing_suggested']}")
     print(f"  - Verbatim Grounded (Verified): {stats['missing_grounded']}")

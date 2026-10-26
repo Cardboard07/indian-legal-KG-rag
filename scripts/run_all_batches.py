@@ -138,18 +138,22 @@ async def run_overnight_queue(
             audited_cnt = summary.get("total_audited_triplets", 0)
             valid_cnt = summary.get("valid_triplets", 0)
             invalid_cnt = summary.get("invalid_triplets", 0)
+            repaired_cnt = summary.get("repaired_triplets", 0)
+            needs_context_cnt = summary.get("needs_context_triplets", 0)
             missing_cnt = summary.get("new_missing_triplets_suggested", 0)
 
             cum_chunks += chunks_cnt
             cum_audited += audited_cnt
             cum_valid += valid_cnt
             cum_invalid += invalid_cnt
+            cum_repaired += repaired_cnt
+            cum_needs_context += needs_context_cnt
             cum_missing += missing_cnt
 
             log_entry = (
                 f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Batch {idx}/{len(batch_files)} ({bpath.name}): "
-                f"Chunks={chunks_cnt}, Audited={audited_cnt}, Valid={valid_cnt}, Invalid={invalid_cnt}, "
-                f"Missing={missing_cnt}, WallTime={elapsed:.1f}s\n"
+                f"Chunks={chunks_cnt}, Audited={audited_cnt}, Valid={valid_cnt}, Invalid={invalid_cnt} "
+                f"(Repaired={repaired_cnt}), NeedsContext={needs_context_cnt}, Missing={missing_cnt}, WallTime={elapsed:.1f}s\n"
             )
             with open(log_file, "a", encoding="utf-8") as fp:
                 fp.write(log_entry)
@@ -157,7 +161,8 @@ async def run_overnight_queue(
             print(
                 f"\n>>> [{idx:2d}/{len(batch_files):2d}] BATCH COMPLETE ({elapsed:.1f}s) | "
                 f"Cumulative Chunks: {cum_chunks} | Audited: {cum_audited} | "
-                f"Invalid: {cum_invalid} | New Missing: {cum_missing}"
+                f"Valid: {cum_valid} | Invalid: {cum_invalid} (Repaired: {cum_repaired}) | "
+                f"NeedsContext: {cum_needs_context} | New Missing: {cum_missing}"
             )
 
         except Exception as ex:
@@ -195,6 +200,9 @@ async def run_overnight_queue(
     print(f"Total Triplets Audited       : {cum_audited}")
     print(f"  - Valid Kept               : {cum_valid} ({cum_valid / max(cum_audited, 1) * 100:.1f}%)")
     print(f"  - Invalid / Distorted      : {cum_invalid} ({cum_invalid / max(cum_audited, 1) * 100:.1f}%)")
+    print(f"    * Repaired with Proposal : {cum_repaired} ({cum_repaired / max(cum_invalid, 1) * 100:.1f}% of invalid)")
+    print(f"    * Quarantined            : {cum_invalid - cum_repaired} ({(cum_invalid - cum_repaired) / max(cum_invalid, 1) * 100:.1f}% of invalid)")
+    print(f"  - Needs Context (Null)     : {cum_needs_context} ({cum_needs_context / max(cum_audited, 1) * 100:.1f}%)")
     print(f"Total New Triplets Discovered: {cum_missing}")
     print(f"Total Queue Wall Time        : {total_wall_time / 60.0:.2f} minutes")
     print(f"Master Run Log               : {log_file}")
