@@ -73,7 +73,7 @@ async def evaluate_batch(
     max_chunks: Optional[int] = None,
     concurrency: int = 8,
     dry_run: bool = False,
-    max_tokens: int = 2048,
+    max_tokens: int = 4096,
     max_prompt_bytes: Optional[int] = None,
 ) -> Dict[str, Any]:
     with open(batch_path, "r", encoding="utf-8") as f:
@@ -190,8 +190,20 @@ async def evaluate_batch(
                         response_format={"type": "json_object"}
                     )
                     elapsed = time.time() - t0
-                    if resp["choices"][0].get("finish_reason") != "stop":
-                        raise ValueError("Incomplete model response (not finish_reason=stop)")
+                    finish = resp["choices"][0].get("finish_reason")
+                    if finish != "stop":
+                        logger.warning(f"Chunk {cid} response truncated (finish_reason={finish}). Retrying with 6144 max_tokens...")
+                        resp = await dispatcher.chat_completion(
+                            messages=messages,
+                            temperature=0.0,
+                            max_tokens=6144,
+                            response_format={"type": "json_object"}
+                        )
+                        elapsed = time.time() - t0
+                        finish = resp["choices"][0].get("finish_reason")
+                        if finish != "stop":
+                            raise ValueError(f"Incomplete model response (finish_reason={finish})")
+
                     content = resp["choices"][0]["message"]["content"]
                     parsed = extract_json_response(content)
 
@@ -300,13 +312,16 @@ async def evaluate_batch(
 
     total_time = time.time() - t_start
 
-    # If chunks failed, abort before saving corrupted final result file
-    if failed_chunks:
+    # If all chunks failed, abort batch
+    if failed_chunks and len(failed_chunks) == len(chunks):
         first_err = failed_chunks[0].get("error", "Unknown error")
         raise RuntimeError(
-            f"Batch {batch_id} incomplete: {len(failed_chunks)}/{len(chunks)} chunks failed! "
-            f"First error: {first_err}. Checkpoint preserved at {checkpoint_file.name} for resumption."
+            f"Batch {batch_id} completely failed: 0/{len(chunks)} chunks succeeded! "
+            f"First error: {first_err}."
         )
+
+    if failed_chunks:
+        print(f"\n[WARNING] Batch {batch_id} had {len(failed_chunks)}/{len(chunks)} failed chunk(s). Successful chunks saved, checkpoint preserved for remainder.")
 
     summary = {
         "batch_id": batch_id,
@@ -360,7 +375,7 @@ def main():
     parser.add_argument("--concurrency", type=int, default=8, help="Number of concurrent requests across cluster workers (default: 8).")
     parser.add_argument("--registry-dir", type=str, default=None, help="Path to cluster node registry directory.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated static node URLs.")
-    parser.add_argument("--max-tokens", type=int, default=2048, help="Maximum response tokens; incomplete responses fail validation.")
+    parser.add_argument("--max-tokens", type=int, default=4096, help="Maximum response tokens; incomplete responses fail validation.")
     parser.add_argument("--max-prompt-bytes", type=int, default=None, help="Optional input byte budget; unset preserves existing request sizes.")
     parser.add_argument("--dry-run", action="store_true", help="Run local mock dry-run without calling LLMs.")
 

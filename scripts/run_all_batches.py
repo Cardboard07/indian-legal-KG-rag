@@ -65,7 +65,7 @@ async def run_overnight_queue(
     batch_dir: Path,
     pattern: str = "*.json",
     concurrency: int = 16,
-    max_tokens: int = 2048,
+    max_tokens: int = 4096,
     max_prompt_bytes: Optional[int] = None,
     delay_between_batches: float = 1.0,
     reset: bool = False,
@@ -216,7 +216,7 @@ def main():
     parser.add_argument("--batch-dir", type=str, default="data/eval_batches", help="Directory containing batch JSON files.")
     parser.add_argument("--pattern", type=str, default="*.json", help="Glob pattern for batches (default: *.json).")
     parser.add_argument("--concurrency", type=int, default=16, help="Concurrent requests across cluster (default: 16).")
-    parser.add_argument("--max-tokens", type=int, default=2048, help="Maximum response tokens per request (default: 2048).")
+    parser.add_argument("--max-tokens", type=int, default=4096, help="Maximum response tokens per request (default: 4096).")
     parser.add_argument("--max-prompt-bytes", type=int, default=None, help="Optional maximum prompt bytes.")
     parser.add_argument("--delay", type=float, default=1.0, help="Seconds to pause between batches.")
     parser.add_argument("--reset", action="store_true", help="Clear prior checkpoints and results in batch directory before starting.")
