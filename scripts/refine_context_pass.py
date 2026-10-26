@@ -17,7 +17,6 @@ import os
 import sys
 import json
 import time
-import sqlite3
 import asyncio
 import argparse
 from pathlib import Path
@@ -26,7 +25,7 @@ from typing import Dict, Any, List, Optional, Tuple
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT_DIR))
 
-from src.config import DB_PATH, ENTITY_TYPES, PERMITTED_RELATIONSHIP_ENDPOINTS
+from src.config import ENTITY_TYPES, PERMITTED_RELATIONSHIP_ENDPOINTS
 from cluster.cluster_dispatcher import MultiNodeLLMDispatcher
 from src.refinement_contract import (
     normalize_proposal_qualifiers,
@@ -90,101 +89,91 @@ def extract_json_response(content: str) -> Dict[str, Any]:
         raise
 
 
-def get_db():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
+class CorpusContextIndex:
+    """In-memory index of all chunks and document preambles across batch JSON files.
+    Completely eliminates any dependency on SQLite database (extraction_store.db).
+    """
+    def __init__(self, batches_dir: Path):
+        self.batches_dir = batches_dir
+        self.chunk_to_doc: Dict[str, str] = {}
+        self.chunk_to_index: Dict[str, int] = {}
+        self.chunk_texts: Dict[str, str] = {}
+        self.doc_metadata: Dict[str, Dict[str, Any]] = {}
+        self.doc_chunks_by_index: Dict[str, Dict[int, str]] = {}
+        self._load()
 
+    def _load(self):
+        batch_files = sorted(list(self.batches_dir.glob("eval_batch_*.json")))
+        for bf in batch_files:
+            try:
+                data = json.loads(bf.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            doc_id = data.get("document_id", "")
+            if doc_id and doc_id not in self.doc_metadata:
+                self.doc_metadata[doc_id] = {
+                    "document_title": data.get("document_title", doc_id),
+                    "regulator": data.get("regulator", "Regulatory Authority"),
+                }
+                self.doc_chunks_by_index[doc_id] = {}
 
-def load_chunk_text(file_path_str: str) -> str:
-    fpath = Path(file_path_str)
-    if not fpath.is_absolute():
-        fpath = ROOT_DIR / fpath
-    if not fpath.is_file():
-        # Fallback to hybrid chunks directory
-        fpath = ROOT_DIR / "hpc_results" / "chunks_docling_hybrid" / Path(file_path_str).name
-    if fpath.is_file():
-        try:
-            return fpath.read_text(encoding="utf-8").strip()
-        except Exception:
-            pass
-    return ""
+            for c in data.get("chunks", []):
+                cid = c.get("chunk_id")
+                cidx = c.get("chunk_index", 0)
+                raw_text = c.get("raw_text", "").strip()
+                if cid:
+                    self.chunk_to_doc[cid] = doc_id
+                    self.chunk_to_index[cid] = cidx
+                    self.chunk_texts[cid] = raw_text
+                    if doc_id:
+                        self.doc_chunks_by_index[doc_id][cidx] = raw_text
 
+    def get_expanded_context(self, chunk_id: str) -> Tuple[str, str]:
+        doc_id = self.chunk_to_doc.get(chunk_id, "")
+        c_idx = self.chunk_to_index.get(chunk_id, 0)
+        target_text = self.chunk_texts.get(chunk_id, "")
 
-def build_expanded_context(
-    conn: sqlite3.Connection,
-    chunk_id: str
-) -> Tuple[str, str]:
-    """Retrieves document preamble and adjacent chunks (N-1, N, N+1)."""
-    c_row = conn.execute(
-        "SELECT chunk_id, document_id, chunk_index, file_path, section_locator FROM manifest_chunks WHERE chunk_id = ?",
-        (chunk_id,)
-    ).fetchone()
-    if not c_row:
-        return "", ""
+        doc_meta = self.doc_metadata.get(doc_id, {})
+        doc_title = doc_meta.get("document_title", doc_id or "Regulatory Document")
+        regulator = doc_meta.get("regulator", "Regulatory Authority")
 
-    doc_id = c_row["document_id"]
-    c_idx = c_row["chunk_index"]
+        doc_by_idx = self.doc_chunks_by_index.get(doc_id, {})
 
-    # 1. Fetch document metadata
-    doc_row = conn.execute("SELECT * FROM documents WHERE document_id = ?", (doc_id,)).fetchone()
-    doc_title = doc_row["document_title"] if doc_row else doc_id
-    regulator = doc_row["regulator"] if doc_row else "Regulatory Authority"
+        # Preamble: Chunks 1, 2, 3 (authority, circular details, statutory scope)
+        preamble_parts = []
+        for p_idx in [1, 2, 3]:
+            p_txt = doc_by_idx.get(p_idx, "").strip()
+            if p_txt:
+                preamble_parts.append(p_txt)
+        preamble_text = "\n\n".join(preamble_parts)
 
-    # 2. Fetch Preamble (Chunk 0 or 1)
-    preamble_row = conn.execute(
-        "SELECT file_path FROM manifest_chunks WHERE document_id = ? ORDER BY chunk_index ASC LIMIT 1",
-        (doc_id,)
-    ).fetchone()
-    preamble_text = load_chunk_text(preamble_row["file_path"]) if preamble_row else ""
+        # Preceding (N-1) and Succeeding (N+1)
+        prev_text = doc_by_idx.get(c_idx - 1, "").strip() if c_idx > 1 else ""
+        next_text = doc_by_idx.get(c_idx + 1, "").strip()
 
-    # 3. Fetch Adjacent chunks (N-1, N, N+1)
-    adj_rows = conn.execute(
-        """
-        SELECT chunk_index, file_path, section_locator
-        FROM manifest_chunks
-        WHERE document_id = ? AND chunk_index BETWEEN ? AND ?
-        ORDER BY chunk_index ASC
-        """,
-        (doc_id, max(0, c_idx - 1), c_idx + 1)
-    ).fetchall()
+        context_blocks = [
+            "=== DOCUMENT HEADER & STATUTORY PREAMBLE ===",
+            f"Document: {doc_title} | Regulator: {regulator}",
+            f"Preamble Excerpt:\n{preamble_text[:2000]}\n",
+        ]
 
-    target_text = ""
-    prev_text = ""
-    next_text = ""
+        if prev_text:
+            context_blocks.append(f"=== PRECEDING SECTION (Chunk index {c_idx - 1}) ===\n{prev_text[:1200]}\n")
 
-    for r in adj_rows:
-        text = load_chunk_text(r["file_path"])
-        if r["chunk_index"] == c_idx:
-            target_text = text
-        elif r["chunk_index"] < c_idx:
-            prev_text = text
-        elif r["chunk_index"] > c_idx:
-            next_text = text
+        context_blocks.append(f"=== TARGET STATUTORY SECTION (Chunk index {c_idx}) ===\n{target_text}\n")
 
-    # Formulate assembled prompt context
-    context_blocks = [
-        f"=== DOCUMENT HEADER & PREAMBLE ===",
-        f"Document: {doc_title} | Regulator: {regulator}",
-        f"Preamble Excerpt:\n{preamble_text[:1500]}\n"
-    ]
+        if next_text:
+            context_blocks.append(f"=== SUCCEEDING SECTION (Chunk index {c_idx + 1}) ===\n{next_text[:1200]}\n")
 
-    if prev_text:
-        context_blocks.append(f"=== PRECEDING SECTION (Chunk index {c_idx - 1}) ===\n{prev_text[:1200]}\n")
+        combined_context = "\n".join(context_blocks)
+        full_text_for_quote_check = f"{preamble_text}\n{prev_text}\n{target_text}\n{next_text}"
 
-    context_blocks.append(f"=== TARGET STATUTORY SECTION (Chunk index {c_idx}) ===\n{target_text}\n")
-
-    if next_text:
-        context_blocks.append(f"=== SUCCEEDING SECTION (Chunk index {c_idx + 1}) ===\n{next_text[:1200]}\n")
-
-    combined_context = "\n".join(context_blocks)
-    full_text_for_quote_check = f"{preamble_text}\n{prev_text}\n{target_text}\n{next_text}"
-
-    return combined_context, full_text_for_quote_check
+        return combined_context, full_text_for_quote_check
 
 
 async def run_context_pass(
     results_dir: Path,
+    batches_dir: Path = Path("data/eval_batches"),
     concurrency: int = 8,
     dry_run: bool = False,
     dispatcher: Optional[MultiNodeLLMDispatcher] = None,
@@ -194,7 +183,7 @@ async def run_context_pass(
         print(f"No refinement result files found in {results_dir}")
         return
 
-    conn = get_db()
+    ctx_index = CorpusContextIndex(batches_dir)
 
     total_unresolved = 0
     chunks_with_unresolved = []
@@ -224,6 +213,7 @@ async def run_context_pass(
     print(" " * 24 + "PASS 2: CONTEXT-ENRICHED REFINEMENT")
     print("=" * 80)
     print(f"Results Directory               : {results_dir}")
+    print(f"Batches Directory               : {batches_dir}")
     print(f"Result Files Inspected          : {len(result_files)}")
     print(f"Chunks Requiring Expanded Context: {len(chunks_with_unresolved)}")
     print(f"Total Triplets to Re-evaluate   : {total_unresolved}")
@@ -232,14 +222,12 @@ async def run_context_pass(
 
     if total_unresolved == 0:
         print("All triplets are already conclusively audited (0 'needs_context' remaining).")
-        conn.close()
         return
 
     if not dry_run and dispatcher:
         healthy = await dispatcher.update_health()
         if not healthy:
             print("ERROR: No healthy LLM worker nodes online. Aborting Pass 2.")
-            conn.close()
             return
 
     sem = asyncio.Semaphore(concurrency)
@@ -250,7 +238,7 @@ async def run_context_pass(
         nonlocal resolved_count
         cid = item["chunk_id"]
         triplets = item["unresolved_triplets"]
-        expanded_context, full_source_text = build_expanded_context(conn, cid)
+        expanded_context, full_source_text = ctx_index.get_expanded_context(cid)
 
         payload = {
             "chunk_id": cid,
@@ -373,12 +361,12 @@ async def run_context_pass(
             data["repaired_triplets"] = rep_cnt
             data["needs_context_triplets"] = nc_cnt
 
-            with open(rf, "w", encoding="utf-8") as fp:
-                json.dump(data, fp, indent=2, ensure_ascii=False)
+            if not dry_run:
+                with open(rf, "w", encoding="utf-8") as fp:
+                    json.dump(data, fp, indent=2, ensure_ascii=False)
             updated_files_count += 1
 
     elapsed = time.time() - t0
-    conn.close()
 
     print("\n" + "=" * 80)
     print(" " * 25 + "PASS 2 REFINEMENT COMPLETE")
@@ -395,6 +383,7 @@ async def run_context_pass(
 def main():
     parser = argparse.ArgumentParser(description="Run Pass 2 Context-Enriched Refinement for unresolved triplets.")
     parser.add_argument("--results-dir", type=str, default="data/eval_batches/results", help="Directory containing Pass 1 results.")
+    parser.add_argument("--batches-dir", type=str, default="data/eval_batches", help="Directory containing eval batch JSONs.")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrency for live inference.")
     parser.add_argument("--registry-dir", type=str, default=None, help="Cluster registry directory.")
     parser.add_argument("--urls", type=str, default="", help="Comma-separated explicit URLs.")
@@ -403,9 +392,9 @@ def main():
 
     args = parser.parse_args()
     results_dir = Path(args.results_dir)
+    batches_dir = Path(args.batches_dir)
 
     if args.preview:
-        conn = get_db()
         result_files = sorted(list(results_dir.glob("refinement_results_*.json")))
         total_nc = 0
         chunks_map = {}
@@ -423,7 +412,6 @@ def main():
         print(f"Total Chunks Needing Wide Context: {len(chunks_map)}")
         print(f"Average Triplets per Chunk      : {total_nc / max(len(chunks_map), 1):.1f}")
         print("=" * 80 + "\n")
-        conn.close()
         return
 
     explicit_urls = [u.strip() for u in args.urls.split(",") if u.strip()] if args.urls else None
@@ -431,6 +419,7 @@ def main():
 
     asyncio.run(run_context_pass(
         results_dir=results_dir,
+        batches_dir=batches_dir,
         concurrency=args.concurrency,
         dry_run=args.dry_run,
         dispatcher=dispatcher
