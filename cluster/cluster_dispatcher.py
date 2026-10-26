@@ -100,7 +100,7 @@ class MultiNodeLLMDispatcher:
         self,
         registry_dir: Optional[str] = None,
         explicit_urls: Optional[List[str]] = None,
-        request_timeout: float = 120.0,
+        request_timeout: float = 240.0,
     ):
         username = os.environ.get("USER", "unknown")
         default_registry = f"/home/{username}/llm_cluster/registry"
@@ -250,8 +250,10 @@ class MultiNodeLLMDispatcher:
                     node.total_completed += 1
                     return data
             except Exception as e:
-                logger.warning(f"Worker {node.id} request failed on attempt {attempt+1}: {e}")
-                node.is_healthy = False  # Mark node unhealthy on connection drops
+                is_timeout = isinstance(e, asyncio.TimeoutError) or "timed out" in str(e).lower()
+                logger.warning(f"Worker {node.id} request {'timed out' if is_timeout else 'failed'} on attempt {attempt+1}: {e}")
+                if not is_timeout:
+                    node.is_healthy = False  # Mark node unhealthy on connection drops, but keep busy nodes active
                 node.total_errors += 1
                 last_error = e
             finally:
