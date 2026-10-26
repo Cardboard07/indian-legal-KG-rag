@@ -123,6 +123,7 @@ class TestStage3FailureModes(unittest.TestCase):
             ) for cid, c in self.communities.items()
         }
 
+        expected_connected = len(self.projection.entities) - len(self.communities.get("COMM::v1::ISOLATES", {}).get("member_entity_ids", []))
         for lvl in [0, 1, 2]:
             frontier = detector.get_frontier(target_level=lvl)
             frontier_nodes = set()
@@ -131,7 +132,7 @@ class TestStage3FailureModes(unittest.TestCase):
                 self.assertEqual(len(overlap), 0, f"Overlapping nodes in frontier at level {lvl}")
                 frontier_nodes.update(comm.member_entity_ids)
             # Must equal connected nodes
-            self.assertEqual(len(frontier_nodes), 26694, f"Frontier at level {lvl} does not cover 26,694 nodes")
+            self.assertEqual(len(frontier_nodes), expected_connected, f"Frontier at level {lvl} does not cover {expected_connected} nodes")
 
     def test_08_missing_child_reports_fallback(self):
         """Verify context builder degrades gracefully when child reports are missing."""

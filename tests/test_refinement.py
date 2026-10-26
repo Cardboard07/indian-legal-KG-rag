@@ -144,5 +144,53 @@ class RefinementTests(unittest.TestCase):
         self.assertEqual(res["missing_triplets"][0]["conditions"][0]["condition_type"], "raw")
         self.assertEqual(res["missing_triplets"][0]["temporal_qualifiers"][0]["qualifier_type"], "deadline")
 
+    def test_immutable_snapshot_abort_triggers(self):
+        import sqlite3
+        from scripts.reconcile_refinement_results import create_immutable_snapshots
+        conn = sqlite3.connect(":memory:")
+        conn.execute("CREATE TABLE relationships (id TEXT, val TEXT);")
+        conn.execute("CREATE TABLE entities (id TEXT, val TEXT);")
+        conn.execute("CREATE TABLE evidence_spans (id TEXT, val TEXT);")
+        conn.execute("INSERT INTO relationships VALUES ('R1', 'test');")
+        create_immutable_snapshots(conn)
+        
+        # Verify row counts match
+        snap_cnt = conn.execute("SELECT count(*) FROM relationships_pre_refinement;").fetchone()[0]
+        self.assertEqual(snap_cnt, 1)
+
+        # Verify UPDATE on snapshot is blocked by trigger
+        with self.assertRaises(sqlite3.IntegrityError):
+            conn.execute("UPDATE relationships_pre_refinement SET val='changed';")
+
+        # Verify DELETE on snapshot is blocked by trigger
+        with self.assertRaises(sqlite3.IntegrityError):
+            conn.execute("DELETE FROM relationships_pre_refinement;")
+
+        # Verify INSERT on snapshot is blocked by trigger
+        with self.assertRaises(sqlite3.IntegrityError):
+            conn.execute("INSERT INTO relationships_pre_refinement VALUES ('R2', 'blocked');")
+
+    def test_sqlite_backup_api_checkpoint(self):
+        import sqlite3
+        from scripts.reconcile_refinement_results import create_database_backup
+        with tempfile.TemporaryDirectory() as td:
+            src = Path(td) / "src.db"
+            dst = Path(td) / "dst.db"
+            src_conn = sqlite3.connect(src)
+            src_conn.execute("PRAGMA journal_mode=WAL;")
+            src_conn.execute("CREATE TABLE t (id INT);")
+            src_conn.execute("INSERT INTO t VALUES (42);")
+            src_conn.commit()
+            src_conn.close()
+
+            create_database_backup(src, dst)
+            self.assertTrue(dst.exists())
+
+            dst_conn = sqlite3.connect(dst)
+            val = dst_conn.execute("SELECT id FROM t;").fetchone()[0]
+            dst_conn.close()
+            self.assertEqual(val, 42)
+
+
 if __name__ == "__main__":
     unittest.main()

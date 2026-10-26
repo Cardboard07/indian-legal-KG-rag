@@ -160,5 +160,11 @@ FALKORDB_BATCH_SIZE = int(os.getenv("FALKORDB_BATCH_SIZE", "1000"))
 
 def get_falkordb_client():
     from falkordb import FalkorDB
-    return FalkorDB(host=resolve_falkordb_host(), port=FALKORDB_PORT)
+    return FalkorDB(
+        host=resolve_falkordb_host(),
+        port=FALKORDB_PORT,
+        socket_keepalive=True,
+        socket_timeout=120,
+        socket_connect_timeout=10,
+    )
 

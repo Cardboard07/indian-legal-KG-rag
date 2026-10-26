@@ -29,6 +29,7 @@ data/manifest.json
 
 # Large Generated Graph Artifacts (>25 MB)
 data/community_reports/communities.json
+data/community_reports_backup_pre_refinement/communities.json
 
 # Development logs & temp files
 *.log

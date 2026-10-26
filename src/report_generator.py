@@ -29,6 +29,7 @@ class CommunityReportGenerator:
         projection: ClusteringProjection,
         reports_dir: str = "data/community_reports",
         graph_name: str = FALKORDB_GRAPH_NAME,
+        reset: bool = False,
     ):
         self.projection = projection
         self.reports_dir = reports_dir
@@ -43,7 +44,8 @@ class CommunityReportGenerator:
         os.makedirs(reports_dir, exist_ok=True)
         self.reports_path = os.path.join(reports_dir, "reports.json")
         self.manifests_path = os.path.join(reports_dir, "context_manifests.json")
-        self._load_existing_reports()
+        if not reset:
+            self._load_existing_reports()
 
     def _load_existing_reports(self):
         """Loads already completed reports to support resumable generation."""
@@ -56,11 +58,21 @@ class CommunityReportGenerator:
                 self.context_manifests = json.load(f)
 
     def _save_checkpoint(self):
-        """Persists reports and manifests to disk."""
-        with open(self.reports_path, "w", encoding="utf-8") as f:
-            json.dump(self.reports, f, indent=2, ensure_ascii=False)
-        with open(self.manifests_path, "w", encoding="utf-8") as f:
-            json.dump(self.context_manifests, f, indent=2, ensure_ascii=False)
+        """Persists reports and manifests to disk with retry for Windows file locks."""
+        from pathlib import Path
+        reports_p = Path(self.reports_path).resolve()
+        manifests_p = Path(self.manifests_path).resolve()
+        for attempt in range(5):
+            try:
+                with open(reports_p, "w", encoding="utf-8") as f:
+                    json.dump(self.reports, f, indent=2, ensure_ascii=False)
+                with open(manifests_p, "w", encoding="utf-8") as f:
+                    json.dump(self.context_manifests, f, indent=2, ensure_ascii=False)
+                break
+            except (OSError, PermissionError):
+                if attempt == 4:
+                    raise
+                time.sleep(0.15 * (attempt + 1))
 
     def synthesize_report(
         self,
@@ -188,7 +200,6 @@ class CommunityReportGenerator:
         }
 
         self.reports[cid] = report
-        self._save_checkpoint()
         return report
 
     def generate_all_reports(self, communities_json_path: str = "data/community_reports/communities.json") -> Dict[str, Any]:
@@ -217,6 +228,8 @@ class CommunityReportGenerator:
                 if idx % 10 == 0 or idx == len(target_l1):
                     print(f"  L1 Progress: {idx}/{len(target_l1)} reports completed.", flush=True)
 
+        self._save_checkpoint()
+
         # 2. Level 0 Communities (Parents)
         l0_comms = [c for c in communities.values() if c["level"] == 0 and not c["id"].endswith("ISOLATES")]
         l0_comms.sort(key=lambda x: x.get("size", 0), reverse=True)
@@ -230,7 +243,10 @@ class CommunityReportGenerator:
                 self.synthesize_report(comm, child_reports=self.reports)
                 generated_l0 += 1
                 if idx % 25 == 0 or idx == len(l0_comms):
+                    self._save_checkpoint()
                     print(f"  L0 Progress: {idx}/{len(l0_comms)} reports completed.", flush=True)
+
+        self._save_checkpoint()
 
         # 3. Ingest generated reports into FalkorDB
         self._ingest_reports_to_falkordb()
@@ -308,7 +324,12 @@ class CommunityReportGenerator:
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate Community Reports")
+    parser.add_argument("--reset", action="store_true", help="Force regenerate all reports without loading existing ones")
+    args = parser.parse_args()
+
     proj = ClusteringProjection()
     proj.build_projection()
-    generator = CommunityReportGenerator(projection=proj)
+    generator = CommunityReportGenerator(projection=proj, reset=args.reset)
     res = generator.generate_all_reports()

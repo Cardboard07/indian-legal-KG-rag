@@ -1,0 +1,46 @@
+{
+  "snapshot_id": "v2_refined",
+  "frozen_at": "2026-10-26T13:17:55Z",
+  "corpus": "Reserve Bank of India (RBI) NBFC Master Directions & Circulars",
+  "regulator": "RBI",
+  "graph_name": "legal_kg_dev",
+  "schema_version": "1.0.0",
+  "prompt_version": "1.0.0",
+  "model_name": "Gemini-3.8-Flash-High",
+  "execution_route": "Antigravity Execution Environment",
+  "review_status_policy": {
+    "status": "unreviewed",
+    "execution_mode": "unreviewed_extraction_dev_mode",
+    "human_reviewed_count": 0,
+    "candidate_valid_count": 159402,
+    "quarantined_count": 0,
+    "disclosure": "All graph elements and derived community reports are generated via validated model extraction operating under explicitly labeled unreviewed_extraction_dev_mode. No records are represented as human-approved."
+  },
+  "graph_topology": {
+    "Document": 357,
+    "Chunk": 34731,
+    "Entity": 159402,
+    "RelationshipAssertion": 79135,
+    "EvidenceSpan": 42129,
+    "EDGE_HAS_CHUNK": 34731,
+    "EDGE_MENTIONS": 114259,
+    "EDGE_SUBJECT_OF": 79135,
+    "EDGE_OBJECT": 79135,
+    "EDGE_RELATION": 79135,
+    "EDGE_SUPPORTED_BY": 212730,
+    "EDGE_IN_CHUNK": 42129,
+    "TOTAL_NODES": 321083,
+    "TOTAL_EDGES": 702044
+  },
+  "content_hashes": {
+    "extraction_store_db_sha256": "2abb1a8fbb2c1205eda7907b3312915e972373b2ff54403b43fc3bbfdc9632a5",
+    "rbi_fts_db_sha256": "50f6f467659f5762ae690875c7b78cc0401d70e9d9b731fa9a8c4f886ce8299b"
+  },
+  "environment_and_dependencies": {
+    "python_version": "3.13.9",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "falkordb_server": "FalkorDB on Redis 6379",
+    "sentence_transformers": "all-MiniLM-L6-v2 (384-d)"
+  }
+}

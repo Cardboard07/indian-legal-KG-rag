@@ -1,17 +1,17 @@
 {
-  "load_run_id": "load_run_1792292829",
+  "load_run_id": "load_run_1793019912",
   "graph_name": "legal_kg_dev",
   "regulator_filter": "RBI",
-  "duration_seconds": 44.91,
+  "duration_seconds": 30.18,
   "counts": {
     "Document": 357,
     "Chunk": 34731,
-    "Entity": 157589,
-    "RelationshipAssertion": 78185,
-    "EvidenceSpan": 40348,
-    "RELATION_edges": 78185,
-    "MENTIONS_edges": 112158,
-    "SUPPORTED_BY_edges": 203097
+    "Entity": 159402,
+    "RelationshipAssertion": 79135,
+    "EvidenceSpan": 42129,
+    "RELATION_edges": 79135,
+    "MENTIONS_edges": 114259,
+    "SUPPORTED_BY_edges": 212730
   },
   "status": "COMPLETED",
   "review_mode": "unreviewed_extraction_dev_mode"

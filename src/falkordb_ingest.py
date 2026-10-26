@@ -7,11 +7,16 @@ Loads extraction outputs into FalkorDB adhering to the 4-layer architecture:
 4. Evidence Layer: EvidenceSpan nodes linking assertions to source chunks with verbatim text
 """
 
+import os
+import sys
 import json
 import time
 import argparse
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Set
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT_DIR))
 
 from src.config import (
     DB_PATH,
@@ -42,6 +47,21 @@ class FalkorDBIngestionEngine:
         self.graph = self.client.select_graph(self.graph_name)
         self.load_run_id = f"load_run_{int(time.time())}"
 
+    def query(self, cypher: str, params: Optional[Dict[str, Any]] = None):
+        """Resilient query execution with automatic socket reconnection and retry."""
+        for attempt in range(5):
+            try:
+                return self.graph.query(cypher, params) if params else self.graph.query(cypher)
+            except Exception as e:
+                if attempt == 4:
+                    raise
+                time.sleep(0.5 * (attempt + 1))
+                try:
+                    self.client = get_falkordb_client()
+                    self.graph = self.client.select_graph(self.graph_name)
+                except Exception:
+                    pass
+
     def init_schema(self):
         """Initializes schema indexes idempotently in FalkorDB."""
         print(f"Initializing FalkorDB schema indexes for graph '{self.graph_name}'...", flush=True)
@@ -60,7 +80,7 @@ class FalkorDBIngestionEngine:
         ]
         for q in index_queries:
             try:
-                self.graph.query(q)
+                self.query(q)
             except Exception as ex:
                 # FalkorDB raises error if index already exists
                 pass
@@ -147,7 +167,7 @@ class FalkorDBIngestionEngine:
             d.category = item.category,
             d.total_chunks = item.total_chunks
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
     def ingest_chunks(self, regulator: Optional[str] = None, limit: Optional[int] = None) -> int:
         print(f"--- Stage 2: Ingesting Chunks (regulator={regulator or 'ALL'}) ---", flush=True)
@@ -216,7 +236,7 @@ class FalkorDBIngestionEngine:
             c.char_count = item.char_count,
             c.section_locator = item.section_locator
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
         # Link Document to Chunk
         link_cypher = """
@@ -225,7 +245,7 @@ class FalkorDBIngestionEngine:
         MATCH (c:Chunk {id: item.id})
         MERGE (d)-[:HAS_CHUNK]->(c)
         """
-        self.graph.query(link_cypher, {"batch": batch})
+        self.query(link_cypher, {"batch": batch})
 
     def ingest_resolved_entities(self, regulator: Optional[str] = None) -> int:
         print(f"--- Stage 3: Ingesting Resolved Canonical Entities ---", flush=True)
@@ -252,7 +272,7 @@ class FalkorDBIngestionEngine:
                 "description": r["consolidated_description"] or "",
                 "mention_count": r["mention_count"] or 1,
                 "aliases": r["aliases_json"] or "[]",
-                "review_status": "unreviewed",  # Explicit unreviewed dev mode
+                "review_status": r["review_status"] or "unreviewed",
             })
             if len(batch) >= self.batch_size:
                 self._upsert_entities_batch(batch)
@@ -291,7 +311,7 @@ class FalkorDBIngestionEngine:
             e.aliases_json = item.aliases,
             e.review_status = item.review_status
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
     def ingest_assertions_and_relationships(self, regulator: Optional[str] = None, limit: Optional[int] = None) -> int:
         print(f"--- Stage 4: Ingesting Assertions, Evidence Links & Views (regulator={regulator or 'ALL'}) ---", flush=True)
@@ -308,9 +328,13 @@ class FalkorDBIngestionEngine:
             JOIN entities t ON r.target_entity_id = t.entity_id
             """
             params = []
+            where_clauses = ["(r.review_status IS NULL OR r.review_status != 'quarantined')"]
             if regulator:
-                query += " JOIN manifest_chunks c ON r.chunk_id = c.chunk_id WHERE c.regulator = ?"
+                query += " JOIN manifest_chunks c ON r.chunk_id = c.chunk_id"
+                where_clauses.append("c.regulator = ?")
                 params.append(regulator)
+            if where_clauses:
+                query += " WHERE " + " AND ".join(where_clauses)
             if limit:
                 query += f" LIMIT {limit}"
 
@@ -364,7 +388,7 @@ class FalkorDBIngestionEngine:
                 "numeric_constraints_json": num_str,
                 "temporal_qualifiers_json": r["temporal_qualifiers_json"] or "[]",
                 "is_conditional": is_cond,
-                "review_status": "unreviewed",
+                "review_status": r["review_status"] or "unreviewed",
             })
 
             if len(batch) >= self.batch_size:
@@ -424,7 +448,7 @@ class FalkorDBIngestionEngine:
             r.is_conditional = item.is_conditional,
             r.review_status = item.review_status
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
     def ingest_evidence(self, regulator: Optional[str] = None, limit: Optional[int] = None) -> int:
         print(f"--- Stage 5: Ingesting Evidence Spans & Linking to Chunks ---", flush=True)
@@ -502,7 +526,7 @@ class FalkorDBIngestionEngine:
             ev.verified = item.verified
         MERGE (ev)-[:IN_CHUNK]->(c)
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
     def link_chunk_entity_mentions(self, regulator: Optional[str] = None, limit: Optional[int] = None) -> int:
         print(f"--- Stage 6: Linking Chunks to Mentioned Entities ---", flush=True)
@@ -567,7 +591,7 @@ class FalkorDBIngestionEngine:
         MERGE (c)-[m:MENTIONS]->(e)
         ON CREATE SET m.mention = item.mention
         """
-        self.graph.query(cypher, {"batch": batch})
+        self.query(cypher, {"batch": batch})
 
     def link_assertions_to_evidence(self):
         print(f"--- Stage 7: Linking Assertions to Supporting Evidence ---", flush=True)
@@ -577,7 +601,7 @@ class FalkorDBIngestionEngine:
         MATCH (ev:EvidenceSpan {chunk_id: a.chunk_id})
         MERGE (a)-[:SUPPORTED_BY]->(ev)
         """
-        res = self.graph.query(cypher)
+        res = self.query(cypher)
         print("Assertions linked to evidence spans.", flush=True)
 
     def reconcile_graph_counts(self) -> Dict[str, Any]:
@@ -595,7 +619,7 @@ class FalkorDBIngestionEngine:
         }
         for label, q in queries.items():
             try:
-                res = self.graph.query(q)
+                res = self.query(q)
                 cnt = res.result_set[0][0] if res.result_set else 0
                 counts[label] = cnt
                 print(f"  {label}: {cnt}")
@@ -611,10 +635,20 @@ def main():
     parser.add_argument("--batch-size", type=int, default=FALKORDB_BATCH_SIZE, help="Batch size for Cypher write operations")
     parser.add_argument("--graph-name", type=str, default=FALKORDB_GRAPH_NAME, help="Target FalkorDB graph name")
     parser.add_argument("--limit-chunks", type=int, default=None, help="Optional limit on chunks for targeted testing")
+    parser.add_argument("--drop-existing", action="store_true", help="Drop target graph before ingestion for clean rebuild")
     args = parser.parse_args()
 
     reg = None if args.regulator.upper() == "ALL" else args.regulator.upper()
     engine = FalkorDBIngestionEngine(graph_name=args.graph_name, batch_size=args.batch_size)
+
+    if args.drop_existing:
+        try:
+            print(f"Dropping existing graph '{args.graph_name}' for clean rebuild...", flush=True)
+            engine.graph.delete()
+            engine.graph = engine.client.select_graph(args.graph_name)
+        except Exception as ex:
+            print(f"Note on graph drop: {ex}", flush=True)
+            engine.graph = engine.client.select_graph(args.graph_name)
 
     print(f"Starting FalkorDB ingestion into graph '{args.graph_name}' (regulator={reg or 'ALL'})...")
     engine.init_schema()
@@ -632,6 +666,12 @@ def main():
     print(f"\nIngestion pass completed in {elapsed:.2f}s.")
 
     counts = engine.reconcile_graph_counts()
+    try:
+        print("Persisting FalkorDB graph snapshot to disk (SAVE)...", flush=True)
+        engine.client.connection.save()
+        print("Graph snapshot saved to disk.", flush=True)
+    except Exception as ex:
+        print(f"Note on graph save: {ex}", flush=True)
     manifest_data = {
         "load_run_id": engine.load_run_id,
         "graph_name": args.graph_name,
